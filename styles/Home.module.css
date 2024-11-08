@@ -84,7 +84,7 @@
         margin-top: 18rem;
     }
     .sec{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -102,7 +102,7 @@
 
 .mainContent {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     flex-direction: row;
 }
@@ -114,12 +114,135 @@
 }
 
 .hand {
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding-left: 0.4rem;
     transform: scaleX(-1);
     transform: rotate(-5deg);
     animation: wave 1.5s ease-in-out infinite;
     display: inline-block;
+}
+
+.sec {
+    font-size: 2.1rem;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secSpan {
+    margin-left: 1rem;
+    color: rgb(241, 91, 241);
+    font-weight: 500;
+    font-style: normal;
+}
+
+.third {
+    color: rgb(241, 91, 241);
+    font-weight: 500;
+    margin-top: 2.5rem;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.typing_text {
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15rem solid rgb(241, 91, 241);
+    opacity: 0.95;
+    animation: typing 6s steps(43) 0s 1, blink 0.6s ease-in-out infinite;
+    font-size: 2.1rem;
+}
+
+.div2{
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.div3{
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.d2{
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+.d3{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:800px) {
+    .mainContent{
+        font-size: 1.7rem;
+    }
+    .hand{
+        font-size: 1.5rem;
+    }
+    .sec{
+        font-size: 1.9rem;
+    }
+    .secSpan{
+        font-size: 1.9rem;
+        font-weight: 500;
+    }
+    .third{
+        margin-top: 1rem;
+    }
+    .typing_text{
+        font-size: 1.8rem;
+    }
+    .div2{
+        font-size: 1.5rem;
+        font-weight: 550;
+    }
+    .div3{
+        font-size: 1.2rem;
+    }
+    .d2{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+}
+
+/* @media screen and (max-width:630px) {
+
+} */
+
+@media screen and (max-width:450px) {
+    .mainContent{
+        font-size: 1.5rem;
+    }
+    .hand{
+        font-size: 1.4rem;
+    }
+    .sec{
+        font-size: 1.5rem;
+    }
+    .secSpan{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .third{
+        margin-top: 2rem;
+    }
+    .typing_text{
+        font-size: 1.5rem;
+    }
+    .div2{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .div3{
+        font-size: 1.1rem;
+    }
 }
 
 /* Waving animation */
@@ -172,44 +295,10 @@
     top: 30%;
 }
 
-.sec {
-    font-size: 2.8rem;
-    text-align: center;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.secSpan {
-    margin-left: 1rem;
-    color: rgb(241, 91, 241);
-    font-weight: 500;
-    font-style: normal;
-}
-
-.third {
-    color: rgb(241, 91, 241);
-    font-size: 2.3rem;
-    font-weight: 500;
-    margin-top: 1.6rem;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 /* Typing Effect Styles */
 .typing_container {
     text-align: center;
     margin-top: 1rem;
-}
-
-.typing_text {
-    width: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.15rem solid rgb(241, 91, 241);
-    opacity: 0.95;
-    animation: typing 6s steps(43) 0s 1, blink 0.6s ease-in-out infinite;
 }
 
 /* Typing effect */
@@ -271,30 +360,8 @@
     margin-bottom: 4rem;
 }
 
-.div2{
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-bottom: 4rem;
-}
-
-.div3{
-    font-size: 1.4rem;
-    font-weight: 400;
-}
-
 .d1{
     margin-bottom: 4rem;
-}
-
-.d2{
-    font-size: 2.3rem;
-    font-weight: 500;
-}
-
-.d3{
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
 }
 
 .d4{

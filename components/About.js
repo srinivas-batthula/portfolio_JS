@@ -47,44 +47,44 @@ export default function AboutPage() {
                     </div>
                 </div>
                 <div className={styles.main2}>
-                    <div style={{ fontSize: '2.3rem' }}>
+                    <div className={styles.head}>
                         Professional  <span style={{ color: 'rgb(184, 41, 184)', fontWeight: 'bold' }}>Skillset</span>
                     </div>
                     <div className={styles.flex1}>
 
-                        <div className={styles.flex2}><i className="fa-brands fa-js" style={{ fontSize: '5rem' }}></i></div>
-                        <div className={styles.flex2}><i className="fa-brands fa-python" style={{ fontSize: '5rem' }}></i></div>
-                        <div className={styles.flex2}><i className="fa-solid fa-c" style={{ fontSize: '5rem' }}></i></div>
-                        <div className={styles.flex2}><i className="fa-brands fa-node" style={{ fontSize: '5rem' }}></i></div>
-                        <div className={styles.flex2}><i className="fa-brands fa-react" style={{ fontSize: '5rem' }}></i></div>
-                        <div className={styles.flex2}>
-                            <i className="devicon-mongodb-plain-wordmark" style={{ fontSize: '5rem' }}></i>
+                        <div className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-js"></i></span></div>
+                        <div className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-python"></i></span></div>
+                        <div className={styles.flex2}><span className={styles.i}><i className="fa-solid fa-c"></i></span></div>
+                        <div className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-node"></i></span></div>
+                        <div className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-react"></i></span></div>
+                        <div className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-mongodb-plain-wordmark"></i></span>
                         </div>
-                        <div className={styles.flex2}>
-                            <i className="devicon-nextjs-original-wordmark" style={{ fontSize: '5rem' }}></i>
+                        <div className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-nextjs-original-wordmark"></i></span>
                         </div>
-                        <div className={styles.flex2}>
-                            <i className="devicon-git-plain" style={{ fontSize: '5rem' }}></i>
+                        <div className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-git-plain"></i></span>
                         </div>
-                        <div className={styles.flex2}>
-                            <i className="devicon-express-original" style={{ fontSize: '5rem' }}></i>
+                        <div className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-express-original"></i></span>
                         </div>
 
                     </div>
                 </div>
                 <div className={styles.main2}>
-                    <div style={{ fontSize: '2.3rem' }}>
+                    <div className={styles.head}>
                         <span style={{ color: 'rgb(184, 41, 184)', fontWeight: 'bold' }}>Tools</span> I use
                     </div>
                     <div className={styles.flex3}>
-                        <div className={styles.flex2}>
-                            <i className="devicon-vscode-plain" style={{ fontSize: '5rem' }}></i>
+                        <div className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-vscode-plain"></i></span>
                         </div>
-                        <div className={styles.flex2}>
-                            <i className="devicon-postman-plain" style={{ fontSize: '5rem' }}></i>
+                        <div className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-postman-plain"></i></span>
                         </div>
-                        <div className={styles.flex2}>
-                            <i className="devicon-github-original" style={{ fontSize: '5rem' }}></i>
+                        <div className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-github-original"></i></span>
                         </div>
                     </div>
                 </div>

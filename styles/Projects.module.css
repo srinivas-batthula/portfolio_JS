@@ -19,6 +19,12 @@
     margin-bottom: 3rem;
 }
 
+@media screen and (max-width:800px) {
+    .head{
+        font-size: 1.8rem;
+    }
+}
+
 .main2{
     width: 100%;
     display: flex;
@@ -36,10 +42,10 @@
     box-shadow: 0 0.25rem 0.35rem rgb(141, 76, 141);
     background-color: transparent;
     backdrop-filter: blur(1.5rem);
-    margin-right: 2.3rem;
+    margin-right: 2rem;
     margin-bottom: 6rem;
     text-align: center;
-    padding: 1rem;
+    padding: 0.71rem;
     border-radius: 3%;
     display: flex;
     flex-direction: column;
@@ -51,9 +57,6 @@
     transition-property: all;
 }
 
-.card:hover{
-    box-shadow: 0 0.16rem 1rem rgb(141, 76, 141);
-}
 .img{
     width: 18rem;
     height: 15.5rem;
@@ -80,6 +83,30 @@
     text-rendering: optimizeLegibility;
     letter-spacing: 0.06rem;
     font-family: 'Roboto', Arial, sans-serif; /* A clean, modern font */
+}
+
+@media screen and (max-width:468px) {
+    .card{
+        width: 23rem;
+        height: 33rem;
+    }
+    .img{
+        width: 16rem;
+        height: 14rem;
+        margin-bottom: 0.2rem;
+    }
+    .title{
+        margin-top: 0.2rem;
+        padding-top: 0.2rem;
+        font-size: 1.1rem;
+    }
+    .content{
+        font-size: 0.9rem;
+    }
+}
+
+.card:hover{
+    box-shadow: 0 0.16rem 1rem rgb(141, 76, 141);
 }
 
 .links{

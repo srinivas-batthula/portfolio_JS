@@ -84,7 +84,7 @@ is at most 990 pixels. */
     position: relative;
     display: inline-block;
     transition-property: all;
-    transition-duration: 0.15s;
+    transition-duration: 0.25s;
     display: flex;
     flex-direction: row;
 }
@@ -97,7 +97,7 @@ is at most 990 pixels. */
     width: 0;
     height: 0.3rem;
     background-color: rgb(204, 105, 204);
-    transition: width 0.4s ease;
+    transition: width 0.4s ease-in-out;
     border-radius: 1rem 0 1rem 0;
 }
 
@@ -134,6 +134,8 @@ is at most 990 pixels. */
 
 .Collapse {
     color: white;
+    transition-duration: 0.35s;
+    transition-property: all;
 }
 
 .svg {
