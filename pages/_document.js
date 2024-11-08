@@ -11,6 +11,8 @@ class MyDocument extends Document {
                     <meta name="description" content="Srinivas Batthula Portfolio" />
 
                             {/* Icon... */}
+                    <meta name="description" content="My Next.js Application" />
+                    {/*  Icon...  */}
                     <link rel="icon" href="/icon.jpg" type="image/x-icon" />
                     
                     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet" />
