@@ -9,9 +9,6 @@ class MyDocument extends Document {
                     {/* Custom fonts, meta tags, or external scripts go here */}
                     <meta name='title' content='Srinivas Batthula' />
                     <meta name="description" content="Srinivas Batthula Portfolio" />
-
-                            {/* Icon... */}
-                    <meta name="description" content="My Next.js Application" />
                     {/*  Icon...  */}
                     <link rel="icon" href="/icon.jpg" type="image/x-icon" />
                     
