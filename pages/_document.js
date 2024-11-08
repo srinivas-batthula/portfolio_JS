@@ -8,7 +8,7 @@ class MyDocument extends Document {
                 <Head>
                     {/* Custom fonts, meta tags, or external scripts go here */}
                     <meta name="description" content="My Next.js Application" />
-                    // Icon...
+                    {/*  Icon...  */}
                     <link rel="icon" href="/icon.jpg" type="image/x-icon" />
                     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet" />
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
