@@ -1,0 +1,138 @@
+.img{
+    background-image: url('./../public/utils/profile_pic.png');
+    background-position: center;
+    background-size: contain;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    opacity: 0.85;
+    transition-property: all;
+    transition-duration: 0.15s;
+}
+.img:hover{
+    box-shadow: 0 0 1rem rgb(187, 74, 187);      
+}
+
+.mainImg{
+    margin: 0.8rem;
+    padding: 0.6rem;
+    float: right;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.sec1{
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: left;
+}
+
+.sec2{
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+.sec3{
+    width: 45%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width:710px) {
+    .sec3{
+        width: 85%;
+    }
+}
+
+.sec4{
+    margin-bottom: 1.5rem;
+    padding-right: 0.2rem;
+    padding: 0.2rem;
+}
+
+.sec5{
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+}
+
+.main2{
+    margin-top: 2.3rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flex1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flex2{
+    margin: 1rem;
+    width: 25%;
+    padding: 2rem;
+    border: 0.05rem solid rgb(187, 74, 187);
+    box-shadow: 0 0 0.2rem rgb(187, 74, 187);
+    border-radius: 5%;
+    transition-duration: 0.45s;
+    transition-property: all;
+    background-color: transparent;
+    backdrop-filter: blur(0.1rem);
+}
+.flex2:hover{
+    transform: scale(1.04);
+    box-shadow: 0 0 0.6rem rgb(187, 74, 187);
+}
+
+.flex3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+

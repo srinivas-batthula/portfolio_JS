@@ -1,0 +1,165 @@
+.navMain {
+    display: flex;
+    color: white;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    margin-bottom: 0.1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navMain:hover {
+    box-shadow: 0 0 1rem rgb(181, 124, 181);
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+    margin-left: auto;
+    margin-right: 0.1rem;
+    position: relative;
+    color: white;
+    transition-property: all;
+    transition-duration: 0.25s;
+}
+
+/* The `@media (max-width: 990px)` rule in CSS is used to apply specific styles when the viewport width
+is at most 990 pixels. */
+@media (max-width: 990px) {
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.4rem;
+        top: 100%;
+        margin: auto;
+    }
+}
+
+.navCon {
+    color: white;
+    text-align: center;
+}
+
+.navCon:active {
+    color: white;
+}
+
+.txt1 {
+    font-size: 1.8rem;
+    font-weight: 550;
+    color: rgb(198, 20, 198);
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.txt1:hover {
+    color: rgb(198, 20, 198);
+}
+
+.txt1:active {
+    color: rgb(198, 20, 198);
+}
+
+.txt1:visited {
+    color: rgb(198, 20, 198);
+}
+
+.txt {
+    font-size: 1.4rem;
+    font-weight: 540;
+    color: white;
+    padding: 0.2rem;
+    margin-left: 5rem;
+    margin-right: 0rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition-property: all;
+    transition-duration: 0.15s;
+    display: flex;
+    flex-direction: row;
+}
+
+.txt::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.3rem;
+    background-color: rgb(204, 105, 204);
+    transition: width 0.4s ease;
+    border-radius: 1rem 0 1rem 0;
+}
+
+.txt:hover::after {
+    width: 100%;
+}
+
+.txt:hover {
+    color: white;
+}
+
+.txt:active {
+    color: white;
+    transform: scale(1.2);
+}
+
+.txt:visited {
+    color: white;
+}
+
+.toggle {
+    color: white;
+    background-color: rgb(204, 105, 204);
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    justify-content: space-between;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.25s;
+}
+
+.Collapse {
+    color: white;
+}
+
+.svg {
+    width: 1.45rem;
+    height: 1.45rem;
+    margin: 0.2rem;
+    padding: 0.1rem;
+}
+
+/* styles.module.css */
+.svg {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    transform: rotate(0deg);
+}
+
+.x-icon {
+    transform: rotate(90deg);
+    /* Rotate to form an "X" */
+}
+
+/* Optional: you can also use opacity to fade in/out */
+.hamburger,
+.x-icon {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}

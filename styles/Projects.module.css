@@ -1,0 +1,104 @@
+.main{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.head{
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.main2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.card{
+    width: 26rem;
+    height: 36rem;
+    box-shadow: 0 0.25rem 0.35rem rgb(141, 76, 141);
+    background-color: transparent;
+    backdrop-filter: blur(1.5rem);
+    margin-right: 2.3rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    transition-duration: 0.45s;
+    transition-property: all;
+}
+
+.card:hover{
+    box-shadow: 0 0.16rem 1rem rgb(141, 76, 141);
+}
+.img{
+    width: 18rem;
+    height: 15.5rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.title{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.15rem;
+    color: rgb(238, 57, 238);
+}
+
+.content{
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 1.1rem;
+    padding: 0.06rem;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.06rem;
+    font-family: 'Roboto', Arial, sans-serif; /* A clean, modern font */
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    padding: 0.4rem;
+    background-color: rgb(124, 5, 175);
+    color: white;
+    border-radius: 8%;
+}
+
+.temp{
+    font-size: 1.3rem;
+    color: rgb(238, 57, 238);
+    text-align: center;
+    font-weight: bold;
+}

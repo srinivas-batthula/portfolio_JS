@@ -1,0 +1,321 @@
+.layoutDiv {
+    width: 100%;
+    height: 100%;
+    background-image: url('./../public/utils/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    backdrop-filter: blur(8%);
+    opacity: 1;
+    animation: opacity 1s ease-in-out;
+    color: white;
+    text-align: center;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    55% {
+        opacity: 0.85;
+    }
+}
+
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 4 equal columns by default */
+    gap: 2rem;
+
+    margin: 0.2rem;
+    padding: 0.2rem;
+    text-align: center;
+    z-index: -1;
+    color: white;
+}
+
+/* Grid item styling */
+.grid_item {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.subDiv {
+    margin: 0.2rem;
+    width: 95%;
+    height: 80vh;
+    transform: scaleX(-1);
+    background-image: url('./../public/utils/home_pic.svg');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 0;
+}
+
+/* Responsive breakpoints using media queries */
+@media (max-width: 1100px) {
+    .grid_container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for medium screens */
+    }
+    .subDiv{
+        width: 72%;
+        height: 68vh;
+    }
+}
+
+@media (max-width: 990px) {
+    .grid_container {
+        grid-template-columns: 1fr;
+        /* 1 columns for small screens */
+    }
+    .subDiv{
+        width: 85%;
+        height: 70vh;
+        background-position: center;
+        margin-top: 18rem;
+    }
+    .sec{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid_container {
+        grid-template-columns: 1fr;
+        /* 1 column for very small screens */
+    }
+    .subDiv{
+        width: 85%;
+        height: 70vh;
+        background-position: center;
+    }
+}
+
+.mainContent {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    flex-direction: row;
+}
+
+.container {
+    text-align: start;
+    font-family: Arial, sans-serif;
+    margin: 1rem;
+}
+
+.hand {
+    font-size: 2.4rem;
+    padding-left: 0.4rem;
+    transform: scaleX(-1);
+    transform: rotate(-5deg);
+    animation: wave 1.5s ease-in-out infinite;
+    display: inline-block;
+}
+
+/* Waving animation */
+@keyframes wave {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    13% {
+        transform: rotate(15deg);
+    }
+
+    26% {
+        transform: rotate(-15deg);
+    }
+
+    39% {
+        transform: rotate(8deg);
+    }
+
+    52% {
+        transform: rotate(-8deg);
+    }
+
+    65% {
+        transform: rotate(4deg);
+    }
+
+    78% {
+        transform: rotate(-4deg);
+    }
+
+    91% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.secMain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+.sec {
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secSpan {
+    margin-left: 1rem;
+    color: rgb(241, 91, 241);
+    font-weight: 500;
+    font-style: normal;
+}
+
+.third {
+    color: rgb(241, 91, 241);
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-top: 1.6rem;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Typing Effect Styles */
+.typing_container {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.typing_text {
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15rem solid rgb(241, 91, 241);
+    opacity: 0.95;
+    animation: typing 6s steps(43) 0s 1, blink 0.6s ease-in-out infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    55% {
+        width: 100%;
+    }
+
+    75% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+/* Cursor blink effect */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.footer{
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.4rem;
+    background-color: transparent;
+    backdrop-filter: blur(3rem);
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+@media screen and (max-width: 980px){
+    .footer{
+        flex-direction: column;
+        gap: 0%;
+    }
+}
+
+.div1{
+    color: white;
+    width: 75%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 4rem;
+}
+
+.div2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.div3{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.d1{
+    margin-bottom: 4rem;
+}
+
+.d2{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.d3{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.d4{
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.4rem;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+.link1:hover{
+    box-shadow: 0 0 2rem skyblue;
+}
+.link2:hover{
+    box-shadow: 0 0 2rem white;
+}
+.link3:hover{
+    box-shadow: 0 0 2rem red;
+}
