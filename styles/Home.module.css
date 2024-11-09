@@ -4,7 +4,8 @@
     background-image: url('./../public/utils/background.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     backdrop-filter: blur(8%);
     opacity: 1;
     animation: opacity 1s ease-in-out;
