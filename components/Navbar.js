@@ -30,13 +30,9 @@ export default function NavbarResponsive() {
                     >
                         {/* Conditionally render hamburger or "X" icon based on isOpen state */}
                         {isOpen ? (
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`${styles.svg} ${styles['x-icon']}`} style={{width:'2rem', height:'2rem', fontWeight:'bold'}}>
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
+                            <span className={`${styles.svg} ${styles['x-icon']}`} style={{width:'2rem', height:'2rem', fontWeight:'bolder'}}> <i className="fa-solid fa-x" style={{fontSize:'1.8rem', color:'violet', textAlign:'center'}}></i> </span>
                         ) : (
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`${styles.svg} ${styles['hamburger']}`} style={{width:'2rem', height:'2rem', fontWeight:'bold'}}>
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5M3.75 12h16.5M3.75 18.75h16.5" />
-                            </svg>
+                            <span className={`${styles.svg} ${styles['hamburger']}`} style={{width:'2rem', height:'2rem', fontWeight:'bolder'}}> <i className="fa-solid fa-bars" style={{fontSize:'1.8rem', color:'violet', textAlign:'center'}}></i> </span>
                         )}
                     </Navbar.Toggle>
                     <Navbar.Collapse id="responsive-navbar-nav" className={styles.Collapse} style={{ color: 'white' }}>

@@ -9,7 +9,9 @@ const Layout = ({ children })=>{
     return(
         <div className={styles.layoutDiv}>
             <NavbarResponsive />
-            <main>{ children }</main>
+            <div className={styles.layoutDiv2}>
+                <main>{ children }</main>
+            </div>
             <Footer />
         </div>
     )

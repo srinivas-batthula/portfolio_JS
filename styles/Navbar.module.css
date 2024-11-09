@@ -10,7 +10,7 @@
     padding-bottom: 0.8rem;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .navMain:hover {
@@ -30,6 +30,12 @@
     transition-duration: 0.25s;
 }
 
+.Collapse {
+    color: white;
+    transition-duration: 0.35s;
+    transition-property: all;
+}
+
 /* The `@media (max-width: 990px)` rule in CSS is used to apply specific styles when the viewport width
 is at most 990 pixels. */
 @media (max-width: 990px) {
@@ -41,6 +47,12 @@ is at most 990 pixels. */
         padding: 0.4rem;
         top: 100%;
         margin: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .navBar{
+        margin: 0;
     }
 }
 
@@ -120,22 +132,15 @@ is at most 990 pixels. */
 
 .toggle {
     color: white;
-    background-color: rgb(204, 105, 204);
     height: 2.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     cursor: pointer;
     transition-property: all;
     transition-duration: 0.25s;
-}
-
-.Collapse {
-    color: white;
-    transition-duration: 0.35s;
-    transition-property: all;
 }
 
 .svg {

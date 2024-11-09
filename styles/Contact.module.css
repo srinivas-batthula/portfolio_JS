@@ -2,7 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-items: center;
+    align-content: center;
     flex-direction: column;
+}
+
+.head{
+    font-size: 2.1rem;
 }
 
 .form {
@@ -28,6 +34,24 @@
 @media screen and (max-width:630px) {
     .form{
         width: 82%;
+        margin-top: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .head{
+        margin-bottom: 2.2rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .form{
+        width: 95%;
+        margin-top: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    .head{
+        margin-bottom: 2.2rem;
+        margin-top: 1rem;
     }
 }
 
@@ -79,10 +103,6 @@
     width: 28rem;
     height: 28rem;
     margin-bottom: 0.8rem;
-}
-
-.head{
-    font-size: 2.1rem;
 }
 
 @media screen and (max-width:800px) {

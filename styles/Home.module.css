@@ -14,6 +14,10 @@
     scroll-behavior: smooth;
 }
 
+/* .layoutDiv2{
+    overflow: hidden;
+} */
+
 @keyframes opacity {
     0% {
         opacity: 0;
@@ -156,6 +160,17 @@
     font-size: 2.1rem;
 }
 
+.div1{
+    color: white;
+    width: 75%;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 4rem;
+}
+
 .div2{
     font-size: 2.1rem;
     font-weight: 500;
@@ -179,6 +194,17 @@
     margin-bottom: 1rem;
 }
 
+.secMain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
 @media screen and (max-width:800px) {
     .mainContent{
         font-size: 1.7rem;
@@ -192,6 +218,9 @@
     .secSpan{
         font-size: 1.9rem;
         font-weight: 500;
+    }
+    .secMain{
+        top: 40%;
     }
     .third{
         margin-top: 1rem;
@@ -218,10 +247,19 @@
 
 @media screen and (max-width:450px) {
     .mainContent{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+    .container{
+        margin-bottom: 2rem;
     }
     .hand{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+    }
+    .subDiv{
+        width: 85%;
+    }
+    .grid_item{
+        margin-top: 2rem;
     }
     .sec{
         font-size: 1.5rem;
@@ -236,8 +274,11 @@
     .typing_text{
         font-size: 1.5rem;
     }
+    .div1{
+        width: 88%;
+    }
     .div2{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 600;
     }
     .div3{
@@ -282,17 +323,6 @@
     100% {
         transform: rotate(-5deg);
     }
-}
-
-.secMain {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: start;
-    align-items: start;
-    position: absolute;
-    left: 10%;
-    top: 30%;
 }
 
 /* Typing Effect Styles */
@@ -347,17 +377,6 @@
         flex-direction: column;
         gap: 0%;
     }
-}
-
-.div1{
-    color: white;
-    width: 75%;
-    vertical-align: middle;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    margin-bottom: 4rem;
 }
 
 .d1{
