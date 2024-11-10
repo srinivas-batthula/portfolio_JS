@@ -65,7 +65,7 @@ export default function ContactPage() {
             console.log("submited");
             // icon.className = "fa-solid fa-spinner text-success";
             try {
-                const response = await fetch('/api/emailSender/', {
+                const response = await fetch('https://portfolio-backend-ynyr.onrender.com/sendEmail/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

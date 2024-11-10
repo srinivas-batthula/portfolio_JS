@@ -5,6 +5,8 @@
     justify-items: center;
     align-content: center;
     flex-direction: column;
+    margin-top: 5.5rem;
+    overflow: hidden;
 }
 
 .head{
@@ -34,11 +36,11 @@
 @media screen and (max-width:630px) {
     .form{
         width: 82%;
-        margin-top: 2.2rem;
+        margin-top: 3rem;
         margin-bottom: 1.5rem;
     }
     .head{
-        margin-bottom: 2.2rem;
+        margin-bottom: 1rem;
         margin-top: 1rem;
     }
 }

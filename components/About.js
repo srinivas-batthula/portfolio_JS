@@ -53,21 +53,39 @@ export default function AboutPage() {
                     <div className={styles.flex1}>
 
                         <div className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-js"></i></span></div>
+
                         <div className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-python"></i></span></div>
+
                         <div className={styles.flex2}><span className={styles.i}><i className="fa-solid fa-c"></i></span></div>
+
                         <div className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-node"></i></span></div>
+
                         <div className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-react"></i></span></div>
+
                         <div className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-mongodb-plain-wordmark"></i></span>
                         </div>
+
                         <div className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-nextjs-original-wordmark"></i></span>
                         </div>
+
                         <div className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-git-plain"></i></span>
                         </div>
+
                         <div className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-express-original"></i></span>
+                        </div>
+
+                        <div className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-bootstrap-plain"></i>
+                        </span>
+                        </div>
+
+                        <div className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-reactbootstrap-original"></i>
+                        </span>
                         </div>
 
                     </div>

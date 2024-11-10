@@ -1,8 +1,5 @@
 .main{
-    margin-top: 3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 5.5rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -11,6 +8,7 @@
     justify-items: center;
     align-items: center;
     align-content: center;
+    overflow: hidden;
 }
 
 .head{
@@ -37,8 +35,8 @@
 }
 
 .card{
-    width: 26rem;
-    height: 36rem;
+    width: 24rem;
+    height: 38rem;
     box-shadow: 0 0.25rem 0.35rem rgb(141, 76, 141);
     background-color: transparent;
     backdrop-filter: blur(1.5rem);
@@ -58,8 +56,8 @@
 }
 
 .img{
-    width: 18rem;
-    height: 15.5rem;
+    width: 22rem;
+    height: 17rem;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -71,14 +69,14 @@
     text-align: center;
     font-size: 1.4rem;
     margin-top: 0.1rem;
-    margin-bottom: 0.15rem;
+    margin-bottom: 0.25rem;
     color: rgb(238, 57, 238);
 }
 
 .content{
     text-align: left;
     font-size: 1rem;
-    margin-bottom: 1.1rem;
+    margin-bottom: 0.7rem;
     padding: 0.06rem;
     text-rendering: optimizeLegibility;
     letter-spacing: 0.06rem;
@@ -91,14 +89,15 @@
         height: 36rem;
     }
     .img{
-        width: 16rem;
-        height: 14rem;
-        margin-bottom: 0.2rem;
+        width: 15rem;
+        height: 13rem;
+        margin-bottom: 0.5rem;
     }
     .title{
-        margin-top: 0.3rem;
+        margin-top: 0.4rem;
         padding-top: 0.2rem;
         font-size: 1.2rem;
+        font-weight: 600;
     }
     .content{
         font-size: 1rem;
@@ -116,9 +115,9 @@
     align-items: center;
 }
 
-.btn{
+.btn2{
     padding: 0.4rem;
-    background-color: rgb(124, 5, 175);
+    background-color: rgb(48, 100, 231);
     color: white;
     border-radius: 8%;
 }

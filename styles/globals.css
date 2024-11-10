@@ -21,7 +21,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  margin: 0;
+  margin-top: 0.1rem; /* This ensures the body content does not overlap the fixed navbar */
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;

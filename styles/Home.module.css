@@ -15,9 +15,10 @@
     scroll-behavior: smooth;
 }
 
-/* .layoutDiv2{
+.main{
+    margin-top: 5.5rem;
     overflow: hidden;
-} */
+}
 
 @keyframes opacity {
     0% {
@@ -36,7 +37,7 @@
     /* 4 equal columns by default */
     gap: 2rem;
 
-    margin: 0.2rem;
+    margin: 2rem;
     padding: 0.2rem;
     text-align: center;
     z-index: -1;
@@ -221,7 +222,7 @@
         font-weight: 500;
     }
     .secMain{
-        top: 40%;
+        top: 35%;
     }
     .third{
         margin-top: 1rem;
@@ -257,26 +258,26 @@
         font-size: 1.5rem;
     }
     .subDiv{
-        width: 85%;
+        width: 95%;
     }
     .grid_item{
-        margin-top: 2rem;
+        margin-top: 2.6rem;
     }
     .sec{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     .secSpan{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: 600;
     }
     .third{
-        margin-top: 2rem;
+        margin-top: 2.1rem;
     }
     .typing_text{
         font-size: 1.5rem;
     }
     .div1{
-        width: 88%;
+        width: 92%;
     }
     .div2{
         font-size: 1.4rem;
