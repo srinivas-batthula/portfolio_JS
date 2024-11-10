@@ -54,7 +54,7 @@ export default function ProjectsPage() {
                                                 {/* Use this DropDown to display 2-github links for Frontend & Backend */}
                             <DropdownButton id="dropdown-item-button" title="GitHub" style={{color:'white', backgroundColor:'blue'}}>
                                 <Dropdown.Item as="button"><a href="https://github.com/srinivas-batthula/portfolio" target="_blank" style={{ color: 'black', textDecoration: 'none', fontSize: '1rem' }}>Frontend Code</a></Dropdown.Item>
-                                <Dropdown.Item as="button"><a href="https://github.com/srinivas-batthula/SendEmail" target="_blank" style={{ color: 'black', textDecoration: 'none', fontSize: '1rem' }}>Backend Code</a></Dropdown.Item>
+                                <Dropdown.Item as="button"><a href="https://github.com/srinivas-batthula/portfolio_backend" target="_blank" style={{ color: 'black', textDecoration: 'none', fontSize: '1rem' }}>Backend Code</a></Dropdown.Item>
                             </DropdownButton>
 
                             {/* <button className={styles.btn2} style={{ marginRight: '1rem' }}><a href="https://github.com/srinivas-batthula/ATM_System" target="_blank" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem', padding:'0.3rem' }}>GitHub</a></button> */}
