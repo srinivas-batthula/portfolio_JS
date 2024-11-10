@@ -40,7 +40,8 @@
     box-shadow: 0 0.25rem 0.35rem rgb(141, 76, 141);
     background-color: transparent;
     backdrop-filter: blur(1.5rem);
-    margin-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     margin-bottom: 6rem;
     text-align: center;
     padding: 0.71rem;
@@ -84,6 +85,7 @@
 }
 
 @media screen and (max-width:468px) {
+    
     .card{
         width: 23rem;
         height: 36rem;
