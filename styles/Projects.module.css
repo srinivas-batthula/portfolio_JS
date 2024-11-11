@@ -67,7 +67,7 @@
 }
 
 .img2{
-    background-image: url('./../public/utils/atm_project.png');
+/*     background-image: url('./../public/utils/atm_project.png'); */
     background-position: center;
     background-size: contain;
     width: 22rem;
@@ -98,7 +98,7 @@
         width: 23rem;
         height: 36rem;
     }
-    .img{
+    .img2{
         width: 15rem;
         height: 13rem;
         margin-bottom: 0.5rem;
