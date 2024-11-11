@@ -69,26 +69,26 @@
 .img2{
     background-image: url('./../public/utils/atm_project.png');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 22.2rem;
-    height: 18rem;
+    width: 22rem;
+    height: 17rem;
 }
 .img3{
     background-image: url('./../public/utils/portfolio_project.png');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 22.2rem;
-    height: 18rem;
+    width: 22rem;
+    height: 17rem;
 }
 .img4{
     background-image: url('./../public/utils/coming_soon.png');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 22.2rem;
-    height: 18rem;
+    width: 22rem;
+    height: 17rem;
 }
 
 .title{
@@ -116,8 +116,8 @@
         height: 36rem;
     }
     .img2, .img3, .img4{
-        width: 16.5rem;
-        height: 14.5rem;
+        width: 15rem;
+        height: 13rem;
         margin-bottom: 0.5rem;
     }
     .title{
