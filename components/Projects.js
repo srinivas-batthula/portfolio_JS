@@ -42,7 +42,7 @@ export default function ProjectsPage() {
 
                     <div className={styles.card}>
                         <div className={styles.img}>
-                            <img src='./../public/utils/portfolio_project.png' alt="project image" />
+                            <img src='/utils/portfolio_project.png' alt="project image" />
                         </div>
                         <div className={styles.title}>
                             Personal Portfolio
@@ -66,7 +66,7 @@ export default function ProjectsPage() {
 
                     <div className={styles.card}>
                         <div className={styles.img}>
-                            <img src='./../public/utils/coming_soon.png' alt="project image" style={{opacity:'0.75', width:'15rem', height:'15rem'}}/>
+                            <img src='https://srinivas-batthula.github.io/portfolio/public/utils/coming_soon.png' alt="project image" style={{opacity:'0.75', width:'15rem', height:'15rem'}}/>
                         </div>
                         <div className={styles.title}>
                             Coming Soon...
