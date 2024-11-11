@@ -79,8 +79,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 22rem;
-    height: 17rem;
+/*     width: 22rem;
+    height: 17rem; */
 }
 .img4{
     background-image: url('./../public/utils/coming_soon.png');
