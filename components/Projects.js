@@ -18,7 +18,8 @@ export default function ProjectsPage() {
 
                     <div className={styles.card}>
                         <div className={styles.img}>
-                            <img src='./../public/utils/atm_project.png' alt="project image" />
+                            {/* <img src='./../public/utils/atm_project.png' alt="project image" /> */}
+                            <div className={styles.img2}></div>
                         </div>
                         <div className={styles.title}>
                             ATM System
