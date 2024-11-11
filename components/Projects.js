@@ -18,7 +18,7 @@ export default function ProjectsPage() {
 
                     <div className={styles.card}>
                         <div className={styles.img}>
-                            <img src='/utils/atm_project.png' alt="project image" />
+                            <img src='public/utils/atm_project.png' alt="project image" />
                         </div>
                         <div className={styles.title}>
                             ATM System
@@ -42,7 +42,7 @@ export default function ProjectsPage() {
 
                     <div className={styles.card}>
                         <div className={styles.img}>
-                            <img src='/utils/portfolio_project.png' alt="project image" />
+                            <img src='public/utils/portfolio_project.png' alt="project image" />
                         </div>
                         <div className={styles.title}>
                             Personal Portfolio
@@ -66,7 +66,7 @@ export default function ProjectsPage() {
 
                     <div className={styles.card}>
                         <div className={styles.img}>
-                            <img src='/utils/coming_soon.png' alt="project image" style={{opacity:'0.75', width:'15rem', height:'15rem'}}/>
+                            <img src='public/utils/coming_soon.png' alt="project image" style={{opacity:'0.75', width:'15rem', height:'15rem'}}/>
                         </div>
                         <div className={styles.title}>
                             Coming Soon...
