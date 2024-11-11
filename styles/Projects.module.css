@@ -70,6 +70,7 @@
     background-image: url('./../public/utils/atm_project.png');
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
     width: 22rem;
     height: 17rem;
 }
@@ -77,6 +78,7 @@
     background-image: url('./../public/utils/portfolio_project.png');
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
     width: 22rem;
     height: 17rem;
 }
@@ -84,6 +86,7 @@
     background-image: url('./../public/utils/coming_soon.png');
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
     width: 22rem;
     height: 17rem;
 }
