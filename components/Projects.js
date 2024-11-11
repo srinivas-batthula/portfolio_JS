@@ -20,6 +20,8 @@ export default function ProjectsPage() {
                         <div className={styles.img}>
                             {/* <img src='./../public/utils/atm_project.png' alt="project image" /> */}
                             <div className={styles.img2}></div>
+
+                            {/* <div className={styles.img2} style={{ backgroundImage: "url('./../public/utils/atm_project.png')" }}></div> */}
                         </div>
                         <div className={styles.title}>
                             ATM System
@@ -68,9 +70,9 @@ export default function ProjectsPage() {
 
                     <div className={styles.card}>
                         <div className={styles.img}>
-
                             {/* Copy 'img2' & paste it for current img with the new img path/url... */}
                             <div className={styles.img4}></div>
+                            {/* <img src='https://srinivas-batthula.github.io/portfolio/public/utils/coming_soon.png' alt="project image" style={{opacity:'0.75', width:'15rem', height:'15rem'}}/> */}
                         </div>
                         <div className={styles.title}>
                             Coming Soon...
