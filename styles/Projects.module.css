@@ -66,6 +66,12 @@
     align-content: center;
 }
 
+.img2{
+    background-image: url('./../public/utils/atm_project.png');
+    background-position: center;
+    background-size: contain;
+}
+
 .title{
     text-align: center;
     font-size: 1.4rem;
