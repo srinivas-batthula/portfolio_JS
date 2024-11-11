@@ -64,7 +64,7 @@ export default function ProjectsPage() {
                             {/* <button className={styles.btn2} style={{ marginRight: '1rem' }}><a href="https://github.com/srinivas-batthula/ATM_System" target="_blank" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem', padding:'0.3rem' }}>GitHub</a></button> */}
 
                                                 {/* Un-Comment the below btn for adding " DEMO " link to project */}
-                            <button className={styles.btn2} style={{ marginLeft: '1rem' }}><a href="" target="_blank" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignContent: 'center' }}><i className="fa-solid fa-arrow-up-right-from-square" style={{ paddingTop: '0.2rem', marginRight: '0.3rem' }}></i><span>  Demo  </span></a></button>
+                            <button className={styles.btn2} style={{ marginLeft: '1rem' }}><a href="https://srinivas-batthula.github.io/portfolio/" target="_blank" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignContent: 'center' }}><i className="fa-solid fa-arrow-up-right-from-square" style={{ paddingTop: '0.2rem', marginRight: '0.3rem' }}></i><span>  Demo  </span></a></button>
                         </div>
                     </div>
 
