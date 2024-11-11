@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(8%);
     opacity: 1;
     animation: opacity 1s ease-in-out;
     color: white;
