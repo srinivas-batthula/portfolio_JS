@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 import styles from "./../styles/Projects.module.css";
 
@@ -19,7 +20,8 @@ export default function ProjectsPage() {
                     <div className={styles.card}>
                         <div className={styles.img}>
                             {/* <img src='./../public/utils/atm_project.png' alt="project image" /> */}
-                            <div className={styles.img2}></div>
+                            // <div className={styles.img2}></div>
+                                <Image src="/utils/atm_project.png" className={styles.img2} />
 
                             {/* <div className={styles.img2} style={{ backgroundImage: "url('./../public/utils/atm_project.png')" }}></div> */}
                         </div>
