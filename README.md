@@ -16,7 +16,7 @@ Welcome to my Portfolio project, designed to showcase my skills, projects, etc.
 
 Insert gif or link to demo
 
-https://portfolio-zn17.onrender.com
+https://srinivas-batthula.github.io/portfolio
 ## API Reference
 
 #### Get Home page
