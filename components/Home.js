@@ -108,13 +108,13 @@ export default function Home() {
                         <a href="https://github.com/srinivas-batthula/" target="_blank" style={{ fontSize: '2rem', color: 'white', marginRight: '1rem', borderRadius: '30%' }} className={styles.link2}>
                             <i className="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://leetcode.com/u/WRBRSO7OH6/" target="_blank" style={{ fontSize: '2rem', color: 'red', marginRight: '1rem', borderRadius: '30%' }} className={styles.link4}>
-                            <img width='3rem' height='3rem' src="../public/leetcode.png" />
+                        <a href="https://leetcode.com/u/WRBRSO7OH6/" target="_blank" style={{ marginRight: '1rem', borderRadius: '30%' }} className={styles.link4}>
+                            <img width='6rem' height='6rem' src="../public/leetcode.png" />
                         </a>
                         <a href="https://www.instagram.com/srinivas_abhi8/" target="_blank" style={{ fontSize: '2rem', color: 'red', marginRight: '1rem', borderRadius: '30%' }} className={styles.link3}>
                             <i className="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="https://x.com/Abhi07082005" target="_blank" style={{ fontSize: '2rem', color: 'white', marginRight: '1rem', borderRadius: '30%' }} className={styles.link5}>
+                        <a href="https://x.com/Abhi07082005/" target="_blank" style={{ fontSize: '2rem', color: 'white', marginRight: '1rem', borderRadius: '30%' }} className={styles.link5}>
                             <i className="fa-brands fa-square-x-twitter" style={{color:'white', fontSize:'2rem'}}></i>
                         </a>
                     </div>
