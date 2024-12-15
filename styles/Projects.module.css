@@ -37,7 +37,7 @@
 .card{
     width: 24rem;
     height: 38rem;
-    box-shadow: 0 0.25rem 0.35rem rgb(141, 76, 141);
+    box-shadow: 0 0.25rem 0.45rem rgb(141, 76, 141);
     background-color: transparent;
     backdrop-filter: blur(1.5rem);
     margin-right: 1rem;
@@ -45,7 +45,7 @@
     margin-bottom: 6rem;
     text-align: center;
     padding: 0.71rem;
-    border-radius: 3%;
+    border-radius: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,15 +74,16 @@
     width: 22.3rem;
     height: 15rem;
 }
-.imgI{
+.img3{
+    background-image: url('./../public/utils/coming_soon.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 22.3rem;
     height: 15rem;
 }
-.img4{
-    background-image: url('./../public/utils/coming_soon.png');
+
+.imgI{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -114,7 +115,7 @@
         width: 23rem;
         height: 36rem;
     }
-    .img2, .img3, .img4{
+    .img2, .img3, .imgI{
         width: 15.2rem;
         height: 12.6rem;
         margin-bottom: 0.5rem;
@@ -131,7 +132,7 @@
 }
 
 .card:hover{
-    box-shadow: 0 0.16rem 1rem rgb(141, 76, 141);
+    box-shadow: 0 0.18rem 1.4rem rgb(141, 76, 141);
 }
 
 .links{

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from 'next/image';
 
 import styles from "./../styles/Projects.module.css";
 
@@ -13,7 +12,7 @@ function Card({data}){
             <div className={styles.card}>
                 <div className={styles.img}>
                     {/* Copy 'imgI' & paste it for current img with the new img path/url... */}
-                    <div style={{ backgroundImage:`url(${data.imgUrl})`, width:'22.3rem', height:'15rem', backgroundPosition:'center', backgroundSize:'contain', backgroundRepeat:'no-repeat' }}></div>
+                    <div className={styles.imgI} style={{ backgroundImage:`url(${data.imgUrl})` }}></div>
                 </div>
                 <div className={styles.title}>
                     {data.title}
@@ -89,28 +88,9 @@ export default function ProjectsPage() {
                         </div>
                     </div>
 
-                    {/* <div className={styles.card}>
-                        <div className={styles.img}>
-                            <div className={styles.img3}></div>
-                        </div>
-                        <div className={styles.title}>
-                            Personal Portfolio
-                        </div>
-                        <div className={styles.content}>
-                            'Personal Portfolio' is a modern & responsive website developed using React & Next.js, designed to showcase my skills, projects... in the tech world. The portfolio features an interactive user experience with smooth transitions and a mobile-friendly design. Feel free to explore and get a glimpse of my journey as a developer, and don't hesitate to reach out if you’d like to connect!
-                        </div>
-                        <div className={styles.links}>
-                            <DropdownButton id="dropdown-item-button" title="GitHub" style={{color:'white', backgroundColor:'blue'}}>
-                                <Dropdown.Item as="button"><a href="https://github.com/srinivas-batthula/portfolio" target="_blank" style={{ color: 'black', textDecoration: 'none', fontSize: '1rem' }}>Frontend Code</a></Dropdown.Item>
-                                <Dropdown.Item as="button"><a href="https://github.com/srinivas-batthula/portfolio_backend" target="_blank" style={{ color: 'black', textDecoration: 'none', fontSize: '1rem' }}>Backend Code</a></Dropdown.Item>
-                            </DropdownButton>
-                            <button className={styles.btn2} style={{ marginLeft: '1rem' }}><a href="https://srinivas-batthula.github.io/portfolio/" target="_blank" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignContent: 'center' }}><i className="fa-solid fa-arrow-up-right-from-square" style={{ paddingTop: '0.2rem', marginRight: '0.3rem' }}></i><span>  Demo  </span></a></button>
-                        </div>
-                    </div> */}
-
                     <div className={styles.card}>
                         <div className={styles.img}>
-                            <div className={styles.img4}></div>
+                            <div className={styles.img3}></div>
                         </div>
                         <div className={styles.title}>
                             Coming Soon...
