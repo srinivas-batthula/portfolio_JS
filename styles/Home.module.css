@@ -407,3 +407,9 @@
 .link3:hover{
     box-shadow: 0 0 2rem red;
 }
+.link4:hover{
+    box-shadow: 0 0 2rem yellow;
+}
+.link5:hover{
+    box-shadow: 0 0 2rem rgb(131, 131, 131);
+}

@@ -74,8 +74,7 @@
     width: 22.3rem;
     height: 15rem;
 }
-.img3{
-    background-image: url('./../public/utils/portfolio_project.png');
+.imgI{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
