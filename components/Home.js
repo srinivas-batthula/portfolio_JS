@@ -109,7 +109,7 @@ export default function Home() {
                             <i className="fa-brands fa-github"></i>
                         </a>
                         <a href="https://leetcode.com/u/WRBRSO7OH6/" target="_blank" style={{ marginRight: '1rem', borderRadius: '30%' }} className={styles.link4}>
-                            <img width='6rem' height='6rem' src="../public/leetcode.png" />
+                            <img width='6rem' height='6rem' src="../public/leetcode.svg" />
                         </a>
                         <a href="https://www.instagram.com/srinivas_abhi8/" target="_blank" style={{ fontSize: '2rem', color: 'red', marginRight: '1rem', borderRadius: '30%' }} className={styles.link3}>
                             <i className="fa-brands fa-instagram"></i>
