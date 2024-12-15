@@ -71,10 +71,6 @@ export default function AboutPage() {
                         </div>
 
                         <div className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-git-plain"></i></span>
-                        </div>
-
-                        <div className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-express-original"></i></span>
                         </div>
 
@@ -86,6 +82,15 @@ export default function AboutPage() {
                         <div className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-reactbootstrap-original"></i>
                         </span>
+                        </div>
+
+                        <div className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-tailwindcss-original"></i>
+                        </span>
+                        </div>
+                        
+                        <div className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-git-plain"></i></span>
                         </div>
 
                     </div>

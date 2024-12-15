@@ -114,7 +114,7 @@ export default function Home() {
                         <a href="https://www.instagram.com/srinivas_abhi8/" target="_blank" style={{ fontSize: '2rem', color: 'red', marginRight: '1rem', borderRadius: '30%' }} className={styles.link3}>
                             <i className="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="https://x.com/Abhi07082005" target="_blank" style={{ fontSize: '2rem', color: 'red', marginRight: '1rem', borderRadius: '30%' }} className={styles.link3}>
+                        <a href="https://x.com/Abhi07082005" target="_blank" style={{ fontSize: '2rem', color: 'white', marginRight: '1rem', borderRadius: '30%' }} className={styles.link3}>
                             <i className="fa-brands fa-square-x-twitter"></i>
                         </a>
                     </div>
