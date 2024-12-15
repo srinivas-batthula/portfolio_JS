@@ -38,20 +38,20 @@ export default function ProjectsPage() {
 
     const projects = [
         {
+            imgUrl: 'https://srinivas-batthula.github.io/portfolio/utils/todo_project.png',
+            title: 'Task Manager',
+            des: "'Task Manager' is an innovative web app built with MERN stack and PWA features, designed to streamline task organization and productivity. The app features an intuitive UI, Notifications, Secure user-authentication and Offline functionality, ensuring accessibility on the go. Explore how it simplifies everyday planning, and feel free to reach out for any collaboration opportunities!",
+            urlFront: 'https://github.com/srinivas-batthula/todo',
+            urlBack: 'https://github.com/srinivas-batthula/todo_backend',
+            urlLive: 'https://srinivas-batthula.github.io/todo'
+        },
+        {
             imgUrl: 'https://srinivas-batthula.github.io/portfolio/utils/portfolio_project.png',        //  ../public/utils/portfolio_project.png
             title: 'Personal Portfolio',
             des: "'Personal Portfolio' is a modern & responsive website developed using React & Next.js, designed to showcase my skills, projects... in the tech world. The portfolio features an interactive user experience with smooth transitions and a mobile-friendly design. Feel free to explore and get a glimpse of my journey as a developer, and don't hesitate to reach out if you’d like to connect!",
             urlFront: 'https://github.com/srinivas-batthula/portfolio',
             urlBack: 'https://github.com/srinivas-batthula/portfolio_backend',
             urlLive: 'https://srinivas-batthula.github.io/portfolio/'
-        },
-        {
-            imgUrl: '',
-            title: 'Task Manager',
-            des: '',
-            urlFront: 'https://github.com/srinivas-batthula/todo',
-            urlBack: 'https://github.com/srinivas-batthula/todo_backend',
-            urlLive: 'https://srinivas-batthula.github.io/todo'
         }
     ]
 
