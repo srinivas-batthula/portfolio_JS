@@ -5,6 +5,8 @@
     backdrop-filter: blur(1rem);
     margin-top: 0;
     margin-bottom: 2rem; /* Gap between navbar and content */
+    transition-duration: 0.25s;
+    transition-property: all;
 }
 
 /* Navbar fix to the top */
@@ -96,7 +98,7 @@
     align-items: flex-end;
     align-content: flex-end;
     overflow: hidden;
-    transition-duration: 0.15s;
+    transition-duration: 0.25s;
     transition-property: all;
 }
 
