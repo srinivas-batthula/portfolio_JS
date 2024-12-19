@@ -91,7 +91,7 @@ export default function ContactPage() {
             setTimeout(() => {
                 // You can implement further logic here after successful submission
                 router.push('/'); // This will redirect to / Home page
-            }, 1500);
+            }, 1000);
         } else {
             console.log("Not-submited");
             // icon.className = "fa-solid fa-user";
@@ -115,6 +115,9 @@ export default function ContactPage() {
                                 Redirecting to Home Page...
                             </div> : ""
                     }
+                    {error && <p style={{ color: 'red', backgroundColor:'black', fontSize:"1rem" }}>{err}</p>}
+                    {success && <p style={{ color: 'green', backgroundColor:'black', fontSize:"1rem" }}>{success}</p>}
+
                     <Row className={styles.row}>
                         <Form.Group as={Col} controlId="formGridName">
                             <Form.Label className="w-100 fs-5">Full Name</Form.Label>
@@ -193,9 +196,6 @@ export default function ContactPage() {
                     <Button onClick={handleSubmit} variant="primary" type="submit" className={styles.btn} disabled={loading}>
                         {loading ? 'Sending...' : 'Send'}
                     </Button>
-
-                    {error && <p style={{ color: 'red', backgroundColor:'black', fontSize:"1rem" }}>{err}</p>}
-                    {success && <p style={{ color: 'green', backgroundColor:'black', fontSize:"1rem" }}>{success}</p>}
                 </Form>
 
                 <div className={styles.main2}>

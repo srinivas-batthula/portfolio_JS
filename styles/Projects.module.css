@@ -13,7 +13,7 @@
 
 .head{
     font-size: 2.1rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 3rem;
 }
 
@@ -144,7 +144,7 @@
 
 .btn2{
     padding: 0.4rem;
-    background-color: rgb(48, 100, 231);
+    background-color: rgb(249, 102, 249);
     color: white;
     border-radius: 8%;
 }
