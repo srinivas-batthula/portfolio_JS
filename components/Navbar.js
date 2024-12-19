@@ -79,13 +79,13 @@ function NavbarResponsive() {
                         className="d-md-none"
                         id="offcanvas-navbar"
                     >
-                    <div className='offmain'>
+                    <div className='offmain' style={{color:'violet'}}>
                         <Offcanvas.Header closeButton style={{color:'violet'}}>
                             <Offcanvas.Title style={{textDecoration:'none', fontSize:'2rem', fontWeight:'600', color:'violet'}}> Srinivas. </Offcanvas.Title>
                         </Offcanvas.Header>
                         </div>
-                        <Offcanvas.Body className='offbody' style={{display:'flex', justifyContent:'center', marginLeft:'1rem', marginRight:'1rem', marginTop:'2rem'}}>
-                                <Nav style={{display:'flex', justifyContent:'center', justifyItems:'center', alignContent:'center', alignItems:'center'}}>
+                        <Offcanvas.Body className='offbody'>
+                                <Nav style={{display:'flex', justifyContent:'center', justifyItems:'center', alignContent:'center', alignItems:'center', marginLeft:'1rem', marginRight:'1rem'}}>
                                     <Link href="/" passHref className='linkMain'>
                                         <Nav.Link as="a" onClick={handleNavClick} className='txt' style={{textDecoration:'none', marginLeft:'1.1rem'}}>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className='svg' style={{width:'1.35rem'}}>
