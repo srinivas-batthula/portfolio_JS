@@ -76,15 +76,15 @@ function NavbarResponsive() {
                         show={show}
                         onHide={handleClose}
                         placement="end"
-                        className="d-sm-none"
+                        className="d-md-none"
                         id="offcanvas-navbar"
                     >
                     <div className='offmain'>
-                        <Offcanvas.Header closeButton>
+                        <Offcanvas.Header closeButton style={{color:'violet'}}>
                             <Offcanvas.Title style={{textDecoration:'none', fontSize:'2rem', fontWeight:'600', color:'violet'}}> Srinivas. </Offcanvas.Title>
                         </Offcanvas.Header>
                         </div>
-                        <Offcanvas.Body className='offbody' style={{display:'flex', justifyContent:'center', justifyItems:'center', alignContent:'center', alignItems:'center'}}>
+                        <Offcanvas.Body className='offbody' style={{display:'flex', justifyContent:'center', marginLeft:'1rem', marginRight:'1rem', marginTop:'2rem'}}>
                                 <Nav style={{display:'flex', justifyContent:'center', justifyItems:'center', alignContent:'center', alignItems:'center'}}>
                                     <Link href="/" passHref className='linkMain'>
                                         <Nav.Link as="a" onClick={handleNavClick} className='txt' style={{textDecoration:'none', marginLeft:'1.1rem'}}>
