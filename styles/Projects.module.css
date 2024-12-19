@@ -144,9 +144,10 @@
 
 .btn2{
     padding: 0.4rem;
-    background-color: rgb(249, 102, 249);
+    background-color: rgb(48, 100, 231);
     color: white;
     border-radius: 8%;
+    box-shadow: 0 0 0.6rem rgb(48, 100, 231);
 }
 
 .temp{

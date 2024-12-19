@@ -22,7 +22,7 @@ function Card({data}){
                 </div>
                 <div className={styles.links}>
                                         {/* Use this DropDown to display 2-github links for Frontend & Backend */}
-                    <DropdownButton id="dropdown-item-button" title="GitHub" style={{color:'white', backgroundColor:'rgb(249, 102, 249)', boxShadow:'0 0 0.3rem rgb(249, 102, 249)'}}>
+                    <DropdownButton id="dropdown-item-button" title="GitHub" style={{color:'white', backgroundColor:'transparent', boxShadow:'0 0 0.6rem blue'}}>
                         <Dropdown.Item as="button"><a href={data.urlFront} target="_blank" style={{ color: 'black', textDecoration: 'none', fontSize: '1rem' }}>Frontend Code</a></Dropdown.Item>
                         <Dropdown.Item as="button"><a href={data.urlBack} target="_blank" style={{ color: 'black', textDecoration: 'none', fontSize: '1rem' }}>Backend Code</a></Dropdown.Item>
                     </DropdownButton>

@@ -2,16 +2,16 @@
     background-image: url('./../public/utils/profile_pic.png');
     background-position: center;
     background-size: contain;
-    width: 9rem;
-    height: 9rem;
+    width: 9.2rem;
+    height: 9.2rem;
     border-radius: 50%;
     opacity: 0.85;
     transition-property: all;
-    transition-duration: 0.15s;
+    transition-duration: 0.35s;
 }
 .img:hover{
-    box-shadow: 0 0 1.5rem rgb(187, 74, 187);
-    transform: scale(1.08);
+    box-shadow: 0 0 1.65rem rgb(187, 74, 187);
+    transform: scale(1.065);
 }
 
 .mainImg{

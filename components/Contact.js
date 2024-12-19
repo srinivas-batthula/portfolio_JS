@@ -111,12 +111,12 @@ export default function ContactPage() {
 
                 <Form id="form" className={styles.form}>
                     {
-                        (sub===true) ? <div style={{color:"red", fontSize:"1.2rem"}}>
+                        (sub===true) ? <div style={{color:"red", fontSize:"1.2rem", backgroundColor:'transparent'}}>
                                 Redirecting to Home Page...
                             </div> : ""
                     }
-                    {error && <p style={{ color: 'red', backgroundColor:'black', fontSize:"1rem" }}>{err}</p>}
-                    {success && <p style={{ color: 'green', backgroundColor:'black', fontSize:"1rem" }}>{success}</p>}
+                    {error && <p style={{ color: 'red', backgroundColor:'transparent', fontSize:"1rem" }}>{err}</p>}
+                    {(success && sub===false) && <p style={{ color: 'green', backgroundColor:'transparent', fontSize:"1rem" }}>{success}</p>}
 
                     <Row className={styles.row}>
                         <Form.Group as={Col} controlId="formGridName">
