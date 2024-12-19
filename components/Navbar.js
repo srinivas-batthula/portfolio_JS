@@ -82,6 +82,7 @@ function NavbarResponsive() {
                     <div className='offmain' style={{color:'violet'}}>
                         <Offcanvas.Header closeButton style={{color:'violet'}}>
                             <Offcanvas.Title style={{textDecoration:'none', fontSize:'2rem', fontWeight:'600', color:'violet'}}> Srinivas. </Offcanvas.Title>
+                            <span onClick={handleClose} className='svg x-icon' style={{width:'2rem', height:'2rem', fontWeight:'bolder', float:'right', marginLeft:'12rem'}}> <i className="fa-solid fa-x" style={{fontSize:'1.8rem', color:'violet'}}></i> </span>
                         </Offcanvas.Header>
                         </div>
                         <Offcanvas.Body className='offbody'>
