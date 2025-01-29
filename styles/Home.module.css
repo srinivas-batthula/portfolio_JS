@@ -3,15 +3,18 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(180deg, #090013, #11001c, #1a0126);
+    /* position: absolute; */
+    background: linear-gradient(180deg, #21082d, #21082d, #21082d);
+
+    /* background-color: linear-gradient(135deg, #9b3b8c, #2c2c2c); */
     /* background-image: url('./../public/utils/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     backdrop-filter: blur(8%);
-    opacity: 1;
     animation: opacity 1s ease-in-out; */
+    opacity: 1;
     color: white;
     text-align: center;
     scrollbar-width: none;
@@ -19,7 +22,7 @@
 }
 
 .main{
-    margin-top: 5.5rem;
+    margin-top: 4.2rem;
     overflow: hidden;
 }
 
@@ -40,7 +43,8 @@
     /* 4 equal columns by default */
     gap: 2rem;
 
-    margin: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     padding: 0.2rem;
     text-align: center;
     z-index: -1;
@@ -53,7 +57,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
 }
 
 .subDiv {
@@ -85,12 +89,14 @@
     .grid_container {
         grid-template-columns: 1fr;
         /* 1 columns for small screens */
+        margin-top: 16.2rem;
     }
     .subDiv{
         width: 85%;
         height: 70vh;
         background-position: center;
-        margin-top: 18rem;
+        margin-top: 11rem;
+        margin-bottom: 2.5rem;
     }
     .sec{
         font-size: 1.6rem;
@@ -106,6 +112,15 @@
         width: 85%;
         height: 70vh;
         background-position: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid_container{
+        margin-top: 11rem;
+    }
+    #g1{
+        margin-bottom: 18rem;
     }
 }
 
@@ -207,7 +222,6 @@
     align-items: start;
     position: absolute;
     left: 10%;
-    top: 30%;
 }
 
 @media screen and (max-width:800px) {
@@ -225,7 +239,11 @@
         font-weight: 500;
     }
     .secMain{
-        top: 35%;
+        top:10%;
+    }
+    .subDiv{
+        margin-top: 9rem;
+        margin-bottom: 2rem;
     }
     .third{
         margin-top: 1rem;

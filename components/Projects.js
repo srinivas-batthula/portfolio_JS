@@ -5,7 +5,7 @@ import styles from "./../styles/Projects.module.css";
 
 function Card({ data }) {
     return (
-        <>
+        <div >
             <div className={styles.card}>
                 <div className={styles.img}>
                     {/* Copy 'imgI' & paste it for current img with the new img path/url... */}
@@ -25,7 +25,7 @@ function Card({ data }) {
                     </DropdownButton> */}
                     <div className={styles.dropdown}>
                         <button className={styles.dropbtn}>GitHub</button>
-                        <div className={styles.dropdown-content}>
+                        <div className={styles.dropdownContent}>
                             <a href={data.urlFront} target="_blank">Frontend Code</a>
                             <a href={data.urlBack} target="_blank">Backend Code</a>
                         </div>
@@ -33,10 +33,10 @@ function Card({ data }) {
 
                     {/* Use this Link to display Live-Demo link */}
                     {/* <button className={styles.btn2} style={{ marginLeft: '1rem' }}><a href={data.urlLive} target="_blank" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignContent: 'center' }}><i className="fa-solid fa-arrow-up-right-from-square" style={{ paddingTop: '0.2rem', marginRight: '0.3rem' }}></i><span>  Demo  </span></a></button> */}
-                    <a href={data.urlLive} target="_blank" style={{textDecoration:'none'}}><button className={styles.animated-btn}><i className="fa-solid fa-arrow-up-right-from-square" style={{fontSize:'1rem'}}></i> Live </button></a>
+                    <a href={data.urlLive} target="_blank" style={{textDecoration:'none'}}><button className={styles.animatedBtn}><i className="fa-solid fa-arrow-up-right-from-square" style={{fontSize:'1rem'}}></i> Live </button></a>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -20,7 +20,7 @@ const Star = ({ x, y, delay }) => {
                 height: "3px",
                 backgroundColor: "white",
                 borderRadius: "50%",
-                boxShadow: "0 0 6px white",
+                boxShadow: "0 0 7.1px white",
             }}
         />
     );
@@ -41,10 +41,12 @@ const ParticlesBackground = () => {
                 position: "absolute",
                 top: 0,
                 left: 0,
-                width: "100vw",
+                width: "100%",
                 height: "100vh",
-                backgroundColor: "linear-gradient(135deg, #9b3b8c, #2c2c2c)",
+                // backgroundColor: "linear-gradient(135deg, #9b3b8c, #2c2c2c)",
                 overflow: "hidden",
+                // zIndex:'-9999',
+
             }}
         >
             {stars.map((star) => (

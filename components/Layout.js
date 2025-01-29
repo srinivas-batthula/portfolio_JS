@@ -9,14 +9,17 @@ import styles from './../styles/Home.module.css'
 const Layout = ({ children })=>{
     return(
         <div className={styles.layoutDiv}>
-            <div style={{width: '100%', height:'100vh', position:'fixed', zIndex:'-9999'}}>
-                <ParticlesBackground />
+            <ParticlesBackground />
+
+            <div style={{position: "relative"}}>
+                <NavbarResponsive />
+
+                <div className={styles.layoutDiv2}>
+                    <main>{ children }</main>
+                </div>
+
+                <Footer />
             </div>
-            <NavbarResponsive />
-            <div className={styles.layoutDiv2}>
-                <main>{ children }</main>
-            </div>
-            <Footer />
         </div>
     )
 }

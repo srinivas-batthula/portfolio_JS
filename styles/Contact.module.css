@@ -19,7 +19,8 @@
     margin: 1.5rem;
     padding: 1rem;
     border-radius: 5%;
-    box-shadow: 0 0 1rem violet;
+    box-shadow: 0 0 0.7rem violet;
+    outline: solid 0.02rem violet;
     transition-duration: 0.35s;
     transition-property: all;
     backdrop-filter: blur(0.1rem);
@@ -67,16 +68,18 @@
 
 .btn {
     font-size: 1.3rem;
+    border-radius: 25%;
     font-weight: 600;
     width: fit-content;
     box-shadow: 0 0 0.6rem blue;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
     transition-property: all;
+    margin-top: 1.2rem;
 }
 
 .btn:hover {
-    box-shadow: 0 0 1.2rem blue;
-    transform: scale(1.05);
+    box-shadow: 0 0 1rem blue;
+    transform: scale(1.04);
 }
 
 .inputContainer {
