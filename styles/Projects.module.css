@@ -1,4 +1,4 @@
-.main{
+.main {
     margin-top: 5.5rem;
     width: 100%;
     display: flex;
@@ -11,19 +11,19 @@
     overflow: hidden;
 }
 
-.head{
+.head {
     font-size: 2.1rem;
     font-weight: 600;
     margin-bottom: 3rem;
 }
 
 @media screen and (max-width:800px) {
-    .head{
+    .head {
         font-size: 1.8rem;
     }
 }
 
-.main2{
+.main2 {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -34,7 +34,7 @@
     align-content: center;
 }
 
-.card{
+.card {
     width: 24rem;
     height: 38rem;
     box-shadow: 0 0.25rem 0.45rem rgb(141, 76, 141);
@@ -54,10 +54,48 @@
     align-content: center;
     transition-duration: 0.45s;
     transition-property: all;
+    position: relative;
 }
 
-.img{
-/*     width: 22rem;
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card:hover::after,
+.card:hover::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 1s spin linear infinite;
+}
+
+.card:hover::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
+.img {
+    /*     width: 22rem;
     height: 17rem; */
     display: flex;
     justify-content: center;
@@ -66,7 +104,7 @@
     align-content: center;
 }
 
-.img2{
+.img2 {
     background-image: url('./../public/utils/atm_project.png');
     background-position: center;
     background-size: contain;
@@ -74,7 +112,8 @@
     width: 22.3rem;
     height: 15rem;
 }
-.img3{
+
+.img3 {
     background-image: url('./../public/utils/coming_soon.png');
     background-position: center;
     background-size: contain;
@@ -83,7 +122,7 @@
     height: 15rem;
 }
 
-.imgI{
+.imgI {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -91,7 +130,7 @@
     height: 15rem;
 }
 
-.title{
+.title {
     text-align: center;
     font-size: 1.4rem;
     margin-top: 0.1rem;
@@ -99,58 +138,164 @@
     color: rgb(238, 57, 238);
 }
 
-.content{
+.content {
     text-align: left;
     font-size: 1rem;
     margin-bottom: 0.7rem;
     padding: 0.06rem;
     text-rendering: optimizeLegibility;
     letter-spacing: 0.06rem;
-    font-family: 'Roboto', Arial, sans-serif; /* A clean, modern font */
+    font-family: 'Roboto', Arial, sans-serif;
+    /* A clean, modern font */
 }
 
 @media screen and (max-width:468px) {
-    
-    .card{
+
+    .card {
         width: 23rem;
         height: 36rem;
     }
-    .img2, .img3, .imgI{
+
+    .img2,
+    .img3,
+    .imgI {
         width: 15.2rem;
         height: 12.6rem;
         margin-bottom: 0.5rem;
     }
-    .title{
+
+    .title {
         margin-top: 0.4rem;
         padding-top: 0.2rem;
         font-size: 1.2rem;
         font-weight: 600;
     }
-    .content{
+
+    .content {
         font-size: 1rem;
     }
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0 0.18rem 1.4rem rgb(141, 76, 141);
 }
 
-.links{
+.links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.btn2{
+/* .btn2 {
     padding: 0.4rem;
     background-color: rgb(48, 100, 231);
     color: white;
     border-radius: 8%;
     box-shadow: 0 0 0.6rem rgb(48, 100, 231);
+} */
+
+/* Dropdown Button */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.temp{
+.dropbtn {
+    background-color: #5898ff;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 2.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.dropbtn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px #5898ff;
+    background: linear-gradient(45deg, #5898ff, #5898ff);
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 140px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Links inside Dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 0.3rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Button Styling */
+.animated-btn {
+    position: relative;
+    background: linear-gradient(45deg, #5898ff, #5898ff);
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease-in-out;
+}
+
+/* Hover Effect */
+.animated-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px #5898ff;
+}
+
+/* Ripple Effect */
+.animated-btn::after {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* Click Effect */
+.animated-btn:active::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.temp {
     font-size: 1.3rem;
     color: rgb(238, 57, 238);
     text-align: center;
