@@ -86,6 +86,7 @@
     justify-content: end;
     list-style: none;
     text-align: center;
+    padding-top: 0.3rem;
 }
 
 .nav-links li {

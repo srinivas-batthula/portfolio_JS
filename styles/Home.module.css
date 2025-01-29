@@ -419,15 +419,34 @@
     gap: 15%;
 }
 
-.link1:hover{
-    box-shadow: 0 0 2rem skyblue;
+#linkBtn{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    transition-duration: 0.2s;
+    transition-property: all;
 }
-.link2:hover{
-    box-shadow: 0 0 2rem white;
+
+#linkBtn:hover {
+    transform: scale(1.2);
 }
-.link3:hover{
-    box-shadow: 0 0 2rem red;
+
+.linkedinButton {
+    color: #109bff;
 }
-.link4:hover{
-    box-shadow: 0 0 2rem yellow;
+.githubButton {
+    color: white;
 }
+.instagramButton {
+    color: #fe1044;
+}
+.leetcodeButton {
+    color: #fea013;
+}
+.twitterButton {
+    color: white;
+}
+

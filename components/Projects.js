@@ -64,7 +64,7 @@ export default function ProjectsPage() {
     return (
         <>
             <div className={styles.main}>
-                <div className={styles.head}>
+                <div className={styles.head} style={{marginBottom:'4rem'}}>
                     My Recent <span style={{ color: 'rgb(251, 53, 251)', fontWeight: 'bold' }}>Works</span>
                     <div style={{ margin: '0.2rem', fontSize: '1.1rem', fontWeight: '400' }}>Here are a few projects I've worked on recently.</div>
                 </div>
