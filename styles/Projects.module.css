@@ -2,7 +2,7 @@
     margin-top: 5.5rem;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
@@ -24,7 +24,7 @@
 }
 
 .main2 {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -32,6 +32,12 @@
     justify-items: center;
     align-items: center;
     align-content: center;
+}
+
+@media screen and (max-width: 650px) {
+    .main2{
+        width: 100%;
+    }
 }
 
 .card {
@@ -149,7 +155,6 @@
 
 .card:hover {
     box-shadow: 0 0.18rem 1.4rem rgb(141, 76, 141);
-    transform: scale(1.02);
 }
 
 .links {

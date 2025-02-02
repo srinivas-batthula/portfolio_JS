@@ -106,11 +106,11 @@ export default function ProjectsPage() {
                 <div className={styles.main2}>
 
                     {
-                        data ? data.map((item, index) => {
+                        (data.length !== 0) ? data.map((item, index) => {
                             return (
                                 <Card key={index} data={item} />
                             )
-                        }) : <div><h2>Loading Projects from GitHub...</h2></div>
+                        }) : <div style={{textAlign:'center', width:'100%', margin:'3rem', color:'#ee00ff'}}><h4>Loading Projects from GitHub...</h4></div>
                     }
 
                     <div className={styles.card}>
