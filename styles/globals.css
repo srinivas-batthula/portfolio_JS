@@ -16,6 +16,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scrollbar-width: thin;
+  scrollbar-color: rgb(207, 128, 207) #350d48; /* Handle color and track color */
 }
 
 body {
@@ -25,4 +26,28 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  scrollbar-base-color: rgb(207, 128, 207);
+  scrollbar-track-color: #350d48;
+}
+
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #350d48; /* Light grey */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(207, 128, 207); /* Custom color */
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(207, 128, 207); /* Darker shade */
 }

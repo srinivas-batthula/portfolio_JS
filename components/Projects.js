@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 import styles from "./../styles/Projects.module.css";
 
@@ -41,25 +41,60 @@ function Card({ data }) {
 }
 
 export default function ProjectsPage() {
+    const [data, setData] = useState([])
 
-    const projects = [
-        {
-            imgUrl: 'https://srinivas-batthula.github.io/portfolio/utils/todo_project.png',
-            title: 'Task Manager',
-            des: "'Task Manager' is an innovative web app built with MERN stack and PWA features, designed to streamline task organization and productivity. The app features an intuitive UI, Notifications, Secure user-authentication and Offline functionality, ensuring accessibility on the go. Explore how it simplifies everyday planning, and feel free to reach out for any collaboration opportunities!",
-            urlFront: 'https://github.com/srinivas-batthula/todo',
-            urlBack: 'https://github.com/srinivas-batthula/todo_backend',
-            urlLive: 'https://srinivas-batthula.github.io/todo'
-        },
-        {
-            imgUrl: 'https://srinivas-batthula.github.io/portfolio/utils/portfolio_project.png',        //  ../public/utils/portfolio_project.png
-            title: 'Personal Portfolio',
-            des: "'Personal Portfolio' is a modern & responsive website developed using React & Next.js, designed to showcase my skills, projects... in the tech world. The portfolio features an interactive user experience with smooth transitions and a mobile-friendly design. Feel free to explore and get a glimpse of my journey as a developer, and don't hesitate to reach out if you’d like to connect!",
-            urlFront: 'https://github.com/srinivas-batthula/portfolio',
-            urlBack: 'https://github.com/srinivas-batthula/portfolio_backend',
-            urlLive: 'https://srinivas-batthula.github.io/portfolio/'
+    useEffect(()=>{
+        const Fetch = async () => {
+            try {
+                let r = await fetch('https://api.github.com/users/srinivas-batthula/repos', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+                r = await r.json();
+
+                // Sort repositories by creation date (descending)
+                r.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+                const promises = r.map(async (item) => {
+                    try {
+                        let res = await fetch(`https://raw.githubusercontent.com/srinivas-batthula/${item.name}/main/metadata.json`, {
+                            method: 'GET',
+                        });
+                        if (res.status === 200) {
+                            res = await res.json();
+                            return res;
+                        }
+                    } catch (error) {
+                        console.log(error);
+                    }
+                });
+
+                // Wait for all fetch requests to finish
+                const Data = await Promise.all(promises)
+                setTimeout(()=>{
+                    setData(Data.filter(item => item !== undefined))     // Filter out any undefined results (in case of fetch errors)
+                }, 1000)
+
+            } catch (error) {
+                console.log(error);
+                setData([]);
+            }
         }
-    ]
+        Fetch()
+    }, [])
+
+    // const projects = [
+    //     {
+    //         "imgUrl": "https://srinivas-batthula.github.io/portfolio/utils/todo_project.png",
+    //         "title": "Task Manager",
+    //         "des": "'Task Manager' is an innovative web app built with MERN stack and PWA features, designed to streamline task organization and productivity. The app features an intuitive UI, Notifications, Secure user-authentication and Offline functionality, ensuring accessibility on the go. Explore how it simplifies everyday planning, and feel free to reach out for any collaboration opportunities!",
+    //         "urlFront": "https://github.com/srinivas-batthula/todo",
+    //         "urlBack": "https://github.com/srinivas-batthula/todo_backend",
+    //         "urlLive": "https://srinivas-batthula.github.io/todo"
+    //     },
+    // ]
 
     return (
         <>
@@ -70,13 +105,12 @@ export default function ProjectsPage() {
                 </div>
                 <div className={styles.main2}>
 
-
                     {
-                        projects.map((item) => {
+                        data ? data.map((item, index) => {
                             return (
-                                <Card data={item} />
+                                <Card key={index} data={item} />
                             )
-                        })
+                        }) : <div><h2>Loading Projects from GitHub...</h2></div>
                     }
 
                     <div className={styles.card}>

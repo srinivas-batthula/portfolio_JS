@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
-import { ToastContainer, toast } from "react-toastify";
+import { Bounce, Flip, Slide, ToastContainer, Zoom, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import styles from "./../styles/Contact.module.css";
@@ -86,6 +86,7 @@ export default function ContactPage() {
                         closeButton: true,
                         autoClose: 3000,
                         theme: "colored",
+                        transition: Bounce
                     });
                     setSuccess('Redirecting to Home...');
                 } else {
@@ -98,6 +99,7 @@ export default function ContactPage() {
                         closeButton: true,
                         autoClose: 3000,
                         theme: "dark",
+                        transition: Bounce
                     })
                     setErr(result.error || 'Failed to send email.');
                 }
@@ -111,6 +113,7 @@ export default function ContactPage() {
                     closeButton: true,
                     autoClose: 3000,
                     theme: "dark",
+                    transition: Bounce,
                 })
                 setErr('Error: ' + err.message);
             } finally {
@@ -123,7 +126,7 @@ export default function ContactPage() {
             setTimeout(() => {
                 // You can implement further logic here after successful submission
                 router.push('/'); // This will redirect to / Home page
-            }, 1000)
+            }, 1800)
         } else {
             console.log("Not-submited");
             // Show error toast if input is empty
@@ -135,6 +138,7 @@ export default function ContactPage() {
                 closeButton: true,
                 autoClose: 3000,
                 theme: "dark",
+                transition: Bounce
             })
             // icon.className = "fa-solid fa-user";
             setErr("Please Enter Data to Send!")

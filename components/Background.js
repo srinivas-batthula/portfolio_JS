@@ -13,7 +13,7 @@ const Star = ({ x, y, delay }) => {
                 delay: delay,
             }}
             style={{
-                position: "absolute",
+                position: "fixed",
                 top: `${y}%`,
                 left: `${x}%`,
                 width: "3px",
@@ -21,6 +21,9 @@ const Star = ({ x, y, delay }) => {
                 backgroundColor: "white",
                 borderRadius: "50%",
                 boxShadow: "0 0 7.1px white",
+                backgroundSize:'cover',
+                backgroundPosition:'center',
+                backgroundAttachment:'fixed',
             }}
         />
     );
@@ -46,6 +49,9 @@ const ParticlesBackground = () => {
                 // backgroundColor: "linear-gradient(135deg, #9b3b8c, #2c2c2c)",
                 overflow: "hidden",
                 // zIndex:'-9999',
+                backgroundSize:'cover',
+                backgroundPosition:'center',
+                backgroundAttachment:'fixed',
 
             }}
         >

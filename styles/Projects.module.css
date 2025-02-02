@@ -35,10 +35,10 @@
 }
 
 .card {
-    width: 24rem;
+    width: 29rem;
     height: 38rem;
     box-shadow: 0 0.25rem 0.45rem rgb(141, 76, 141);
-    background-color: transparent;
+    background: #21082d !important;
     backdrop-filter: blur(1.5rem);
     margin-right: 1rem;
     margin-left: 1rem;
@@ -90,22 +90,22 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 22.3rem;
+    width: 23rem;
     height: 15rem;
 }
 
 .title {
     text-align: center;
     font-size: 1.4rem;
-    margin-top: 0.1rem;
-    margin-bottom: 0.25rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
     color: rgb(238, 57, 238);
 }
 
 .content {
     text-align: left;
     font-size: 1rem;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
     padding: 0.06rem;
     text-rendering: optimizeLegibility;
     letter-spacing: 0.06rem;
@@ -113,7 +113,14 @@
     /* A clean, modern font */
 }
 
-@media screen and (max-width:468px) {
+@media screen and (max-width: 508px) {
+    .card{
+        width: 26rem;
+        height: 36;
+    }
+}
+
+@media screen and (max-width: 468px) {
 
     .card {
         width: 23rem;
@@ -142,6 +149,7 @@
 
 .card:hover {
     box-shadow: 0 0.18rem 1.4rem rgb(141, 76, 141);
+    transform: scale(1.02);
 }
 
 .links {

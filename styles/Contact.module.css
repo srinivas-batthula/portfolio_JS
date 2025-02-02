@@ -10,8 +10,10 @@
 }
 
 .head{
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     font-weight: 600;
+    margin-top: 1.6rem;
+    margin-bottom: 5rem;
 }
 
 .form {
@@ -29,9 +31,15 @@
     box-shadow: 0 0 1.5rem rgb(231, 101, 231);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 830px) {
     .form {
         width: 70%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .form{
+        width: 80%;
     }
 }
 
@@ -41,9 +49,15 @@
         margin-top: 6rem;
         margin-bottom: 1.5rem;
     }
-    .head{
+    /* .head{
         margin-bottom: 1rem;
         margin-top: 1rem;
+    } */
+}
+
+@media screen and (max-width:520px) {
+    .form{
+        width: 90%;
     }
 }
 
@@ -53,10 +67,10 @@
         margin-top: 3.5rem;
         margin-bottom: 1rem;
     }
-    .head{
+    /* .head{
         margin-bottom: 2.2rem;
         margin-top: 1rem;
-    }
+    } */
 }
 
 .row {
@@ -111,11 +125,11 @@
     margin-bottom: 0.8rem;
 }
 
-@media screen and (max-width:800px) {
+/* @media screen and (max-width:800px) {
     .head{
         font-size: 1.8rem;
     }
-}
+} */
 
 .main2{
     margin-top: 6.8rem;
@@ -131,7 +145,7 @@
 }
 
 .links{
-    width: 100%;
+    width: 60%;
     margin-top: 1.8rem;
     padding: 0.4rem;
     color: white;

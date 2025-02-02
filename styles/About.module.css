@@ -16,7 +16,7 @@
 }
 
 .mainImg{
-    margin: 0.8rem;
+    margin: 1.8rem;
     padding: 0.6rem;
     float: right;
     background-color: #21082d;
@@ -59,7 +59,7 @@
 }
 
 .sec3{
-    width: 45%;
+    width: 65%;
     font-size: 1.3rem;
     font-weight: 400;
     display: flex;
