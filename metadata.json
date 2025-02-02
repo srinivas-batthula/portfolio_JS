@@ -1,0 +1,8 @@
+{
+            "imgUrl": "https://srinivas-batthula.github.io/portfolio/utils/portfolio_project.png",
+            "title": "Personal Portfolio",
+            "des": " 'Personal Portfolio' is a modern & responsive website developed using React & Next.js, designed to showcase my skills, projects... in the tech world. The portfolio features an interactive user experience with smooth transitions and a mobile-friendly design. Feel free to explore and get a glimpse of my journey as a developer, and don't hesitate to reach out if you’d like to connect!",
+            "urlFront": "https://github.com/srinivas-batthula/portfolio",
+            "urlBack": "https://github.com/srinivas-batthula/portfolio_backend",
+            "urlLive": "https://srinivas-batthula.github.io/portfolio/"
+}
