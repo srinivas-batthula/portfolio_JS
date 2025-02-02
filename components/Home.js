@@ -71,7 +71,7 @@ export default function Home() {
                         <div className={styles.sec}>
                             I'M <span className={styles.secSpan}>SRINIVAS BATTHULA</span>
                         </div>
-                        <div className={styles.third} style={{ fontWeight: "lighter" }}>
+                        <div className={styles.third} style={{ fontWeight: "bold" }}>
                             <TypingEffect />
                         </div>
                     </div>
