@@ -67,7 +67,7 @@ export default function ContactPage() {
             console.log("submited");
             // icon.className = "fa-solid fa-spinner text-success";
             try {
-                const response = await fetch('/api/sendEmail', {
+                const response = await fetch('/portfolio/api/sendEmail', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
