@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
-import { Bounce, Flip, Slide, ToastContainer, Zoom, toast } from "react-toastify";
+import { Bounce, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import styles from "./../styles/Contact.module.css";
@@ -67,7 +67,7 @@ export default function ContactPage() {
             console.log("submited");
             // icon.className = "fa-solid fa-spinner text-success";
             try {
-                const response = await fetch('https://portfolio-backend-ynyr.onrender.com/sendEmail/', {
+                const response = await fetch('/api/sendEmail', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -126,7 +126,7 @@ export default function ContactPage() {
             setTimeout(() => {
                 // You can implement further logic here after successful submission
                 router.push('/'); // This will redirect to / Home page
-            }, 1800)
+            }, 2000)
         } else {
             console.log("Not-submited");
             // Show error toast if input is empty
@@ -160,7 +160,7 @@ export default function ContactPage() {
                 <Form id="form" className={styles.form}>
                     <div style={{color:'rgb(251, 53, 251)', fontWeight:'bolder', fontSize:'1.7rem', marginBottom:'3.3rem'}}>Drop a Message</div>
                     {
-                        (sub === true) ? <div style={{ color: "red", fontSize: "1.2rem", backgroundColor: 'transparent' }}>
+                        (sub === true) ? <div style={{ color: "green", fontSize: "1.2rem", backgroundColor: 'transparent' }}>
                             Redirecting to Home Page...
                         </div> : ""
                     }

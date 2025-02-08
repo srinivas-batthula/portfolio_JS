@@ -10,7 +10,7 @@ class MyDocument extends Document {
                     <meta name='title' content='Srinivas Batthula' />
                     <meta name="description" content="Srinivas Batthula Portfolio" />
                     {/*  Icon...  */}
-                    <link rel="icon" href="/icon.jpg" type="image/x-icon" />
+                    <link rel="icon" href="https://srinivas-batthula.github.io/portfolio/icon.jpg" type="image/x-icon" />
                     
                     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet" />
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />

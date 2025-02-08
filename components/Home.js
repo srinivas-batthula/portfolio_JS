@@ -30,32 +30,6 @@ const TypingEffect = () => {
 };
 
 export default function Home() {
-    const sendRequest = async () => {
-        try {
-            const response = await fetch(
-                "https://portfolio-backend-ynyr.onrender.com/test/",
-                {
-                    method: "GET",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                }
-            );
-
-            if (response.ok) {
-                return;
-            } else {
-                return;
-            }
-        } catch (error) {
-            return;
-        }
-    };
-    // Effect to send the request when the page loads
-    useEffect(() => {
-        sendRequest();
-    }, []); // Empty dependency array ensures this runs only once when the component mounts
-
 
     return (
         <div className={styles.main}>

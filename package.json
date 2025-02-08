@@ -13,10 +13,11 @@
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.7",
     "framer-motion": "^12.0.5",
     "install": "^0.13.0",
     "next": "^15.1.6",
-    "nodemailer": "^6.9.16",
+    "nodemailer": "^6.10.0",
     "npm": "^10.9.2",
     "postcss": "^8.4.47",
     "react": "^18.2.0",
