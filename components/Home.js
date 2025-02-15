@@ -208,7 +208,7 @@ export default function Home() {
                             data-social="LeetCode"
                             className={styles.leetcodeButton}
                             id={styles.linkBtn}
-                            href="https://leetcode.com/u/WRBRSO7OH6/"
+                            href="https://leetcode.com/u/srinivas-batthula/"
                             target="_blank"
                         >
                             <svg
