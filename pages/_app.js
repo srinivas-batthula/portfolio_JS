@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import '../styles/Navbar.css'
 import Layout from '../components/Layout'
 
+
 function MyApp({ Component, pageProps }) {
     return (
         <Layout>

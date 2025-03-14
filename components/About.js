@@ -1,6 +1,8 @@
 import React from "react";
 
 import styles from "./../styles/About.module.css";
+import ImageCarousel from "./Certifications";
+
 
 export default function AboutPage() {
     return (
@@ -46,6 +48,14 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </div>
+
+                <div className={styles.main3}>
+                    <div className={styles.head}>
+                        Earned  <span style={{ color: 'rgb(184, 41, 184)', fontWeight: 'bold' }}>Certifications</span>
+                    </div>
+                    <ImageCarousel />
+                </div>
+
                 <div className={styles.main2}>
                     <div className={styles.head}>
                         Professional  <span style={{ color: 'rgb(184, 41, 184)', fontWeight: 'bold' }}>Skillset</span>

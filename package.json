@@ -24,6 +24,7 @@
     "react-bootstrap": "^2.10.5",
     "react-dom": "^18.2.0",
     "react-toastify": "^11.0.3",
+    "swiper": "^11.2.5",
     "tailwindcss": "^3.4.14"
   },
   "devDependencies": {

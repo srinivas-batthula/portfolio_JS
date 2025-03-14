@@ -126,6 +126,30 @@
     align-content: center;
 }
 
+.main3{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 40rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+@media screen and (max-width:650px) {
+    .main3{
+        width: 98%;
+    }
+}
+
+
+
 @media screen and (max-width:1050px) {
     .flex2{
         width: 35%;

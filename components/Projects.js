@@ -5,7 +5,7 @@ import styles from "./../styles/Projects.module.css";
 
 function Card({ data }) {
     return (
-        <div >
+        // <div >
             <div className={styles.card}>
                 <div className={styles.img}>
                     {/* Copy 'imgI' & paste it for current img with the new img path/url... */}
@@ -24,19 +24,19 @@ function Card({ data }) {
                         <Dropdown.Item as="button"><a href={data.urlBack} target="_blank" style={{ color: 'black', textDecoration: 'none', fontSize: '1rem' }}>Backend Code</a></Dropdown.Item>
                     </DropdownButton> */}
                     <div className={styles.dropdown}>
-                        <button className={styles.dropbtn}>GitHub</button>
+                        <button className={styles.dropbtn}><i className="fa-brands fa-github"></i></button>
                         <div className={styles.dropdownContent}>
-                            <a href={data.urlFront} target="_blank">Frontend Code</a>
-                            <a href={data.urlBack} target="_blank">Backend Code</a>
+                            <a href={data.urlFront} target="_blank">Frontend repo</a>
+                            <a href={data.urlBack} target="_blank">Backend repo</a>
                         </div>
                     </div>
 
                     {/* Use this Link to display Live-Demo link */}
                     {/* <button className={styles.btn2} style={{ marginLeft: '1rem' }}><a href={data.urlLive} target="_blank" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignContent: 'center' }}><i className="fa-solid fa-arrow-up-right-from-square" style={{ paddingTop: '0.2rem', marginRight: '0.3rem' }}></i><span>  Demo  </span></a></button> */}
-                    <a href={data.urlLive} target="_blank" style={{textDecoration:'none'}}><button className={styles.animatedBtn}><i className="fa-solid fa-arrow-up-right-from-square" style={{fontSize:'1rem'}}></i> Live </button></a>
+                    <a href={data.urlLive} target="_blank" style={{textDecoration:'none'}}><button className={styles.animatedBtn}><i className="fa-solid fa-arrow-up-right-from-square" style={{fontSize:'1rem'}}></i></button></a>
                 </div>
             </div>
-        </div>
+        // </div>
     )
 }
 
@@ -61,15 +61,17 @@ export default function ProjectsPage() {
                     try {
                         let res = await fetch(`https://raw.githubusercontent.com/srinivas-batthula/${item.name}/main/metadata.json`, {
                             method: 'GET',
-                        });
+                        })
                         if (res.status === 200) {
-                            res = await res.json();
-                            return res;
+                            res = await res.json()
+                            console.log(item.name)
+                            return res
                         }
                     } catch (error) {
-                        console.log(error);
+                        console.log(' ')
+                        // console.log(error);
                     }
-                });
+                })
 
                 // Wait for all fetch requests to finish
                 const Data = await Promise.all(promises)
@@ -78,14 +80,15 @@ export default function ProjectsPage() {
                 }, 1000)
 
             } catch (error) {
-                console.log(error);
-                setData([]);
+                // console.log(error);
+                console.log(' ')
+                // setData([])
             }
         }
         Fetch()
     }, [])
 
-    // const projects = [
+                    // metadata.json.....
     //     {
     //         "imgUrl": "https://srinivas-batthula.github.io/portfolio/utils/todo_project.png",
     //         "title": "Task Manager",
@@ -93,8 +96,7 @@ export default function ProjectsPage() {
     //         "urlFront": "https://github.com/srinivas-batthula/todo",
     //         "urlBack": "https://github.com/srinivas-batthula/todo_backend",
     //         "urlLive": "https://srinivas-batthula.github.io/todo"
-    //     },
-    // ]
+    //     }
 
     return (
         <>
@@ -106,7 +108,7 @@ export default function ProjectsPage() {
                 <div className={styles.main2}>
 
                     {
-                        (data.length !== 0) ? data.map((item, index) => {
+                        (data && data.length !== 0) ? data.map((item, index) => {
                             return (
                                 <Card key={index} data={item} />
                             )
@@ -121,6 +123,13 @@ export default function ProjectsPage() {
                             ATM System
                         </div>
                         <div className={styles.content}>
+                            {/* {
+                            ['nextjs', 'react', 'nodemailer'].map((item, index)=>{
+                                return(
+                                    <div >#{item}</div>
+                                )
+                            })
+                            } */}
                             Welcome to the Project 'ATM System' - A Robust Banking Experience! This Python application simulates an ATM interface, allowing users to perform essential banking operations such as balance inquiries, deposits, transaction history with permanent data storage in JSON files and account management—all within a command-line environment.
                         </div>
                         <div className={styles.links}>
