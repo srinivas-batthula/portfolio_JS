@@ -6,6 +6,7 @@ Welcome to my Portfolio project, designed to showcase my skills, projects, etc.
 
 ## Features
 
+- Serverless E-mail sending service
 - Responsive and accessible from all devices
 - About section consisting my skills, tools, et.
 - Projects section consisting of all my Projects.
