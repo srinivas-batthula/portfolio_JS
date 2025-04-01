@@ -51,7 +51,7 @@ export default function AboutPage() {
 
                 <div className={styles.main3}>
                     <div className={styles.head}>
-                        Earned  <span style={{ color: 'rgb(184, 41, 184)', fontWeight: 'bold' }}>Certifications</span>
+                        Certifications  <span style={{ color: 'rgb(184, 41, 184)', fontWeight: 'bold' }}>Earned</span>
                     </div>
                     <ImageCarousel />
                 </div>
@@ -62,45 +62,63 @@ export default function AboutPage() {
                     </div>
                     <div className={styles.flex1}>
 
-                        <div className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-js"></i></span></div>
+                        <div title="java" className={styles.flex2}><span className={styles.i}><i className="devicon-java-plain"></i></span></div>
 
-                        <div className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-python"></i></span></div>
+                        <div title="javascript" className={styles.flex2}><span className={styles.i}><i className="devicon-javascript-plain"></i></span></div>
 
-                        <div className={styles.flex2}><span className={styles.i}><i className="fa-solid fa-c"></i></span></div>
+                        <div title="python" className={styles.flex2}><span className={styles.i}><i className="devicon-python-plain-wordmark"></i></span></div>
 
-                        <div className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-node"></i></span></div>
-
-                        <div className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-react"></i></span></div>
-
-                        <div className={styles.flex2}><span className={styles.i}>
+                        <div title="mongodb" className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-mongodb-plain-wordmark"></i></span>
                         </div>
 
-                        <div className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-nextjs-original-wordmark"></i></span>
+                        <div title="mongoose/ODM" className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-mongoose-original-wordmark"></i></span>
                         </div>
 
-                        <div className={styles.flex2}><span className={styles.i}>
+                        <div title="nodejs" className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-node"></i></span></div>
+
+                        <div title="expressjs" className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-express-original"></i></span>
                         </div>
 
-                        <div className={styles.flex2}><span className={styles.i}>
+                        <div title="json" className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-json-plain"></i></span>
+                        </div>
+
+                        <div title="reactjs" className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-react"></i></span></div>
+
+                        <div title="redux/toolkit" className={styles.flex2}><span className={styles.i}><i className="devicon-redux-original"></i></span></div>
+
+                        <div title="nextjs" className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-nextjs-original-wordmark"></i></span>
+                        </div>
+                        
+                        <div title="git/version-control" className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-git-plain"></i></span>
+                        </div>
+
+                        <div title="bootstrap" className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-bootstrap-plain"></i>
                         </span>
                         </div>
 
-                        <div className={styles.flex2}><span className={styles.i}>
+                        <div title="reactbootstrap" className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-reactbootstrap-original"></i>
                         </span>
                         </div>
 
-                        <div className={styles.flex2}><span className={styles.i}>
+                        <div title="tailwindcss" className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-tailwindcss-original"></i>
                         </span>
                         </div>
-                        
-                        <div className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-git-plain"></i></span>
+
+                        <div title="html5" className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-html5-plain-wordmark"></i></span>
+                        </div>
+
+                        <div title="css3" className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-css3-plain-wordmark"></i></span>
                         </div>
 
                     </div>
@@ -110,14 +128,20 @@ export default function AboutPage() {
                         <span style={{ color: 'rgb(184, 41, 184)', fontWeight: 'bold' }}>Tools</span> I use
                     </div>
                     <div className={styles.flex3}>
-                        <div className={styles.flex2}><span className={styles.i}>
+                        <div title="vscode" className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-vscode-plain"></i></span>
                         </div>
-                        <div className={styles.flex2}><span className={styles.i}>
+                        <div title="postman" className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-postman-plain"></i></span>
                         </div>
-                        <div className={styles.flex2}><span className={styles.i}>
+                        <div title="github" className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-github-original"></i></span>
+                        </div>
+                        <div title="vercel" className={styles.flex2}><span className={styles.i}>
+                            <i class="devicon-vercel-original"></i></span>
+                        </div>
+                        <div title="netlify" className={styles.flex2}><span className={styles.i}>
+                            <i class="devicon-netlify-plain"></i></span>
                         </div>
                     </div>
                 </div>

@@ -274,7 +274,7 @@
 
 @media screen and (max-width:500px) {
     .div1{
-        width: 88%;
+        width: 94%;
     }
 }
 
@@ -461,5 +461,8 @@
 }
 .twitterButton {
     color: white;
+}
+.emailButton {
+    color: #b2221e;
 }
 

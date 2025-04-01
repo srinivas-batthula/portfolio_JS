@@ -266,6 +266,25 @@ export default function ContactPage() {
                         <a data-social="Twitter" className={styles.twitterButton} id={styles.linkBtn} href="https://x.com/Abhi07082005/" target="_blank">
                             <svg role="img" viewBox="0 0 24 24" width='38' height='38' fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" /></svg>
                         </a>
+                        <a
+                            data-social="Email"
+                            className={styles.emailButton}
+                            id={styles.linkBtn}
+                            href="mailto:srinivasbatthula05.official@gmail.com"
+                            target="_blank"
+                        >
+                            <svg
+                                role="img"
+                                viewBox="0 0 24 24"
+                                width="43"
+                                height="43"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>Email</title>
+                                <path d="M2 4C0.9 4 0 4.9 0 6v12c0 1.1 0.9 2 2 2h20c1.1 0 2-0.9 2-2V6c0-1.1-0.9-2-2-2H2zm0 2h20l-10 7L2 6zm0 2.5l7.5 5.25c1 .75 2.5 .75 3.5 0L22 8.5V18H2V8.5z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>

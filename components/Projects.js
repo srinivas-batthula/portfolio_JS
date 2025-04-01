@@ -51,8 +51,8 @@ export default function ProjectsPage() {
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                });
-                r = await r.json();
+                })
+                r = await r.json()
 
                 // Sort repositories by creation date (descending)
                 r.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
