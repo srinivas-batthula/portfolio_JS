@@ -61,23 +61,25 @@
     }
 }
 
-@media screen and (max-width:450px) {
-    .form{
-        width: 95%;
-        margin-top: 3.5rem;
-        margin-bottom: 1rem;
-    }
-    /* .head{
-        margin-bottom: 2.2rem;
-        margin-top: 1rem;
-    } */
-}
-
 .row {
     display: flex;
     justify-content: center;
     margin: 1rem;
     padding: 0.1rem;
+}
+
+@media screen and (max-width:450px) {
+    .form{
+        width: 97%;
+        margin-top: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    .row{
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
 }
 
 .btn {
@@ -191,3 +193,12 @@
     color: #b2221e;
 }
 
+
+@media screen and (max-width:410px) {
+    .links{
+        flex-wrap: wrap;
+    }
+    #linkBtn{
+        margin-bottom: 1rem;
+    }
+}
