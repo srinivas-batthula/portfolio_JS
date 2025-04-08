@@ -10,7 +10,7 @@ export default function Footer() {
                     Designed and Developed by <span style={{color:'rgb(251, 53, 251)', fontWeight:'bold', fontStyle:'italic'}}>Srinivas Batthula</span>
                 </div>
                 <div className={styles.footerChild2}>
-                    Copyright © 2024 BSP
+                    Copyright © 2025 BSP
                 </div>
                 <div className={styles.footerChild3}>
                     <a href="https://www.linkedin.com/in/srinivas-batthula/" target="_blank" style={{fontSize:'1.5rem', color:'skyblue', marginRight:'1rem'}}>

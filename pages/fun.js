@@ -50,9 +50,9 @@ export default function UserGreeting() {
                     screenSize,
                     city: data.city,
                     country: data.country,
-                });
-            });
-    }, []);
+                })
+            })
+    }, [])
 
 
     return (
