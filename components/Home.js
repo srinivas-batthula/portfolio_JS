@@ -1,5 +1,8 @@
+'use client'
+
 import React, { useState, useEffect } from "react";
 import styles from "./../styles/Home.module.css";
+
 
 const TypingEffect = () => {
     const texts = [

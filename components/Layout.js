@@ -1,12 +1,17 @@
-import React from 'react'
+'use client'
+
+import React, {useEffect} from 'react'
 
 import NavbarResponsive from './Navbar'
 import Footer from './Footer'
 import ParticlesBackground from './Background'
 
 import styles from './../styles/Home.module.css'
+import FunToast from './ToastFun'
+
 
 const Layout = ({ children })=>{
+
     return(
         <div className={styles.layoutDiv}>
             <ParticlesBackground />
@@ -20,6 +25,8 @@ const Layout = ({ children })=>{
 
                 <Footer />
             </div>
+
+            <FunToast />
         </div>
     )
 }
