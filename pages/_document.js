@@ -21,12 +21,13 @@ class MyDocument extends Document {
                     {/* https://srinivas-batthula.github.io/portfolio */}
                     <link rel="icon" href="/icon.jpg" type="image/x-icon" />
 
-                    {/* Google Search Console Meta tag... */}
-                    <meta name="google-site-verification" content="TbhDgBAon0JlcRZGcPav0DB8188B7S1doUU7vfQy0qY" />
+                    {/* Google Search Console Meta tags... */}
+                    <meta name="google-site-verification" content="TbhDgBAon0JlcRZGcPav0DB8188B7S1doUU7vfQy0qY" />  {/* For Vercel deployment... */}
+                    <meta name="google-site-verification" content="tgr9rQeA_88RwbcxrcZmCrRUBjbLWUBYb9jolb1cFM0" />  {/* For Github-Pages deployment... */}
 
                     {/* SEO... */}
                     <meta name="robots" content="index, follow" />
-                    <link rel="canonical" href="https://portfolio-phi-three-63.vercel.app/" />
+                    <link rel="canonical" href="https://srinivas-batthula.github.io/portfolio" />
 
                     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet" />
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
