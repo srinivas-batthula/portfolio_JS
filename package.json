@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "deploy": "gh-pages -d out"
@@ -17,6 +18,7 @@
     "framer-motion": "^12.6.3",
     "install": "^0.13.0",
     "next": "^15.1.6",
+    "next-sitemap": "^4.2.3",
     "nodemailer": "^6.10.0",
     "npm": "^10.9.2",
     "postcss": "^8.4.47",
