@@ -16,14 +16,18 @@ class MyDocument extends Document {
                     <meta property='og:title' content='Srinivas Batthula | Fullstack Developer Portfolio' />
                     <meta property='og:description' content='Explore my recent Works and Projects on GitHub' />
                     <meta property='og:url' content='https://portfolio-phi-three-63.vercel.app' />
-                    
+
                     {/*  Icon...  */}
-                            {/* https://srinivas-batthula.github.io/portfolio */}
+                    {/* https://srinivas-batthula.github.io/portfolio */}
                     <link rel="icon" href="/icon.jpg" type="image/x-icon" />
 
                     {/* Google Search Console Meta tag... */}
                     <meta name="google-site-verification" content="TbhDgBAon0JlcRZGcPav0DB8188B7S1doUU7vfQy0qY" />
-                    
+
+                    {/* SEO... */}
+                    <meta name="robots" content="index, follow" />
+                    <link rel="canonical" href="https://portfolio-phi-three-63.vercel.app/" />
+
                     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet" />
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 
