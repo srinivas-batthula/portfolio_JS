@@ -10,7 +10,7 @@ class MyDocument extends Document {
                     <meta name='title' content='Srinivas Batthula | Portfolio' />
                     <meta name='author' content='Srinivas Batthula' />
                     <meta name="description" content="srinivas batthula portfolio" />
-                    <meta name="keywords" content="srinivas, batthula, portfolio, mern stack developer, react, nextjs, mongodb, expressjs, nodejs, fullstack developer, javascript" />
+                    <meta name="keywords" content="Srinivas Batthula, portfolio, MERN stack developer, React developer, Next.js, MongoDB, Express.js, Node.js, full-stack developer, JavaScript, web development, front-end development, back-end development, software engineer, programming, java, python, seo, rest apis" />
 
                     {/* Social Sharing... */}
                     <meta property='og:title' content='Srinivas Batthula | Fullstack Developer Portfolio' />
@@ -27,6 +27,7 @@ class MyDocument extends Document {
                     <meta name="google-site-verification" content="tgr9rQeA_88RwbcxrcZmCrRUBjbLWUBYb9jolb1cFM0" />  {/* For Github-Pages deployment... */}
 
                     {/* SEO... */}
+                    <link rel="sitemap" type="application/xml" href="https://portfolio-phi-three-63.vercel.app/sitemap.xml" />
                     <meta name="robots" content="index, follow" />
                     <link rel="canonical" href="https://portfolio-phi-three-63.vercel.app" />
 
@@ -35,10 +36,38 @@ class MyDocument extends Document {
 
                     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
+                    {/* Structured Data (JSON-LD)... */}
+                    <script type="application/ld+json">
+                    {
+                        {
+                            "@context": "http://schema.org",
+                            "@type": "Person",
+                            "name": "Srinivas Batthula",
+                            "jobTitle": "MERN Stack Developer, Full Stack Developer, Backend Developer, SDE, Software Developer",
+                            "url": "https://portfolio-phi-three-63.vercel.app",
+                            "sameAs": [
+                                "https://www.linkedin.com/in/srinivas-batthula/",
+                                "https://github.com/srinivas-batthula/",
+                                "https://leetcode.com/u/srinivas-batthula/",
+                                "https://www.instagram.com/srinivas_abhi8/",
+                                "https://x.com/Abhi07082005/",
+                            ],
+                            "worksFor": {
+                                "@type": "Sreenidhi Institute of Science and Technology, Hyderabad",
+                                "name": "Student"
+                            },
+                            "skills": "MERN Stack, Full Stack, React, NextJs, Node.js, Express.js, FastAPI, MongoDB, SQL, JavaScript, Java, Python",
+                            "image": "https://portfolio-phi-three-63.vercel.app/icon.png"
+                        }
+                    }
+                    </script>
+
                 </Head>
                 <body>
+
                     <Main />
                     <NextScript />
+
                 </body>
             </Html>
         );

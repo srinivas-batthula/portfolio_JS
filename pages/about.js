@@ -10,7 +10,7 @@ export default function About(){
                 <meta name='title' content='About | Srinivas Batthula' />
                 <meta name='author' content='Srinivas Batthula' />
                 <meta name="description" content="learn more about srinivas batthula" />
-                <meta name="keywords" content="srinivas, portfolio, mern stack developer, react, nextjs, mongodb, expressjs, nodejs, fullstack developer, javascript" />
+                <meta name="keywords" content="Srinivas Batthula, portfolio, MERN stack developer, React developer, Next.js, MongoDB, Express.js, Node.js, full-stack developer, JavaScript, web development, front-end development, back-end development, software engineer, programming, java, python, seo, rest apis" />
 
                 {/* Social Sharing... */}
                 <meta property='og:title' content='Srinivas Batthula | Fullstack Developer Portfolio' />
