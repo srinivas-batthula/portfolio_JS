@@ -10,7 +10,7 @@ export default function HomePage() {
                 {/* <meta name='title' content='Contact' /> */}
                 <meta name='author' content='Srinivas Batthula' />
                 <meta name="description" content="srinivas batthula portfolio" />
-                <meta name="keywords" content="Srinivas Batthula, portfolio, MERN stack developer, React developer, Next.js, MongoDB, Express.js, Node.js, full-stack developer, JavaScript, web development, front-end development, back-end development, software engineer, programming, java, python, seo, rest apis" />
+                <meta name="keywords" content="Srinivas Batthula, btech, portfolio, Vercel, MERN stack developer, React developer, Next.js, MongoDB, Express.js, Node.js, full-stack developer, JavaScript, web development, front-end development, back-end development, software engineer, programming, java, python, seo, rest apis" />
 
                 {/* Social Sharing... */}
                 <meta property='og:title' content='Srinivas Batthula | Fullstack Developer Portfolio' />
