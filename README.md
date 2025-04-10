@@ -1,21 +1,19 @@
 
 # Personal Portfolio
 
-Welcome to my Portfolio project, designed to showcase my skills, projects, etc.
+Hello, Welcome to my Portfolio project, designed to showcase my skills, projects, etc.
 
 
 ## Features
 
 - Serverless E-mail sending service
 - Responsive and accessible from all devices
-- About section consisting my skills, tools, et.
-- Projects section consisting of all my Projects.
+- About section consisting my skills, tools, Certifications
+- Projects section where the recent projects are directly fetched from GitHub via API
 - Cross platform
 
 
 ## Live Demo
-
-Insert gif or link to demo
 
 https://srinivas-batthula.github.io/portfolio
 ## API Reference
@@ -38,19 +36,10 @@ https://srinivas-batthula.github.io/portfolio
 
 **Client:** React, NextJs, React-Bootsrap
 
-**Server:** Node, Express
 
+![Logo](https://github.com/srinivas-batthula/portfolio/blob/main/public/icon.png)
 
-![Logo](https://github.com/srinivas-batthula/portfolio/blob/main/public/icon.jpg)
-
-
-## Contributing
-
-Contributions are always welcome!
-
-Feel free to contribute to this project.
-
-Please adhere to this project's `code of conduct`.
+[@Srinivas Batthula](https://github.com/srinivas-batthula)
 
 
 ## Authors
