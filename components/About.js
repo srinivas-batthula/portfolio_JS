@@ -22,28 +22,28 @@ export default function AboutPage() {
 
                         <div className={styles.sec3}>
                             <div className={styles.sec4}>
-                                Hi Everyone, I am <span style={{ color: 'rgb(251, 53, 251)', fontWeight: 'bold' }}> Srinivas Batthula </span> from <span style={{ color: 'rgb(251, 53, 251)', fontWeight: 'bold' }}>Karimnagar, India</span>.
+                                Hello! I'm <span style={{ color: 'rgb(251, 53, 251)', fontWeight: 'bold' }}> Srinivas Batthula </span>, a passionate tech enthusiast from <span style={{ color: 'rgb(251, 53, 251)', fontWeight: 'bold' }}>Hyderabad, India</span>.
                                 <br />
-                                I am currently pursuing my B.Tech degree in CSE at Sreenidhi Institute of Science and Technology, Hyderabad  with a passion for building impactful applications.
+                                I'm currently pursuing a B.Tech degree in the field of Computer Science and Engineering at Sreenidhi Institute of Science and Technology, Hyderabad. I’m driven by a deep curiosity for technology and a desire to create meaningful digital experiences.
                             </div>
                             <div className={styles.sec4}>
-                                I am skilled in Python & JavaScript and am currently exploring the MERN stack by working on hands-on projects.
+                                My core skills lie in Java and JavaScript, and I’m actively honing my expertise in the MERN stack through practical, hands-on projects that push my boundaries and expand my knowledge.
                             </div>
                             <div className={styles.sec5}>
-                                Apart from coding, here are some other activities that I enjoy:
+                                Beyond programming, I find joy and inspiration in a variety of activities:
                                 <br />
                                 <span className={styles.hobbies}>
-                                    🌐 Exploring new tech trends
+                                    🌐 Staying up to date with the latest tech innovations
                                     <br />
-                                    🌍 Travelling
+                                    🚀 Building side projects that challenge and improve my skills
                                     <br />
-                                    🚀 Building side projects to sharpen my skills
+                                    🧠 Sharpening problem-solving skills through platforms like LeetCode
                                 </span>
                             </div>
-                            <div className={styles.sec4} style={{ color: 'rgb(113, 54, 113)' }}>
-                                "Code to create, learn, and grow every day!"
+                            <div className={styles.sec4} style={{ color: 'rgb(213, 114, 143)' }}>
+                                <span style={{ fontWeight:'bold' }}>" Code with purpose, learn with passion, and grow with consistency. "</span>
                                 <br />
-                                <span style={{ marginLeft: '50%' }}>— Srinivas</span>
+                                <span style={{ marginLeft: '50%', fontStyle:'italic' }}> ~ Srinivas.</span>
                             </div>
                         </div>
                     </div>

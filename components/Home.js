@@ -77,11 +77,7 @@ export default function Home() {
                         </div>
                         <div className={styles.div3}>
                             <div>
-                                Hey there! 👋 I’m a passionate developer who’s fallen in love
-                                with programming and never looked back. 💻 From solving problems
-                                to building products, I’m on a constant journey of learning and
-                                growth — and I can proudly say, I’ve learned something along the
-                                way! 😅
+                                Hello and welcome! 👋 I’m a dedicated and enthusiastic developer with a deep passion for programming and continuous learning. 💻 What began as curiosity has turned into a rewarding journey of creating meaningful digital solutions.
                                 <br />
                                 <br />
                                 I’m fluent in the classics like{" "}
@@ -92,7 +88,17 @@ export default function Home() {
                                         fontWeight: "bold",
                                     }}
                                 >
-                                    Python
+                                    Java
+                                </span>
+                                , {' '}
+                                <span
+                                    style={{
+                                        color: "rgb(251, 53, 251)",
+                                        fontStyle: "oblique",
+                                        fontWeight: "bold",
+                                    }}
+                                >
+                                    JavaScript
                                 </span>{" "}
                                 and{" "}
                                 <span
@@ -102,9 +108,9 @@ export default function Home() {
                                         fontWeight: "bold",
                                     }}
                                 >
-                                    JavaScript
+                                    Python
                                 </span>
-                                , and my interests revolve around creating innovative{" "}
+                                , and I specialize in crafting robust{" "}
                                 <span
                                     style={{
                                         color: "rgb(251, 53, 251)",
@@ -112,9 +118,9 @@ export default function Home() {
                                         fontWeight: "bold",
                                     }}
                                 >
-                                    Web applications and scalable products
+                                    Web applications and Scalable products
                                 </span>
-                                . I love diving into the world of{" "}
+                                . My focus lies in{" "}
                                 <span
                                     style={{
                                         color: "rgb(251, 53, 251)",
@@ -124,11 +130,10 @@ export default function Home() {
                                 >
                                     Full Stack Development
                                 </span>
-                                , where I get to solve complex problems and build seamless
-                                applications that users will love. 🚀
+                                , where I enjoy tackling complex challenges and building intuitive, high-performance solutions. 🚀
                                 <br />
                                 <br />
-                                My{" "}
+                                With hands-on experience in the{" "}
                                 <span
                                     style={{
                                         color: "rgb(251, 53, 251)",
@@ -138,8 +143,7 @@ export default function Home() {
                                 >
                                     MERN-Stack
                                 </span>{" "}
-                                expertise allows me to bring ideas to life with powerful tools
-                                like{" "}
+                                I bring ideas to life using modern frameworks like{" "}
                                 <span
                                     style={{
                                         color: "rgb(251, 53, 251)",
@@ -149,13 +153,10 @@ export default function Home() {
                                 >
                                     React.js and Next.js
                                 </span>
-                                , making modern web apps that are not just functional but also
-                                fast and user-friendly.
+                                . I’m passionate about building fast, responsive, and user-friendly applications that deliver real value.
                                 <br />
                                 <br />
-                                If you're looking for someone with a passion for building
-                                dynamic, scalable web solutions and modern applications, I'm
-                                your guy! Let's create something amazing together. 🌟
+                                If you’re in search of a developer who combines technical expertise with a forward-thinking mindset, let’s connect and build something exceptional together. 🌟
                             </div>
                         </div>
                     </div>

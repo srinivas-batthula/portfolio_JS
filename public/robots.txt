@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://srinivas-batthula.github.io/portfolio
+Host: https://portfolio-phi-three-63.vercel.app
 
 # Sitemaps
-Sitemap: https://srinivas-batthula.github.io/portfolio/sitemap.xml
+Sitemap: https://portfolio-phi-three-63.vercel.app/sitemap.xml

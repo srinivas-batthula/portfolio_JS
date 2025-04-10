@@ -10,7 +10,7 @@ class MyDocument extends Document {
                     <meta name='title' content='Srinivas Batthula | Portfolio' />
                     <meta name='author' content='Srinivas Batthula' />
                     <meta name="description" content="srinivas batthula portfolio" />
-                    <meta name="keywords" content="srinivas, portfolio, mern stack developer, react, nextjs, mongodb, expressjs, nodejs, fullstack developer, javascript" />
+                    <meta name="keywords" content="srinivas, batthula, portfolio, mern stack developer, react, nextjs, mongodb, expressjs, nodejs, fullstack developer, javascript" />
 
                     {/* Social Sharing... */}
                     <meta property='og:title' content='Srinivas Batthula | Fullstack Developer Portfolio' />
@@ -20,7 +20,7 @@ class MyDocument extends Document {
 
                     {/*  Icon...  */}
                     {/* https://srinivas-batthula.github.io/portfolio */}
-                    <link rel="icon" href="/icon.jpg" type="image/x-icon" />
+                    <link rel="icon" href="/icon.png" type="image/png" />
 
                     {/* Google Search Console Meta tags... */}
                     <meta name="google-site-verification" content="TbhDgBAon0JlcRZGcPav0DB8188B7S1doUU7vfQy0qY" />  {/* For Vercel deployment... */}
@@ -28,7 +28,7 @@ class MyDocument extends Document {
 
                     {/* SEO... */}
                     <meta name="robots" content="index, follow" />
-                    <link rel="canonical" href="https://srinivas-batthula.github.io/portfolio" />
+                    <link rel="canonical" href="https://portfolio-phi-three-63.vercel.app" />
 
                     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet" />
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />

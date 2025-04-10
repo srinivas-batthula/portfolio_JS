@@ -20,7 +20,7 @@ export default function Contact() {
                 
                 {/* SEO... */}
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://srinivas-batthula.github.io/portfolio" />
+                <link rel="canonical" href="https://portfolio-phi-three-63.vercel.app" />
             </Head>
             <main>
                 <ContactPage />
