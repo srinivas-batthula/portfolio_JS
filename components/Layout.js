@@ -19,14 +19,15 @@ const Layout = ({ children }) => {
 
                             // To extract only '/about' from '/portfolio/about'...
             function extractLastSegment(path) {
-                const parts = path.split('/').filter(Boolean);
-                return parts.length > 1 ? '/' + parts.pop() : '/';
+                const parts = path.split('/').filter(Boolean)
+                return (parts.length>1 && parts[0]==='portfolio') ? '/' + parts[parts.length-1] : '/'
             }
 
             if (currentHost !== correctHost) {
                 const currentPath = extractLastSegment(window.location.pathname) + window.location.search /* like ?q=123 */ + window.location.hash /* like #about */
 
                 const redirectTo = `https://${correctHost}${currentPath}`
+                // console.log(redirectTo)
                 window.location.replace(redirectTo)             // better UX than 'window.location.href'...
             }
         }
