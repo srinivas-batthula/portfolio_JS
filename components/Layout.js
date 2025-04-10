@@ -11,14 +11,20 @@ import FunToast from './ToastFun'
 
 
 const Layout = ({ children }) => {
-                                //Redirect to 'vercel-deployment' if the current user is on 'github-pages'...
+                            //Redirect to 'vercel-deployment' if the current user is on 'github-pages'...
     useEffect(() => {
         if (typeof window !== 'undefined') {
             const currentHost = window.location.hostname        // like 'srinivas-batthula.github.io/portfolio'...
             const correctHost = 'portfolio-phi-three-63.vercel.app'
 
+                            // To extract only '/about' from '/portfolio/about'...
+            function extractLastSegment(path) {
+                const parts = path.split('/').filter(Boolean);
+                return parts.length > 1 ? '/' + parts.pop() : '/';
+            }
+
             if (currentHost !== correctHost) {
-                const currentPath = window.location.pathname /* like '/about'... */ + window.location.search /* like ?q=123 */ + window.location.hash /* like #about */
+                const currentPath = extractLastSegment(window.location.pathname) + window.location.search /* like ?q=123 */ + window.location.hash /* like #about */
 
                 const redirectTo = `https://${correctHost}${currentPath}`
                 window.location.replace(redirectTo)             // better UX than 'window.location.href'...
@@ -27,23 +33,23 @@ const Layout = ({ children }) => {
     }, [])
 
 
-return (
-    <div className={styles.layoutDiv}>
-        <ParticlesBackground />
+    return (
+        <div className={styles.layoutDiv}>
+            <ParticlesBackground />
 
-        <div style={{ position: "relative" }}>
-            <NavbarResponsive />
+            <div style={{ position: "relative" }}>
+                <NavbarResponsive />
 
-            <div className={styles.layoutDiv2}>
-                <main>{children}</main>
+                <div className={styles.layoutDiv2}>
+                    <main>{children}</main>
+                </div>
+
+                <Footer />
             </div>
 
-            <Footer />
+            <FunToast />
         </div>
-
-        <FunToast />
-    </div>
-)
+    )
 }
 
 export default Layout;
