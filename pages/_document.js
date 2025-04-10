@@ -41,7 +41,7 @@ class MyDocument extends Document {
                     <script type="application/ld+json">
                     {`
                         {
-                            "@context": "http://schema.org",
+                            "@context": "https://schema.org",
                             "@type": "Person",
                             "name": "Srinivas Batthula",
                             "jobTitle": "MERN Stack Developer, Full Stack Developer, Backend Developer, SDE, Software Developer",
