@@ -1,4 +1,5 @@
 // src/pages/_document.js
+
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
@@ -38,7 +39,7 @@ class MyDocument extends Document {
 
                     {/* Structured Data (JSON-LD)... */}
                     <script type="application/ld+json">
-                    {
+                    {`
                         {
                             "@context": "http://schema.org",
                             "@type": "Person",
@@ -46,21 +47,22 @@ class MyDocument extends Document {
                             "jobTitle": "MERN Stack Developer, Full Stack Developer, Backend Developer, SDE, Software Developer",
                             "url": "https://portfolio-phi-three-63.vercel.app",
                             "sameAs": [
-                                "https://www.linkedin.com/in/srinivas-batthula/",
-                                "https://github.com/srinivas-batthula/",
-                                "https://leetcode.com/u/srinivas-batthula/",
-                                "https://www.instagram.com/srinivas_abhi8/",
-                                "https://x.com/Abhi07082005/",
+                            "https://www.linkedin.com/in/srinivas-batthula/",
+                            "https://github.com/srinivas-batthula/",
+                            "https://leetcode.com/u/srinivas-batthula/",
+                            "https://www.instagram.com/srinivas_abhi8/",
+                            "https://x.com/Abhi07082005/"
                             ],
                             "worksFor": {
-                                "@type": "Sreenidhi Institute of Science and Technology, Hyderabad",
-                                "name": "Student"
+                                "@type": "Organization",
+                            "name": "Sreenidhi Institute of Science and Technology, Hyderabad"
                             },
                             "skills": "MERN Stack, Full Stack, React, NextJs, Node.js, Express.js, FastAPI, MongoDB, SQL, JavaScript, Java, Python",
                             "image": "https://portfolio-phi-three-63.vercel.app/icon.png"
                         }
-                    }
+                    `}
                     </script>
+
 
                 </Head>
                 <body>
