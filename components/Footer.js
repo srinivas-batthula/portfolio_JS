@@ -13,13 +13,13 @@ export default function Footer() {
                     Copyright © 2025 BSP
                 </div>
                 <div className={styles.footerChild3}>
-                    <a href="https://www.linkedin.com/in/srinivas-batthula/" target="_blank" style={{fontSize:'1.5rem', color:'skyblue', marginRight:'1rem'}}>
+                    <a href="https://www.linkedin.com/in/srinivas-batthula/" title="srinivas batthula linkedin socials" target="_blank" style={{fontSize:'1.5rem', color:'skyblue', marginRight:'1rem'}}>
                         <i className="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/srinivas-batthula/" target="_blank" style={{fontSize:'1.5rem', color:'white', marginRight:'1rem'}}>
+                    <a href="https://github.com/srinivas-batthula/" title="srinivas batthula github socials" target="_blank" style={{fontSize:'1.5rem', color:'white', marginRight:'1rem'}}>
                         <i className="fa-brands fa-github"></i>
                     </a>
-                    <a href="https://www.instagram.com/srinivas_abhi8/" target="_blank" style={{fontSize:'1.5rem', color:'red', marginRight:'1rem'}}>
+                    <a href="https://www.instagram.com/srinivas_abhi8/" title="srinivas batthula x twitter socials" target="_blank" style={{fontSize:'1.5rem', color:'red', marginRight:'1rem'}}>
                         <i className="fa-brands fa-instagram"></i>
                     </a>
                     {/* <a href="https://leetcode.com/u/WRBRSO7OH6/" target="_blank" style={{width:'1.8rem', height:'1.8rem', fontSize:'1.8rem', color:'yellow', marginRight:'1rem'}}>

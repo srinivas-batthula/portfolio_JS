@@ -7,6 +7,7 @@ class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
+                    <title>Srinivas Batthula | Portfolio</title>
                     {/* Custom fonts, meta tags, or external scripts go here */}
                     <meta name='title' content='Srinivas Batthula | Portfolio' />
                     <meta name='author' content='Srinivas Batthula' />

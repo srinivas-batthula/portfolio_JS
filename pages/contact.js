@@ -6,6 +6,7 @@ export default function Contact() {
     return (
         <>
             <Head>
+                <title>Contact | Srinivas Batthula</title>
                 {/* Custom fonts, meta tags, or external scripts go here */}
                 <meta name='title' content='Contact | Srinivas Batthula' />
                 <meta name='author' content='Srinivas Batthula' />

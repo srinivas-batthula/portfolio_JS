@@ -6,6 +6,7 @@ export default function About(){
     return(
         <>
             <Head>
+                <title>About | Srinivas Batthula</title>
                 {/* Custom fonts, meta tags, or external scripts go here */}
                 <meta name='title' content='About | Srinivas Batthula' />
                 <meta name='author' content='Srinivas Batthula' />

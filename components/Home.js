@@ -177,6 +177,7 @@ export default function Home() {
                             className={styles.linkedinButton}
                             id={styles.linkBtn}
                             href="https://www.linkedin.com/in/srinivas-batthula/"
+                            title="srinivas batthula linkedin socials"
                             target="_blank"
                         >
                             <svg
@@ -195,6 +196,7 @@ export default function Home() {
                             className={styles.githubButton}
                             id={styles.linkBtn}
                             href="https://github.com/srinivas-batthula/"
+                            title="srinivas batthula github socials"
                             target="_blank"
                         >
                             <svg
@@ -213,6 +215,7 @@ export default function Home() {
                             className={styles.leetcodeButton}
                             id={styles.linkBtn}
                             href="https://leetcode.com/u/srinivas-batthula/"
+                            title="srinivas batthula leetcode socials"
                             target="_blank"
                         >
                             <svg
@@ -232,6 +235,7 @@ export default function Home() {
                             className={styles.instagramButton}
                             id={styles.linkBtn}
                             href="https://www.instagram.com/srinivas_abhi8/"
+                            title="srinivas batthula instagram socials"
                             target="_blank"
                         >
                             <svg
@@ -251,6 +255,7 @@ export default function Home() {
                             className={styles.twitterButton}
                             id={styles.linkBtn}
                             href="https://x.com/Abhi07082005/"
+                            title="srinivas batthula x twitter socials"
                             target="_blank"
                         >
                             <svg
@@ -270,6 +275,7 @@ export default function Home() {
                             className={styles.emailButton}
                             id={styles.linkBtn}
                             href="mailto:srinivasbatthula05.official@gmail.com"
+                            title="srinivas batthula email socials"
                             target="_blank"
                         >
                             <svg

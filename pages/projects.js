@@ -6,6 +6,7 @@ export default function Projects() {
     return (
         <>
             <Head>
+                <title>Projects | Srinivas Batthula</title>
                 {/* Custom fonts, meta tags, or external scripts go here */}
                 <meta name='title' content='Projects | Srinivas Batthula' />
                 <meta name='author' content='Srinivas Batthula' />

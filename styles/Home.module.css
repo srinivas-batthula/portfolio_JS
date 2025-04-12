@@ -3,16 +3,11 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    /* position: absolute; */
-    /* background: linear-gradient(180deg, #21082d, #21082d, #21082d); */
     background: linear-gradient(180deg, #160025, #160025, #160025);
-    /* background-image: url('./../public/utils/background.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* backdrop-filter: blur(8%); */
-    /* animation: opacity 1s ease-in-out; */
     opacity: 1;
     color: white;
     text-align: center;
@@ -191,7 +186,6 @@
     width: 0;
     white-space: nowrap;
     overflow: hidden;
-    /* border-right: 0.15rem solid rgb(241, 91, 241); */
     opacity: 0.95;
     animation: typing 6s steps(43) 0s 1, blink 0.6s ease-in-out infinite;
     font-size: 1.8rem;
@@ -242,19 +236,6 @@
 }
 
 @media screen and (max-width:800px) {
-    /* .mainContent{
-        font-size: 1.7rem;
-    } */
-    /* .hand{
-        font-size: 1.5rem;
-    }
-    .sec{
-        font-size: 1.9rem;
-    }
-    .secSpan{
-        font-size: 1.9rem;
-        font-weight: 500;
-    } */
     .secMain{
         top: 9%;
     }

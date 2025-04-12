@@ -122,13 +122,6 @@
     text-rendering: optimizeLegibility;
     letter-spacing: 0.06rem;
     font-family: 'Roboto', Arial, sans-serif;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem; */
-    /* A clean, modern font */
 }
 
 @media screen and (max-width: 508px) {
@@ -144,12 +137,6 @@
 }
 
 @media screen and (max-width: 468px) {
-
-    /* .card {
-        width: 23rem;
-        height: 37.3rem;
-    } */
-
     .img2,
     .img3,
     .imgI {
@@ -184,14 +171,6 @@
     margin-bottom: 0rem;
     margin-top: 1rem;
 }
-
-/* .btn2 {
-    padding: 0.4rem;
-    background-color: rgb(48, 100, 231);
-    color: white;
-    border-radius: 8%;
-    box-shadow: 0 0 0.6rem rgb(48, 100, 231);
-} */
 
 /* Dropdown Button */
 .dropdown {
