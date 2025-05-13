@@ -1,4 +1,3 @@
-
 /* Navbar Styles */
 .main {
     display: flex;
@@ -20,7 +19,8 @@
     background-color: transparent;
     backdrop-filter: blur(1rem);
     margin-top: 0;
-    margin-bottom: 1.6rem; /* Gap between navbar and content */
+    margin-bottom: 1.6rem;
+    /* Gap between navbar and content */
     transition-duration: 0.25s;
     transition-property: all;
     display: flex;
@@ -30,7 +30,7 @@
     z-index: 1040;
 }
 
-.navbar:hover{
+.navbar:hover {
     box-shadow: 0 0 0.2rem violet;
 }
 
@@ -50,24 +50,108 @@
     color: violet;
 }
 
-.logo:hover{
+.logo:hover {
     cursor: pointer;
-    
+
 }
+
+/* Resume Download btn */
+.custom-btn {
+    width: 5.3rem;
+    height: 2.1rem;
+    border-radius: 5px;
+    text-align: center;
+    background: transparent;
+    transition: all 0.15s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.resume-download {
+    margin-bottom: 0.25rem;
+    padding: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: auto;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 540;
+    
+    border: none;
+    color: #fff;
+    overflow: hidden;
+}
+
+.resume-download:hover {
+    background: rgb(223, 106, 223);
+    background: linear-gradient(0deg, rgb(242, 113, 242) 0%, rgb(243, 144, 243) 100%);
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.15s ease;
+}
+
+.resume-download:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3.5s ease-in-out infinite;
+}
+
+.resume-download:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+@keyframes shiny-btn1 {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}
+
 
 /* Menu Icon */
 .menu-icon {
-    margin-right: 0.6rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     width: 2rem;
     height: 2rem;
     font-weight: bolder;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.35rem;
-    cursor: pointer;
     position: relative;
     z-index: 1100;
+    gap: 0.35rem;
+    cursor: pointer;
     display: none;
 }
 
@@ -91,7 +175,6 @@
 
 .nav-links li {
     text-decoration: none;
-    margin-left: 1.2rem;
 }
 
 .spans {
@@ -150,9 +233,14 @@
 
 
 /* Mobile Navigation */
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1030px) {
     .menu-icon {
         display: flex;
+    }
+
+    .resume-download {
+        margin-right: 1.5rem;
+        margin-bottom: -0.15rem;
     }
 
     .nav-links {
@@ -212,6 +300,7 @@
     .menu-icon .bar {
         width: 2rem;
     }
+
     .menu-icon.active .bar {
         width: 2rem;
     }

@@ -23,6 +23,7 @@ class MyDocument extends Document {
                     {/*  Icon...  */}
                     {/* https://srinivas-batthula.github.io/portfolio */}
                     <link rel="icon" href="/icon.png" type="image/png" />
+                    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
 
                     {/* Google Search Console Meta tags... */}
                     <meta name="google-site-verification" content="TbhDgBAon0JlcRZGcPav0DB8188B7S1doUU7vfQy0qY" />  {/* For Vercel deployment... */}

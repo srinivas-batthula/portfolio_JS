@@ -29,6 +29,8 @@ const NavbarResponsive = () => {
 
                     <div style={{marginLeft: '1rem'}} onClick={() => router.push('/')} className="logo">Srinivas.</div>
 
+                    <a href='/utils/Srinivas_Resume-2.pdf' target='_blank' download={true} className='custom-btn resume-download'>Resume</a>
+
                     <div onClick={() => toggleOffcanvas(!showOffcanvas)} className="menu-icon" id="menuIcon">
                         <div className="bar"></div>
                         <div className="bar"></div>
