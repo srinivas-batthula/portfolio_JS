@@ -29,7 +29,7 @@ const NavbarResponsive = () => {
 
                     <div style={{marginLeft: '1rem'}} onClick={() => router.push('/')} className="logo">Srinivas.</div>
 
-                    <a href='/utils/Srinivas_Resume-2.pdf' target='_blank' download={true} className='custom-btn resume-download'>Resume <i class="fa-solid fa-download" style={{textAlign:'center', fontSize:'0.8rem', paddingTop:'0.6rem', marginLeft:'0.1rem'}}></i> </a>
+                    <a href='https://drive.google.com/uc?export=download&id=1QZhlkZRVyVi1B10Q1RtEsUxgCMZQmST-' target='_blank' download={true} className='custom-btn resume-download'>Resume <i class="fa-solid fa-download" style={{textAlign:'center', fontSize:'0.8rem', paddingTop:'0.6rem', marginLeft:'0.1rem'}}></i> </a>
 
                     <div onClick={() => toggleOffcanvas(!showOffcanvas)} className="menu-icon" id="menuIcon">
                         <div className="bar"></div>
