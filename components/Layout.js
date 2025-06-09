@@ -15,7 +15,8 @@ const Layout = ({ children }) => {
     useEffect(() => {
         if (typeof window !== 'undefined') {
             const currentHost = window.location.hostname        // like 'srinivas-batthula.github.io/portfolio'...
-            const correctHost = 'portfolio-phi-three-63.vercel.app'
+            const correctHost = 'srinivas-batthula.vercel.app'
+            console.log(currentHost);
 
                             // To extract only '/about' from '/portfolio/about'...
             function extractLastSegment(path) {
@@ -32,20 +33,6 @@ const Layout = ({ children }) => {
             }
         }
     }, [])
-
-    // Register the service worker...
-    useEffect(() => {
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('https://portfolio-phi-three-63.vercel.app' + '/service-worker.js', { scope: '/' })
-                .then((registration) => {
-                    console.log('Service Worker registered with scope: ', registration.scope)
-                })
-                .catch((error) => {
-                    console.error('Service Worker Registration failed: ', error)
-                })
-        }
-    }, [])
-
 
     return (
         <div className={styles.layoutDiv}>

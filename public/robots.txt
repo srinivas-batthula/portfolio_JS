@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://portfolio-phi-three-63.vercel.app/sitemap.xml
+Sitemap: https://srinivas-batthula.vercel.app/sitemap.xml
