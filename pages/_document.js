@@ -7,12 +7,12 @@ class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    <title>Srinivas Batthula | Portfolio</title>
+                    {/* <title>Srinivas Batthula | Portfolio</title> */}
                     {/* Custom fonts, meta tags, or external scripts go here */}
                     <meta name='title' content='Srinivas Batthula | Portfolio' />
                     <meta name='author' content='Srinivas Batthula' />
-                    <meta name="description" content="srinivas batthula portfolio" />
-                    <meta name="keywords" content="Srinivas Batthula, srinivas-batthula, btech, portfolio, Vercel, MERN stack developer, React developer, Next.js, MongoDB, Express.js, Node.js, full-stack developer, JavaScript, web development, front-end development, back-end development, software engineer, programming, java, python, seo, rest apis" />
+                    <meta name="description" content="srinivas batthula portfolio website" />
+                    <meta name="keywords" content="Srinivas Batthula, srinivas-batthula, btech, portfolio, Vercel, MERN stack developer, React.js, Next.js, MongoDB, Express.js, Node.js, full-stack developer, JavaScript, web development, front-end development, back-end development, software engineer, programming, java, python, seo, rest apis, pwa, progressive web apps" />
 
                     {/* Social Sharing... */}
                     <meta property='og:title' content='Srinivas Batthula | Fullstack Developer Portfolio' />
@@ -62,7 +62,7 @@ class MyDocument extends Document {
                                     "name": "Sreenidhi Institute of Science and Technology, Hyderabad"
                                 },
                                 "skills":
-                                    "MERN Stack, Full Stack, React, NextJs, Node.js, Express.js, FastAPI, MongoDB, SQL, JavaScript, Java, Python",
+                                    "MERN Stack, Full Stack, React, NextJs, Node.js, Express.js, FastAPI, MongoDB, SQL, JavaScript, Java, Python, pwa, progressive web apps",
                                 "image": "https://srinivas-batthula.vercel.app/icon.png"
                             })
                         }}

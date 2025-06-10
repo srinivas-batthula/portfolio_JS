@@ -41,9 +41,9 @@ export default function AboutPage() {
                                 </span>
                             </div>
                             <div className={styles.sec4} style={{ color: 'rgb(213, 114, 143)' }}>
-                                <span style={{ fontWeight:'bold' }}>" Code with purpose, learn with passion, and grow with consistency. "</span>
+                                <span style={{ fontWeight: 'bold' }}>" Code with purpose, learn with passion, and grow with consistency. "</span>
                                 <br />
-                                <span style={{ marginLeft: '50%', fontStyle:'italic' }}> ~ Srinivas.</span>
+                                <span style={{ marginLeft: '50%', fontStyle: 'italic' }}> ~ Srinivas.</span>
                             </div>
                         </div>
                     </div>
@@ -82,18 +82,22 @@ export default function AboutPage() {
                             <i className="devicon-express-original"></i></span>
                         </div>
 
+                        <div title="socketio websockets" className={styles.flex2}><span className={styles.i}><i className="devicon-socketio-original-wordmark"></i></span></div>
+
+                        <div title="playwright webscraping" className={styles.flex2}><span className={styles.i}><i className="devicon-playwright-plain"></i></span></div>
+
+                        <div title="swagger docs" className={styles.flex2}><span className={styles.i}><i class="devicon-swagger-plain-wordmark"></i></span></div>
+
                         <div title="json" className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-json-plain"></i></span>
                         </div>
 
                         <div title="reactjs" className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-react"></i></span></div>
 
-                        <div title="redux/toolkit" className={styles.flex2}><span className={styles.i}><i className="devicon-redux-original"></i></span></div>
-
                         <div title="nextjs" className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-nextjs-original-wordmark"></i></span>
                         </div>
-                        
+
                         <div title="git/version-control" className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-git-plain"></i></span>
                         </div>

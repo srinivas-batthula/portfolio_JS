@@ -45,9 +45,9 @@ export default function Home() {
                                 <span className={styles.hand}>👋🏻</span>
                             </div>
                         </div>
-                        <div className={styles.sec}>
+                        <h1 className={styles.sec}>
                             I'M <span className={styles.secSpan}>SRINIVAS BATTHULA</span>
-                        </div>
+                        </h1>
                         <div className={styles.third} style={{ fontWeight: "bold" }}>
                             <TypingEffect />
                         </div>
@@ -76,7 +76,7 @@ export default function Home() {
                             MYSELF
                         </div>
                         <div className={styles.div3}>
-                            <div>
+                            <p>
                                 Hello and welcome! 👋 I’m a dedicated and enthusiastic developer with a deep passion for programming and continuous learning. 💻 What began as curiosity has turned into a rewarding journey of creating meaningful digital solutions.
                                 <br />
                                 <br />
@@ -157,7 +157,7 @@ export default function Home() {
                                 <br />
                                 <br />
                                 If you’re in search of a developer who combines technical expertise with a forward-thinking mindset, let’s connect and build something exceptional together. 🌟
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
