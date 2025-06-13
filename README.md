@@ -1,7 +1,7 @@
 
 # Personal Portfolio
 
-Hello, Welcome to my Portfolio project, designed to showcase my skills, projects, etc.
+Hello all, Welcome to my Portfolio project, designed to showcase my skills, projects, etc.
 
 
 ## Features
@@ -34,7 +34,7 @@ https://srinivas-batthula.github.io/portfolio
 
 ## Tech Stack
 
-**Client:** React, NextJs, React-Bootsrap
+**Client:**  NextJs, React.Js, React-Bootsrap, TailwindCSS
 
 
 ![Logo](https://github.com/srinivas-batthula/portfolio/blob/main/public/icon.png)

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import ContactPage from './../components/Contact';
-
+import {Schema} from '@/lib/schema.bundle'
 
 export default function Contact() {
     return (
@@ -17,11 +17,19 @@ export default function Contact() {
                 <meta property='og:title' content='Srinivas Batthula | Fullstack Developer Portfolio' />
                 <meta property="og:type" content="website" />
                 <meta property='og:description' content='Explore my recent Works and Projects on GitHub' />
-                <meta property='og:url' content='https://portfolio-phi-three-63.vercel.app' />
-                
+                <meta property='og:url' content='https://srinivas-batthula.vercel.app' />
+
                 {/* SEO... */}
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://portfolio-phi-three-63.vercel.app" />
+                <link rel="canonical" href="https://srinivas-batthula.vercel.app" />
+
+                {/* Structured Data (JSON-LD)... */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(Schema)
+                    }}
+                ></script>
             </Head>
             <main>
                 <ContactPage />
