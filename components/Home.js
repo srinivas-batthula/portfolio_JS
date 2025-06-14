@@ -179,6 +179,7 @@ export default function Home() {
                             href="https://www.linkedin.com/in/srinivas-batthula/"
                             title="srinivas batthula linkedin socials"
                             target="_blank"
+                            rel="me"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -198,6 +199,7 @@ export default function Home() {
                             href="https://github.com/srinivas-batthula/"
                             title="srinivas batthula github socials"
                             target="_blank"
+                            rel="me"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -217,6 +219,7 @@ export default function Home() {
                             href="https://leetcode.com/u/srinivas-batthula/"
                             title="srinivas batthula leetcode socials"
                             target="_blank"
+                            rel="me"
                         >
                             <svg
                                 role="img"
@@ -237,6 +240,7 @@ export default function Home() {
                             href="https://www.instagram.com/srinivas_abhi8/"
                             title="srinivas batthula instagram socials"
                             target="_blank"
+                            rel="me"
                         >
                             <svg
                                 role="img"
@@ -257,6 +261,7 @@ export default function Home() {
                             href="https://x.com/Abhi07082005/"
                             title="srinivas batthula x twitter socials"
                             target="_blank"
+                            rel="me"
                         >
                             <svg
                                 role="img"
@@ -277,6 +282,7 @@ export default function Home() {
                             href="mailto:srinivasbatthula05.official@gmail.com"
                             title="srinivas batthula email socials"
                             target="_blank"
+                            rel="me"
                         >
                             <svg
                                 role="img"

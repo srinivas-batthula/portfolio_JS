@@ -11,12 +11,12 @@ export default function FunToast() {
     useEffect(() => {
         const notify = () =>
             toast((t) => (
-                <div className="p-2 text-sm">
-                    <p className="font-medium">Hey there! Want to see something cool/fun?</p>
+                <div className="p-2 text-sm top-10">
+                    <p className="font-medium mt-2">Hey there! Want to see something <strong>cool/fun?</strong></p>
 
                     {/* Link Button... */}
                     <button
-                        className="mt-2 px-3 py-1 bg-purple-600 hover:bg-purple-800 text-white rounded"
+                        className="px-3 py-1 bg-purple-600 hover:bg-purple-800 text-white rounded"
                         onClick={() => {
                             toast.dismiss(t.id); // close toast
                             router.push("/fun");
@@ -27,17 +27,17 @@ export default function FunToast() {
 
                     {/* Close Button (x)... */}
                     <button
-                        className="fixed top-0 right-5 mb-2 text-xl font-bold text-gray-600"
+                        className="fixed top-0 right-5 mb-2 text-2xl font-bold text-gray-600"
                         onClick={() => toast.dismiss(t.id)} // dismiss the toast
                     >
                         &times;
                     </button>
                 </div>
             ), {
-                duration: 20000,
+                duration: 30000,
             });
 
-        setTimeout(notify, 1500); // show after 2 seconds
+        setTimeout(notify, 1500); // show after 1.5 seconds
     }, []);
 
     return null;

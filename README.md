@@ -6,16 +6,18 @@ Hello all, Welcome to my Portfolio project, designed to showcase my skills, proj
 
 ## Features
 
-- Serverless E-mail sending service
-- Responsive and accessible from all devices
-- About section consisting my skills, tools, Certifications
-- Projects section where the recent projects are directly fetched from GitHub via API
-- Cross platform
+- **Serverless Email Integration:** Seamlessly send emails without managing a backend.
+- **Dynamic Project Showcase:** Automatically fetch and display your latest GitHub repositories using the GitHub API.
+- **Geo-aware User Experience:** Detects user location and time zone via IP address on the /fun page.
+- **Fully Responsive Design:** Optimized for all screen sizes and devices to ensure a smooth experience everywhere.
+- **Cross-Platform Compatibility:** Works consistently across all major browsers and operating systems.
 
 
 ## Live Demo
 
 https://srinivas-batthula.github.io/portfolio
+
+
 ## API Reference
 
 #### Get Home page
@@ -31,18 +33,16 @@ https://srinivas-batthula.github.io/portfolio
 ```
 
 
-
 ## Tech Stack
 
 **Client:**  NextJs, React.Js, React-Bootsrap, TailwindCSS
 
 
-![Logo](https://github.com/srinivas-batthula/portfolio/blob/main/public/icon.png)
+## Logo
 
-[@Srinivas Batthula](https://github.com/srinivas-batthula)
+![Logo](https://github.com/srinivas-batthula/portfolio/blob/main/public/icon.png)
 
 
 ## Authors
 
-- [@SrinivasB](https://www.github.com/srinivas-batthula)
-
+- [@srinivas-batthula](https://www.github.com/srinivas-batthula)
