@@ -15,7 +15,7 @@
     scroll-behavior: smooth;
 }
 
-.main{
+.main {
     margin-top: 4.2rem;
     overflow: hidden;
 }
@@ -71,7 +71,8 @@
         grid-template-columns: repeat(2, 1fr);
         /* 2 columns for medium screens */
     }
-    .subDiv{
+
+    .subDiv {
         width: 72%;
         height: 68vh;
     }
@@ -83,14 +84,16 @@
         /* 1 columns for small screens */
         margin-top: 16.2rem;
     }
-    .subDiv{
+
+    .subDiv {
         width: 85%;
         height: 70vh;
         background-position: center;
         margin-top: 11rem;
         margin-bottom: 2.5rem;
     }
-    .sec{
+
+    .sec {
         font-size: 1.6rem;
     }
 }
@@ -100,7 +103,8 @@
         grid-template-columns: 1fr;
         /* 1 column for very small screens */
     }
-    .subDiv{
+
+    .subDiv {
         width: 85%;
         height: 70vh;
         background-position: center;
@@ -108,10 +112,11 @@
 }
 
 @media (max-width: 500px) {
-    .grid_container{
+    .grid_container {
         margin-top: 11rem;
     }
-    #g1{
+
+    #g1 {
         margin-bottom: 3rem;
     }
 }
@@ -157,21 +162,31 @@
 }
 
 @media screen and (max-width: 500px) {
-    .sec{
+    .sec {
         font-size: 2rem;
-    };
-    .secMain{
+    }
+
+    ;
+
+    .secMain {
         margin-left: 0.5rem;
-    };
+    }
+
+    ;
 }
 
 @media screen and (max-width: 410px) {
-    .sec{
+    .sec {
         font-size: 1.7rem;
-    };
-    .secMain{
+    }
+
+    ;
+
+    .secMain {
         margin-left: 0.2rem;
-    };
+    }
+
+    ;
 }
 
 .third {
@@ -179,7 +194,7 @@
     font-weight: lighter;
     margin-top: 3rem;
     font-style: normal;
-    font-family:  'Arial Narrow';
+    font-family: 'Arial Narrow';
 }
 
 .typing_text {
@@ -191,7 +206,7 @@
     font-size: 1.8rem;
 }
 
-.div1{
+.div1 {
     color: white;
     width: 75%;
     vertical-align: middle;
@@ -202,24 +217,24 @@
     margin-bottom: 4rem;
 }
 
-.div2{
+.div2 {
     font-size: 2.4rem;
     font-weight: 550;
     margin-bottom: 4rem;
 }
 
-.div3{
+.div3 {
     font-size: 1.4rem;
     font-weight: 400;
     letter-spacing: 0.1rem;
 }
 
-.d2{
+.d2 {
     font-size: 2.1rem;
     font-weight: 500;
 }
 
-.d3{
+.d3 {
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -236,34 +251,39 @@
 }
 
 @media screen and (max-width:800px) {
-    .secMain{
+    .secMain {
         top: 9%;
     }
-    .subDiv{
+
+    .subDiv {
         margin-top: 9rem;
         margin-bottom: 2rem;
     }
-    .third{
+
+    .third {
         margin-top: 1rem;
     }
+
     /* .typing_text{
         font-size: 1.8rem;
     } */
-    .div2{
+    .div2 {
         font-size: 2rem;
         font-weight: 550;
     }
-    .div3{
+
+    .div3 {
         font-size: 1.2rem;
     }
-    .d2{
+
+    .d2 {
         font-size: 1.6rem;
         font-weight: 600;
     }
 }
 
 @media screen and (max-width:500px) {
-    .div1{
+    .div1 {
         width: 94%;
     }
 }
@@ -339,7 +359,7 @@
     }
 }
 
-.footer{
+.footer {
     width: 100%;
     margin-top: 3rem;
     padding: 0.4rem;
@@ -354,18 +374,18 @@
     gap: 15%;
 }
 
-@media screen and (max-width: 980px){
-    .footer{
+@media screen and (max-width: 980px) {
+    .footer {
         flex-direction: column;
         gap: 0%;
     }
 }
 
-.d1{
+.d1 {
     margin-bottom: 4rem;
 }
 
-.d4{
+.d4 {
     width: 100%;
     margin-top: 0.4rem;
     padding: 0.4rem;
@@ -379,37 +399,45 @@
 }
 
 @media screen and (max-width:450px) {
-    .subDiv{
+    .subDiv {
         width: 95%;
     }
-    .grid_item{
+
+    .grid_item {
         margin-top: 2.6rem;
     }
-    #g2{
+
+    #g2 {
         margin-top: 0;
     }
-    #g1{
+
+    #g1 {
         margin-bottom: 0;
     }
-    .third{
+
+    .third {
         margin-top: 2.1rem;
     }
-    .div2{
+
+    .div2 {
         font-size: 1.4rem;
         font-weight: 550;
     }
-    .div3{
+
+    .div3 {
         font-size: 1.1rem;
     }
-    .d4{
+
+    .d4 {
         flex-wrap: wrap;
     }
-    #linkBtn{
+
+    #linkBtn {
         margin-bottom: 1rem;
     }
 }
 
-#linkBtn{
+#linkBtn {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -427,19 +455,27 @@
 .linkedinButton {
     color: #109bff;
 }
+
 .githubButton {
     color: white;
 }
+
 .instagramButton {
     color: #fe1044;
 }
+
 .leetcodeButton {
     color: #fea013;
 }
+
 .twitterButton {
     color: white;
 }
+
 .emailButton {
     color: #b2221e;
 }
 
+.whatsappButton {
+    color: #25D366;
+}

@@ -193,6 +193,10 @@
     color: #b2221e;
 }
 
+.whatsappButton {
+    color: #25D366;
+}
+
 
 @media screen and (max-width:410px) {
     .links{

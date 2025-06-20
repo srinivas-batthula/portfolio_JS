@@ -14,9 +14,9 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'To, subject, and text fields are required.' });
     }
 
-    const EMAIL_USER = process.env.EMAIL_USER;
-    const EMAIL_USER2 = process.env.EMAIL_USER2;
-
+    const EMAIL_USER = process.env.NEXT_PUBLIC_EMAIL_USER;
+    const EMAIL_USER2 = process.env.NEXT_PUBLIC_EMAIL_USER2;
+NEXT_PUBLIC_
     // First email: To the user thanking them for contacting
     const firstEmailSubject = 'An E-mail from ~Srinivas Batthula';
     // const firstEmailText = `Thank you '${name}' for contacting me.\nYour response has been recorded.\n\t~Srinivas Batthula`;
@@ -79,8 +79,8 @@ export default async function handler(req, res) {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS,
+                user: process.env.NEXT_PUBLIC_EMAIL_USER,
+                pass: process.env.NEXT_PUBLIC_EMAIL_PASS,
             },
         })
 
