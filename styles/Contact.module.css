@@ -198,7 +198,7 @@
 }
 
 
-@media screen and (max-width:410px) {
+@media screen and (max-width:450px) {
     .links{
         flex-wrap: wrap;
     }
