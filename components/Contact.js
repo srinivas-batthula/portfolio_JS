@@ -67,12 +67,13 @@ export default function ContactPage() {
             console.log("submited");
             // icon.className = "fa-solid fa-spinner text-success";
             try {
-                const response = await fetch('/api/sendEmail', {
+                const response = await fetch('https://eo95al15k26gtw1.m.pipedream.net', {                //    /api/sendEmail ...
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
+                        'User-Agent': 'pipedream/1'
                     },
-                    body: JSON.stringify({ "name": val.name, "to": val.email, "txt": val.msg }),
+                    body: JSON.stringify({ "name": val.name, "email": val.email, "message": val.msg }),        // { "name": val.name, "to": val.email, "txt": val.msg } ...
                 });
 
                 const result = await response.json();
@@ -101,7 +102,7 @@ export default function ContactPage() {
                         theme: "dark",
                         transition: Bounce
                     })
-                    setErr(result.error || 'Failed to send email.');
+                    setErr('Failed to send email.');
                 }
             } catch (err) {
                 // Show error toast if input is empty
@@ -115,7 +116,7 @@ export default function ContactPage() {
                     theme: "dark",
                     transition: Bounce,
                 })
-                setErr('Error: ' + err.message);
+                setErr('Error!');
             } finally {
                 val.email = "";
                 val.name = "";
