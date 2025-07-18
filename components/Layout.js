@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
                 const currentPath = extractLastSegment(window.location.pathname) + window.location.search /* like ?q=123 */ + window.location.hash /* like #about */
 
                 const redirectTo = `https://${correctHost}${currentPath}`
-                // console.log(redirectTo)
+                // console.log("Redirecting to :-  ",redirectTo)
                 window.location.replace(redirectTo)             // better UX than 'window.location.href'...
             }
         }

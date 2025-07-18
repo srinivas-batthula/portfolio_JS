@@ -67,7 +67,7 @@ export default function ContactPage() {
             console.log("submited");
             // icon.className = "fa-solid fa-spinner text-success";
             try {
-                const response = await fetch('https://eo95al15k26gtw1.m.pipedream.net', {                //    /api/sendEmail ...
+                const response = await fetch('https://eo95al15k26gtw1.m.pipedream.net', {                //    n8n-automation endpoint ...
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

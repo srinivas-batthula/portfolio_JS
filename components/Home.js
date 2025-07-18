@@ -151,7 +151,7 @@ export default function Home() {
                                         fontWeight: "bold",
                                     }}
                                 >
-                                    React.js and Next.js
+                                    Express and Next.js
                                 </span>
                                 . I’m passionate about building fast, responsive, and user-friendly applications that deliver real value.
                                 <br />
