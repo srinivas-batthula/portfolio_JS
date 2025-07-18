@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
 
                 const redirectTo = `https://${correctHost}${currentPath}`
                 // console.log("Redirecting to :-  ",redirectTo)
-                window.location.replace(redirectTo)             // better UX than 'window.location.href'...
+                // window.location.replace(redirectTo)             // better UX than 'window.location.href'...
             }
         }
         fetchDetails();
