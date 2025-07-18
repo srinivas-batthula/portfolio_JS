@@ -127,7 +127,7 @@ export default function ContactPage() {
             setTimeout(() => {
                 // You can implement further logic here after successful submission
                 router.push('/'); // This will redirect to / Home page
-            }, 2000)
+            }, 3000)
         } else {
             console.log("Not-submited");
             // Show error toast if input is empty

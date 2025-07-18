@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
 
+import React, { useEffect } from "react";
 import styles from "./../styles/Projects.module.css";
+import { useProjectsDataStore } from "@/store/useProjectsDataStore";
 
 
 function Card({ data }) {
@@ -32,7 +33,7 @@ function Card({ data }) {
                 {/* Use this Link to display Live-Demo link */}
                 {/* <button className={styles.btn2} style={{ marginLeft: '1rem' }}><a href={data.urlLive} target="_blank" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignContent: 'center' }}><i className="fa-solid fa-arrow-up-right-from-square" style={{ paddingTop: '0.2rem', marginRight: '0.3rem' }}></i><span>  Demo  </span></a></button> */}
                 {
-                    (data.title !== "ATM System") && <a href={data.urlLive} target="_blank" style={{ textDecoration: 'none' }}><button className={styles.animatedBtn}><i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '1rem' }}></i></button></a>
+                    (data.isLiveLink === "true") && <a href={data.urlLive} target="_blank" style={{ textDecoration: 'none' }}><button className={styles.animatedBtn}><i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '1rem' }}></i></button></a>
                 }
             </div>
         </div>
@@ -40,59 +41,26 @@ function Card({ data }) {
 }
 
 export default function ProjectsPage() {
-    const [data, setData] = useState([])
+    const data = useProjectsDataStore((s) => s.projects);
+    const fetchProjects = useProjectsDataStore((s) => s.fetchProjects);
 
-    useEffect(() => {
-        const Fetch = async () => {
-            try {
-                let r = await fetch('https://api.github.com/users/srinivas-batthula/repos', {
-                    method: 'GET',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                })
-                r = await r.json()
-
-                // Sort repositories by creation date (descending)
-                r.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-
-                const promises = r.map(async (item) => {
-                    try {
-                        let res = await fetch(`https://raw.githubusercontent.com/srinivas-batthula/${item.name}/main/metadata.json`, {
-                            method: 'GET',
-                        })
-                        if (res.status === 200) {
-                            res = await res.json()
-                            console.log(item.name)
-                            return res
-                        }
-                    } catch (error) {
-                        console.log(' ')
-                        // console.log(error);
-                    }
-                })
-
-                // Wait for all fetch requests to finish
-                const Data = await Promise.all(promises)
-                setTimeout(() => {
-                    setData(Data.filter(item => item !== undefined))     // Filter out any undefined results (in case of fetch errors)
-                }, 1000)
-
-            } catch (error) {
-                // console.log(error);
-                console.log(' ')
-                // setData([])
-            }
+    useEffect(()=>{
+        if(!data){
+            fetchProjects();
         }
-        Fetch()
-    }, [])
+        else if(data.length === 0){
+            console.log("No Projects to display!");
+        }
+    }, [data]);
 
-    // metadata.json.....
+
+    // metadata.json.....   { In your all `projects` to display them automatically! }
     //     {
     //         "imgUrl": "https://srinivas-batthula.github.io/portfolio/utils/todo_project.png",
     //         "title": "Task Manager",
     //         "des": "'Task Manager' is an innovative web app built with MERN stack and PWA features, designed to streamline task organization and productivity. The app features an intuitive UI, Notifications, Secure user-authentication and Offline functionality, ensuring accessibility on the go. Explore how it simplifies everyday planning, and feel free to reach out for any collaboration opportunities!",
     //         "isOneRepo": "false",
+    //         "isLiveLink": "true",
     //         "urlFront": "https://github.com/srinivas-batthula/todo",
     //         "urlBack": "https://github.com/srinivas-batthula/todo_backend",
     //         "urlLive": "https://srinivas-batthula.github.io/todo"
