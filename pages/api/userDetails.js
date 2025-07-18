@@ -14,7 +14,7 @@ export default async function handler(req, res) {
         console.error(err);
     }
     // Set Cache-Control header to prevent caching
-    // res.setHeader('Cache-Control', 'no-store, max-age=0')
+    res.setHeader('Cache-Control', 'no-store, max-age=0')
 
     return res.status(200).json({
         ip,
