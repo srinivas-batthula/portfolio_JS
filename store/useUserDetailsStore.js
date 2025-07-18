@@ -1,5 +1,8 @@
+// store/useUserDetailsStore
 "use client";
+
 import { create } from "zustand";
+
 
 export const useUserDetailsStore = create((set) => ({
     details: null,
