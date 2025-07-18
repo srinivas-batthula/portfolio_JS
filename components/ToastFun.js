@@ -55,7 +55,14 @@ export default function FunToast() {
                 </div>
             ), { duration: 40000 });
 
-            
+        if (details.city && details.country) {
+            console.log('User Details :-  ', details);
+            notify();
+        }
+    }, [details]);
+
+    
+    useEffect(() => {
         const userAgent = navigator.userAgent;
         let browser = "Unknown";
         let os = "Unknown";
@@ -90,14 +97,10 @@ export default function FunToast() {
                     city: data.city,
                     country: data.country,
                 });
-                console.log('User Details :-  ', details);
-                notify();
             })
             .catch((err) => {
                 console.error(err);
             });
-
-        // setTimeout(notify, 2000);
     }, []);
 
     return null;
