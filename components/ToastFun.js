@@ -51,6 +51,7 @@ export default function FunToast() {
                 </div>
             ), { duration: 40000 });
 
+            
         if (details && details.city && details.country && !hasShownToast) {
             setHasShownToast(true); // Prevent rerun
             console.log('User Details :-  ', details);

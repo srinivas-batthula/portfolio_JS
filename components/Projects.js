@@ -5,7 +5,6 @@ import styles from "./../styles/Projects.module.css";
 
 function Card({ data }) {
     return (
-        // <div >
         <div className={styles.card}>
             <div className={styles.img}>
                 {/* Copy 'imgI' & paste it for current img with the new img path/url... */}
@@ -37,7 +36,6 @@ function Card({ data }) {
                 }
             </div>
         </div>
-        // </div>
     )
 }
 

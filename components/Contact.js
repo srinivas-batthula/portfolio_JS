@@ -76,7 +76,6 @@ export default function ContactPage() {
                     body: JSON.stringify({ "name": val.name, "email": val.email, "message": val.msg }),        // { "name": val.name, "to": val.email, "txt": val.msg } ...
                 });
 
-                const result = await response.json();
                 if (response.ok) {
                     // Show success toast if form is submitted correctly
                     toast.success("Form submitted successfully!", {
@@ -105,6 +104,7 @@ export default function ContactPage() {
                     setErr('Failed to send email.');
                 }
             } catch (err) {
+                console.log('Error from /Contact',err);
                 // Show error toast if input is empty
                 toast.error("Form submission failed!", {
                     position: "top-center",
