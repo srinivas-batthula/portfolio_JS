@@ -23,7 +23,7 @@ export default function UserGreeting() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.4, duration: 0.6 }}
                 >
-                    {details.greeting} dev! You're visiting from {details.city}, {details.country}.
+                    {details && details.greeting} dev! You're visiting from {details && details.city}, {details && details.country}.
                 </motion.p>
                 <motion.p
                     className="text-sm sm:text-base text-white/90"
@@ -31,7 +31,7 @@ export default function UserGreeting() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.6, duration: 0.6 }}
                 >
-                    Browser: {details.browser} | OS: {details.os} | Language: {details.language} | Screen: {details.screenSize}
+                    Browser: {details && details.browser} | OS: {details && details.os} | Language: {details && details.language} | Screen: {details && details.screenSize}
                 </motion.p>
             </motion.div>
         </div>
