@@ -47,7 +47,7 @@ export default function FunToast() {
                         {/* Close Button */}
                         <button
                             onClick={() => toast.dismiss(t.id)}
-                            className="absolute top-1 right-4 text-3xl font-bold text-red-500 hover:text-red-800 transition"
+                            className="absolute top-1 right-4 text-4xl m-1 font-bold text-red-500 hover:text-red-800 transition"
                         >
                             &times;
                         </button>
@@ -61,7 +61,7 @@ export default function FunToast() {
         }
     }, [details]);
 
-    
+
     useEffect(() => {
         const userAgent = navigator.userAgent;
         let browser = "Unknown";
