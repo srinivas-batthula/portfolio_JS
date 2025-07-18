@@ -16,47 +16,6 @@ export default function FunToast() {
     });
 
     useEffect(() => {
-        const userAgent = navigator.userAgent;
-        let browser = "Unknown";
-        let os = "Unknown";
-
-        if (userAgent.includes("Chrome")) browser = "Chrome";
-        else if (userAgent.includes("Firefox")) browser = "Firefox";
-        else if (userAgent.includes("Safari")) browser = "Safari";
-        else if (userAgent.includes("Edge")) browser = "Edge";
-
-        if (userAgent.includes("Win")) os = "Windows";
-        else if (userAgent.includes("Mac")) os = "MacOS";
-        else if (userAgent.includes("Linux")) os = "Linux";
-        else if (/Android/.test(userAgent)) os = "Android";
-        else if (/iPhone|iPad/.test(userAgent)) os = "iOS";
-
-        const hour = new Date().getHours();
-        const greeting =
-            hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
-
-        const screenSize = `${window.innerWidth}x${window.innerHeight}`;
-        const language = navigator.language;
-
-        fetch("/api/userDetails")
-            .then((res) => res.json())
-            .then((data) => {
-                setDetails({
-                    greeting,
-                    browser,
-                    os,
-                    language,
-                    screenSize,
-                    city: data.city,
-                    country: data.country,
-                });
-                console.log('User Details :-  ', details);
-            })
-            .catch((err) => {
-                console.error(err);
-            });
-
-
         const notify = () =>
             toast.custom((t) => (
                 <div className="fixed top-3 right-5 z-50">
@@ -96,8 +55,49 @@ export default function FunToast() {
                 </div>
             ), { duration: 40000 });
 
+            
+        const userAgent = navigator.userAgent;
+        let browser = "Unknown";
+        let os = "Unknown";
 
-        setTimeout(notify, 2000);
+        if (userAgent.includes("Chrome")) browser = "Chrome";
+        else if (userAgent.includes("Firefox")) browser = "Firefox";
+        else if (userAgent.includes("Safari")) browser = "Safari";
+        else if (userAgent.includes("Edge")) browser = "Edge";
+
+        if (userAgent.includes("Win")) os = "Windows";
+        else if (userAgent.includes("Mac")) os = "MacOS";
+        else if (userAgent.includes("Linux")) os = "Linux";
+        else if (/Android/.test(userAgent)) os = "Android";
+        else if (/iPhone|iPad/.test(userAgent)) os = "iOS";
+
+        const hour = new Date().getHours();
+        const greeting =
+            hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
+
+        const screenSize = `${window.innerWidth}x${window.innerHeight}`;
+        const language = navigator.language;
+
+        fetch("/api/userDetails")
+            .then((res) => res.json())
+            .then((data) => {
+                setDetails({
+                    greeting,
+                    browser,
+                    os,
+                    language,
+                    screenSize,
+                    city: data.city,
+                    country: data.country,
+                });
+                console.log('User Details :-  ', details);
+                notify();
+            })
+            .catch((err) => {
+                console.error(err);
+            });
+
+        // setTimeout(notify, 2000);
     }, []);
 
     return null;
