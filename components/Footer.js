@@ -1,27 +1,7 @@
-import { useEffect } from 'react';
+
 import styles from './../styles/Home.module.css';
 
 export default function Footer() {
-    useEffect(() => {                       // Inject the visitor-counter scripts dynamically...
-        const timeout = setTimeout(() => {
-            const authScript = document.createElement('script');
-            authScript.src = 'https://www.freevisitorcounters.com/auth.php?id=084e02b0f913408356e205ddaa80248af9d07e49';
-            authScript.async = true;
-
-            const counterScript = document.createElement('script');
-            counterScript.src = 'https://www.freevisitorcounters.com/en/home/counter/1353995/t/7';
-            counterScript.async = true;
-
-            const container = document.getElementById('visitor-counter');
-            if (container) {
-                container.appendChild(authScript);
-                container.appendChild(counterScript);
-            }
-        }, 100); // delay to ensure DOM is ready
-
-        return () => clearTimeout(timeout);
-    }, []);
-
 
     return (
         <div className={styles.footer}>
@@ -33,12 +13,10 @@ export default function Footer() {
             </div>
 
             {/* Visitor Counter Block */}
-            <div id="visitor-counter" style={{ textAlign: 'center', marginTop: '10px' }}>
-                {/* Hide the free link but keep it in DOM */}
-                <a href="http://www.freevisitorcounters.com" style={{ display: 'none' }}>
-                    on freevisitorcounters.com
-                </a>
-            </div>
+            <a href="https://www.hitwebcounter.com" target="_blank">
+                <p style={{color:'violet', fontWeight:'bold'}}>Visitors : </p>
+                <img src="https://hitwebcounter.com/counter/counter.php?page=21189306&style=0001&nbdigits=6&type=page&initCount=152" title="Counter Widget" Alt="Visit counter For Websites" border="0" />
+            </a>
 
             <div className={styles.footerChild2}>
                 Copyright © {new Date().getFullYear()} BSP

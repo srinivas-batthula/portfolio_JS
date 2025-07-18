@@ -8,7 +8,11 @@ export default async function handler(req, res) {
 
     try {
         const geoRes = await fetch(`https://get.geojs.io/v1/ip/geo/${ip}.json?timestamp=${Date.now()}`)
-        geo = await geoRes.json()
+        if (geoRes.ok) {
+            geo = await geoRes.json();
+        } else {
+            console.warn(`Geo API returned status: ${geoRes.status}`);
+        }
     }
     catch (err) {
         console.error(err);
@@ -18,8 +22,8 @@ export default async function handler(req, res) {
 
     return res.status(200).json({
         ip,
-        city: geo.city || '',
-        country: geo.country || '',
+        city: (geo && geo.city) ? geo.city : '',
+        country: (geo && geo.country) ? geo.country : '',
         userAgent,
     })
 }
