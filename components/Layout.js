@@ -9,8 +9,11 @@ import ParticlesBackground from './Background'
 import styles from './../styles/Home.module.css'
 import FunToast from './ToastFun'
 
+import { useUserDetailsStore } from "@/store/useUserDetailsStore";
+
 
 const Layout = ({ children }) => {
+    const fetchDetails = useUserDetailsStore((s) => s.fetchDetails);
                             //Redirect to 'vercel-deployment' if the current user is on 'github-pages'...
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -29,9 +32,10 @@ const Layout = ({ children }) => {
 
                 const redirectTo = `https://${correctHost}${currentPath}`
                 // console.log("Redirecting to :-  ",redirectTo)
-                window.location.replace(redirectTo)             // better UX than 'window.location.href'...
+                // window.location.replace(redirectTo)             // better UX than 'window.location.href'...
             }
         }
+        fetchDetails();
     }, [])
 
     return (

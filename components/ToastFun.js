@@ -3,17 +3,19 @@
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { motion } from "framer-motion";
+import { useUserDetailsStore } from "@/store/useUserDetailsStore";
 
 export default function FunToast() {
-    const [details, setDetails] = useState({
-        greeting: "",
-        browser: "",
-        os: "",
-        language: "",
-        screenSize: "",
-        city: "",
-        country: "",
-    });
+    const details = useUserDetailsStore((s) => s.details);
+    // const [details, setDetails] = useState({
+    //     greeting: "",
+    //     browser: "",
+    //     os: "",
+    //     language: "",
+    //     screenSize: "",
+    //     city: "",
+    //     country: "",
+    // });
 
     useEffect(() => {
         const notify = () =>
@@ -55,53 +57,53 @@ export default function FunToast() {
                 </div>
             ), { duration: 40000 });
 
-        if (details.city && details.country) {
+        if (details && details.city && details.country) {
             console.log('User Details :-  ', details);
             notify();
         }
     }, [details]);
 
 
-    useEffect(() => {
-        const userAgent = navigator.userAgent;
-        let browser = "Unknown";
-        let os = "Unknown";
+    // useEffect(() => {
+    //     const userAgent = navigator.userAgent;
+    //     let browser = "Unknown";
+    //     let os = "Unknown";
 
-        if (userAgent.includes("Chrome")) browser = "Chrome";
-        else if (userAgent.includes("Firefox")) browser = "Firefox";
-        else if (userAgent.includes("Safari")) browser = "Safari";
-        else if (userAgent.includes("Edge")) browser = "Edge";
+    //     if (userAgent.includes("Chrome")) browser = "Chrome";
+    //     else if (userAgent.includes("Firefox")) browser = "Firefox";
+    //     else if (userAgent.includes("Safari")) browser = "Safari";
+    //     else if (userAgent.includes("Edge")) browser = "Edge";
 
-        if (userAgent.includes("Win")) os = "Windows";
-        else if (userAgent.includes("Mac")) os = "MacOS";
-        else if (userAgent.includes("Linux")) os = "Linux";
-        else if (/Android/.test(userAgent)) os = "Android";
-        else if (/iPhone|iPad/.test(userAgent)) os = "iOS";
+    //     if (userAgent.includes("Win")) os = "Windows";
+    //     else if (userAgent.includes("Mac")) os = "MacOS";
+    //     else if (userAgent.includes("Linux")) os = "Linux";
+    //     else if (/Android/.test(userAgent)) os = "Android";
+    //     else if (/iPhone|iPad/.test(userAgent)) os = "iOS";
 
-        const hour = new Date().getHours();
-        const greeting =
-            hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
+    //     const hour = new Date().getHours();
+    //     const greeting =
+    //         hour < 12 ? "Good morning" : hour < 18 ? "Good afternoon" : "Good evening";
 
-        const screenSize = `${window.innerWidth}x${window.innerHeight}`;
-        const language = navigator.language;
+    //     const screenSize = `${window.innerWidth}x${window.innerHeight}`;
+    //     const language = navigator.language;
 
-        fetch("/api/userDetails")
-            .then((res) => res.json())
-            .then((data) => {
-                setDetails({
-                    greeting,
-                    browser,
-                    os,
-                    language,
-                    screenSize,
-                    city: data.city,
-                    country: data.country,
-                });
-            })
-            .catch((err) => {
-                console.error(err);
-            });
-    }, []);
+    //     fetch("/api/userDetails")
+    //         .then((res) => res.json())
+    //         .then((data) => {
+    //             setDetails({
+    //                 greeting,
+    //                 browser,
+    //                 os,
+    //                 language,
+    //                 screenSize,
+    //                 city: data.city,
+    //                 country: data.country,
+    //             });
+    //         })
+    //         .catch((err) => {
+    //             console.error(err);
+    //         });
+    // }, []);
 
     return null;
 }
