@@ -21,21 +21,20 @@ export default async function handler(req, res) {
     // Helper function for delay
     const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-    // Sending req's to provided URL...
+    // Send requests asynchronously (fire-and-forget style)
     const requestCount = parseInt(times);
-    for (let i = 0; i < requestCount; i++) {
-        // console.log(i);
-        try {
-            let data = await fetch(url);
-            // data = await data.json();
-            // console.log(data);
-        }
-        catch (err) {
-            console.error(err);
-        }
+    (async () => {
+        for (let i = 0; i < requestCount; i++) {
+            try {
+                const response = await fetch(url);
+                // console.log(`[${i + 1}] ${url} → ${response.status}`);
+            } catch (err) {
+                console.error(`[${i + 1}] Error pinging ${url}:`, err.message);
+            }
 
-        if (i < requestCount - 1) {
-            await delay(1000); // 1 second delay
+            if (i < requestCount - 1) {
+                await delay(1000); // 1 second delay between requests
+            }
         }
-    }
+    })();
 }
