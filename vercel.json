@@ -3,11 +3,7 @@
     "crons": [
         {
             "path": "/api/uptimer",
-            "schedule": "0 1 * * *",
-            "query": {
-                "url": "https://coflow-backend-bcgk.onrender.com",
-                "times": "3"
-            }
+            "schedule": "0 1 * * *"
         }
     ]
 }
