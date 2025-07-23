@@ -1,4 +1,4 @@
-// pages/api/uptimer.js
+// pages/api/uptimer.js         { Run by VERCEL-CRON at 6:30AM everyday }...
 
 // URL-format := `https://srinivas-batthula.vercel.app/api/uptimer?url=https://coflow-backend-bcgk.onrender.com&times=3`
 export default async function handler(req, res) {
