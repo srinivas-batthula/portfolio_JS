@@ -5,8 +5,11 @@ export default async function handler(req, res) {
     const { url, times } = req.query;
 
     // Validate inputs
-    if (!url || !times || isNaN(times) || parseInt(times) < 1)
-        return res.status(400).json({ success: false, msg: 'Your provided URL or times are invalid!' });
+    if (!url || !times || isNaN(times) || parseInt(times) < 1) {
+        // return res.status(400).json({ success: false, msg: 'Your provided URL or times are invalid!' });
+        url = "https://coflow-backend-bcgk.onrender.com/";
+        times = "3";
+    }
 
     res.status(200).json({
         success: true,

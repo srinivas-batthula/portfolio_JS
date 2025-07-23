@@ -4,7 +4,6 @@
         {
             "path": "/api/uptimer",
             "schedule": "0 1 * * *",
-            "method": "GET",
             "query": {
                 "url": "https://coflow-backend-bcgk.onrender.com",
                 "times": "3"
