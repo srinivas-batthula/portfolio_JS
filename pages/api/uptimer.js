@@ -10,6 +10,7 @@ export default async function handler(req, res) {
         url = "https://coflow-backend-bcgk.onrender.com/";
         times = "3";
     }
+    console.log(`/api/uptimer executed!\t URL: ${url}`);
 
     res.status(200).json({
         success: true,
@@ -37,4 +38,5 @@ export default async function handler(req, res) {
             }
         }
     })();
+    return;
 }
