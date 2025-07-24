@@ -132,6 +132,10 @@ export default function AboutPage() {
                         <span style={{ color: 'rgb(184, 41, 184)', fontWeight: 'bold' }}>Tools</span> I use
                     </div>
                     <div className={styles.flex3}>
+                        <div title="docker" className={styles.flex2}><span className={styles.i}>
+                            <i className="devicon-docker-plain-wordmark"></i>
+                        </span>
+                        </div>
                         <div title="vscode" className={styles.flex2}><span className={styles.i}>
                             <i className="devicon-vscode-plain"></i></span>
                         </div>
