@@ -37,7 +37,8 @@ export default function FunToast() {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.6, duration: 0.6 }}
                         >
-                            Browser: {details.browser} | OS: {details.os} | Language: {details.language} | Screen: {details.screenSize}
+                            Browser: {details.browser} | OS: {details.os}
+                            {/* | Language: {details.language} | Screen: {details.screenSize} */}
                         </motion.p>
 
                         {/* Close Button */}

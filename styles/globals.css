@@ -51,3 +51,12 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(207, 128, 207); /* Darker shade */
 }
+
+/* Add to globals.css */
+.scrollbarHide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbarHide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

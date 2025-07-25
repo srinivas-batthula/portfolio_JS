@@ -2,13 +2,21 @@ import React from "react";
 
 import styles from "./../styles/About.module.css";
 import ImageCarousel from "./Certifications";
+import SkillsSection from "./Skills";
+import { useRouter } from "next/navigation";
 
 
 export default function AboutPage() {
+    const router = useRouter();
+
     return (
         <>
             <div className={styles.about}>
-                <div className={styles.sec2}>Know Who <span style={{ color: 'rgb(251, 53, 251)', fontWeight: 'bold' }}>I'M</span></div>
+                <div className={styles.sec2}>Know Who <span style={{ color: 'rgb(231, 90, 231)', fontWeight: 'bold' }}>I'M</span></div>
+                <p style={{
+                    color: 'rgba(220, 220, 220, 0.751)',
+                    fontSize: '1.3rem'
+                }}>Passionate about modern technology and scalable architectures</p>
 
                 <div className={styles.main}>
 
@@ -22,7 +30,7 @@ export default function AboutPage() {
 
                         <div className={styles.sec3}>
                             <div className={styles.sec4}>
-                                Hello! I'm <span style={{ color: 'rgb(251, 53, 251)', fontWeight: 'bold' }}> Srinivas Batthula </span>, a passionate tech enthusiast from <span style={{ color: 'rgb(251, 53, 251)', fontWeight: 'bold' }}>Hyderabad, India</span>.
+                                Hello! I'm <span style={{ color: 'rgb(200, 80, 200)', fontWeight: 'bold' }}> Srinivas Batthula </span>, a passionate tech enthusiast from <span style={{ color: 'rgb(200, 80, 200)', fontWeight: 'bold' }}>Hyderabad, India</span>.
                                 <br />
                                 I'm currently pursuing a B.Tech degree in the field of Computer Science and Engineering at Sreenidhi Institute of Science and Technology, Hyderabad. I’m driven by a deep curiosity for technology and a desire to create meaningful digital experiences.
                             </div>
@@ -49,108 +57,41 @@ export default function AboutPage() {
                     </div>
                 </div>
 
+                {/* Certifications section */}
                 <div className={styles.main3}>
                     <div className={styles.head}>
-                        Certifications  <span style={{ color: 'rgb(184, 41, 184)', fontWeight: 'bold' }}>Earned</span>
+                        Certifications  <span style={{ color: 'rgb(231, 110, 231)', fontWeight: 'bold' }}>Earned</span>
                     </div>
                     <ImageCarousel />
                 </div>
 
-                <div className={styles.main2}>
+                {/* Skills section */}
+                <SkillsSection />
+
+                {/* Explore More */}
+                <div style={{ marginTop: '4rem' }}>
                     <div className={styles.head}>
-                        Professional  <span style={{ color: 'rgb(184, 41, 184)', fontWeight: 'bold' }}>Skillset</span>
+                        Explore <span style={{ color: 'rgb(231, 110, 231)', fontWeight: 'bold' }}>More</span>
                     </div>
-                    <div className={styles.flex1}>
-
-                        <div title="java" className={styles.flex2}><span className={styles.i}><i className="devicon-java-plain"></i></span></div>
-
-                        <div title="javascript" className={styles.flex2}><span className={styles.i}><i className="devicon-javascript-plain"></i></span></div>
-
-                        <div title="python" className={styles.flex2}><span className={styles.i}><i className="devicon-python-plain-wordmark"></i></span></div>
-
-                        <div title="mongodb" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-mongodb-plain-wordmark"></i></span>
-                        </div>
-
-                        <div title="mongoose/ODM" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-mongoose-original-wordmark"></i></span>
-                        </div>
-
-                        <div title="nodejs" className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-node"></i></span></div>
-
-                        <div title="expressjs" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-express-original"></i></span>
-                        </div>
-
-                        <div title="socketio websockets" className={styles.flex2}><span className={styles.i}><i className="devicon-socketio-original-wordmark"></i></span></div>
-
-                        <div title="playwright webscraping" className={styles.flex2}><span className={styles.i}><i className="devicon-playwright-plain"></i></span></div>
-
-                        <div title="swagger docs" className={styles.flex2}><span className={styles.i}><i class="devicon-swagger-plain-wordmark"></i></span></div>
-
-                        <div title="json" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-json-plain"></i></span>
-                        </div>
-
-                        <div title="reactjs" className={styles.flex2}><span className={styles.i}><i className="fa-brands fa-react"></i></span></div>
-
-                        <div title="nextjs" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-nextjs-original-wordmark"></i></span>
-                        </div>
-
-                        <div title="git/version-control" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-git-plain"></i></span>
-                        </div>
-
-                        <div title="bootstrap" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-bootstrap-plain"></i>
-                        </span>
-                        </div>
-
-                        <div title="reactbootstrap" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-reactbootstrap-original"></i>
-                        </span>
-                        </div>
-
-                        <div title="tailwindcss" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-tailwindcss-original"></i>
-                        </span>
-                        </div>
-
-                        <div title="html5" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-html5-plain-wordmark"></i></span>
-                        </div>
-
-                        <div title="css3" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-css3-plain-wordmark"></i></span>
-                        </div>
-
-                    </div>
-                </div>
-                <div className={styles.main2}>
-                    <div className={styles.head}>
-                        <span style={{ color: 'rgb(184, 41, 184)', fontWeight: 'bold' }}>Tools</span> I use
-                    </div>
-                    <div className={styles.flex3}>
-                        <div title="docker" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-docker-plain-wordmark"></i>
-                        </span>
-                        </div>
-                        <div title="vscode" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-vscode-plain"></i></span>
-                        </div>
-                        <div title="postman" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-postman-plain"></i></span>
-                        </div>
-                        <div title="github" className={styles.flex2}><span className={styles.i}>
-                            <i className="devicon-github-original"></i></span>
-                        </div>
-                        <div title="vercel" className={styles.flex2}><span className={styles.i}>
-                            <i class="devicon-vercel-original"></i></span>
-                        </div>
-                        <div title="netlify" className={styles.flex2}><span className={styles.i}>
-                            <i class="devicon-netlify-plain"></i></span>
-                        </div>
+                    <div className="flex justify-center gap-5">
+                        <button
+                            onClick={() => router.push('/projects')}
+                            className="group px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-semibold rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out active:scale-95 flex items-center gap-2"
+                        >
+                            <span style={{ fontSize: '1.2rem' }}> Projects </span>
+                            <span className="transform transition-transform duration-300 ease-in-out group-hover:translate-x-2" style={{ fontSize: "1.5rem" }}>
+                                →
+                            </span>
+                        </button>
+                        {/* <button
+                            onClick={() => router.push('/experience')}
+                            className="group px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-semibold rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out active:scale-95 flex items-center gap-2"
+                        >
+                            <span style={{ fontSize: '1.2rem' }}> Experience </span>
+                            <span className="transform transition-transform duration-300 ease-in-out group-hover:translate-x-2" style={{ fontSize: "1.5rem" }}>
+                                →
+                            </span>
+                        </button> */}
                     </div>
                 </div>
             </div>

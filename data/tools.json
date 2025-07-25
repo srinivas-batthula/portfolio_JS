@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Docker",
+        "icon": "devicon-docker-plain-wordmark",
+        "type": [
+            "devops",
+            "deployment",
+            "technology"
+        ]
+    },
+    {
+        "name": "VSCode",
+        "icon": "devicon-vscode-plain-wordmark",
+        "type": [
+            "development",
+            "tool"
+        ]
+    },
+    {
+        "name": "NPM",
+        "icon": "fa-brands fa-npm",
+        "type": [
+            "development",
+            "tool"
+        ]
+    },
+    {
+        "name": "Nodemon",
+        "icon": "devicon-nodemon-plain",
+        "type": [
+            "development",
+            "tool"
+        ]
+    },
+    {
+        "name": "Postman",
+        "icon": "devicon-postman-plain-wordmark",
+        "type": [
+            "tool",
+            "testing"
+        ]
+    },
+    {
+        "name": "Jest",
+        "icon": "devicon-jest-plain",
+        "type": [
+            "tool",
+            "testing"
+        ]
+    },
+    {
+        "name": "GitHub",
+        "icon": "devicon-github-original-wordmark",
+        "type": [
+            "deployment",
+            "tool"
+        ]
+    },
+    {
+        "name": "Vercel",
+        "icon": "devicon-vercel-original-wordmark",
+        "type": [
+            "deployment",
+            "tool"
+        ]
+    },
+    {
+        "name": "Netlify",
+        "icon": "devicon-netlify-plain-wordmark",
+        "type": [
+            "deployment",
+            "tool"
+        ]
+    },
+    {
+        "name": "OpenAI API",
+        "icon": "fa-brands fa-openai",
+        "type": [
+            "apis",
+            "tool"
+        ]
+    }
+]

@@ -6,22 +6,8 @@ import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import { Autoplay, Navigation } from "swiper/modules";
 
-
-
-const certificates = [
-    {
-        img: "/certificates/freecodecamp_backend.png",
-        link1: 'https://www.freecodecamp.org/certification/fcc3c479363-8e6f-4275-bc53-e8bc24aced39/back-end-development-and-apis'
-    },
-    {
-        img: "/certificates/hackerrank_java.png",
-        link1: 'https://www.hackerrank.com/certificates/iframe/ca46ae083285'
-    },
-    {
-        img: "/certificates/hackerrank_python.png",
-        link1: 'https://www.hackerrank.com/certificates/0c16e899f397'
-    },
-]
+// JSON-Data imports
+import certificates from '@/data/certifications.json';
 
 
 export default function ImageCarousel() {

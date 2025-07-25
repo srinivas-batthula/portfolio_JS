@@ -12,6 +12,7 @@
 }
 
 .head {
+    color: rgba(255, 255, 255, 0.751);
     font-size: 2.1rem;
     font-weight: 600;
     margin-bottom: 3rem;
@@ -79,7 +80,7 @@
 }
 
 .img2 {
-    background-image: url('./../public/utils/atm_project.png');
+    background-image: url('./../public/utils/projects/atm_project.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -88,7 +89,7 @@
 }
 
 .img3 {
-    background-image: url('./../public/utils/coming_soon.png');
+    background-image: url('./../public/utils/projects/coming_soon.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

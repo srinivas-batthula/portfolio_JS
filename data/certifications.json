@@ -1,0 +1,17 @@
+[
+    {
+        "img": "/utils/certificates/freecodecamp_backend.png",
+        "link1": "https://www.freecodecamp.org/certification/fcc3c479363-8e6f-4275-bc53-e8bc24aced39/back-end-development-and-apis",
+        "tags": ["freecodecamp", "backend", "javascript", "mern stack", "rest apis"]
+    },
+    {
+        "img": "/utils/certificates/hackerrank_java.png",
+        "link1": "https://www.hackerrank.com/certificates/iframe/ca46ae083285",
+        "tags": ["hackerrank", "java", "problem solving"]
+    },
+    {
+        "img": "/utils/certificates/hackerrank_python.png",
+        "link1": "https://www.hackerrank.com/certificates/0c16e899f397",
+        "tags": ["hackerrank", "python", "problem solving"]
+    }
+]

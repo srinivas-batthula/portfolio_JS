@@ -56,7 +56,7 @@ export default function ProjectsPage() {
 
     // metadata.json.....   { In your all `projects` to display them automatically! }
     //     {
-    //         "imgUrl": "https://srinivas-batthula.github.io/portfolio/utils/todo_project.png",
+    //         "imgUrl": "https://srinivas-batthula.github.io/portfolio/utils/projects/todo_project.png",
     //         "title": "Task Manager",
     //         "des": "'Task Manager' is an innovative web app built with MERN stack and PWA features, designed to streamline task organization and productivity. The app features an intuitive UI, Notifications, Secure user-authentication and Offline functionality, ensuring accessibility on the go. Explore how it simplifies everyday planning, and feel free to reach out for any collaboration opportunities!",
     //         "isOneRepo": "false",
@@ -70,8 +70,8 @@ export default function ProjectsPage() {
         <>
             <div className={styles.main}>
                 <div className={styles.head} style={{ marginBottom: '4rem' }}>
-                    My Recent <span style={{ color: 'rgb(251, 53, 251)', fontWeight: 'bold' }}>Works</span>
-                    <div style={{ margin: '0.2rem', fontSize: '1.1rem', fontWeight: '400' }}>Here are a few projects I've worked on recently.</div>
+                    My Recent <span style={{ color: 'rgb(231, 120, 231)', fontWeight: 'bold' }}>Works</span>
+                    <div style={{ margin: '0.2rem', fontSize: '1.2rem', fontWeight: '400', color: 'rgba(220, 220, 220, 0.751)' }}>Here are a few projects I've worked on recently.</div>
                 </div>
                 <div className={styles.main2}>
 
@@ -83,7 +83,6 @@ export default function ProjectsPage() {
                         }) : <div className="text-center w-full my-12 text-green-400 animate-pulse transition-colors duration-500 hover:text-purple-500">
                             <h4>Loading Projects from GitHub...</h4>
                         </div>
-
                     }
 
                     <div className={styles.card}>

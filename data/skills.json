@@ -1,0 +1,168 @@
+[
+    {
+        "name": "Java",
+        "icon": "devicon-java-plain-wordmark",
+        "type": [
+            "language"
+        ]
+    },
+    {
+        "name": "JavaScript",
+        "icon": "devicon-javascript-plain",
+        "type": [
+            "language"
+        ]
+    },
+    {
+        "name": "Python",
+        "icon": "devicon-python-plain-wordmark",
+        "type": [
+            "language"
+        ]
+    },
+    {
+        "name": "MongoDB",
+        "icon": "devicon-mongodb-plain-wordmark",
+        "type": [
+            "database"
+        ]
+    },
+    {
+        "name": "Mongoose/ODM",
+        "icon": "devicon-mongoose-original-wordmark",
+        "type": [
+            "database",
+            "backend"
+        ]
+    },
+    {
+        "name": "NodeJs",
+        "icon": "fa-brands fa-node",
+        "type": [
+            "backend"
+        ]
+    },
+    {
+        "name": "ExpressJs",
+        "icon": "devicon-express-original-wordmark",
+        "type": [
+            "backend",
+            "framework"
+        ]
+    },
+    {
+        "name": "SocketIO",
+        "icon": "devicon-socketio-original-wordmark",
+        "type": [
+            "backend",
+            "library",
+            "websockets"
+        ]
+    },
+    {
+        "name": "Playwright",
+        "icon": "devicon-playwright-plain",
+        "type": [
+            "backend",
+            "library",
+            "webscraping",
+            "automation"
+        ]
+    },
+    {
+        "name": "Redis",
+        "icon": "devicon-redis-plain-wordmark",
+        "type": [
+            "backend",
+            "Caching",
+            "tool"
+        ]
+    },
+    {
+        "name": "Git / Version Control",
+        "icon": "devicon-git-plain-wordmark",
+        "type": [
+            "version control",
+            "git",
+            "development"
+        ]
+    },
+    {
+        "name": "Swagger Docs",
+        "icon": "devicon-swagger-plain-wordmark",
+        "type": [
+            "backend",
+            "documentation",
+            "docs"
+        ]
+    },
+    {
+        "name": "JSON",
+        "icon": "devicon-json-plain",
+        "type": [
+            "backend",
+            "data"
+        ]
+    },
+    {
+        "name": "ReactJs",
+        "icon": "fa-brands fa-react",
+        "type": [
+            "frontend",
+            "library"
+        ]
+    },
+    {
+        "name": "NextJs",
+        "icon": "devicon-nextjs-original-wordmark",
+        "type": [
+            "frontend",
+            "framework"
+        ]
+    },
+    {
+        "name": "BootStrap",
+        "icon": "devicon-bootstrap-plain-wordmark",
+        "type": [
+            "frontend",
+            "ui",
+            "library"
+        ]
+    },
+    {
+        "name": "React-BootStrap",
+        "icon": "devicon-reactbootstrap-original",
+        "type": [
+            "frontend",
+            "ui",
+            "library"
+        ]
+    },
+    {
+        "name": "TailwindCSS",
+        "icon": "devicon-tailwindcss-plain",
+        "type": [
+            "frontend",
+            "ui",
+            "library"
+        ]
+    },
+    {
+        "name": "HTML5",
+        "icon": "devicon-html5-plain-wordmark",
+        "type": [
+            "frontend",
+            "web",
+            "technology"
+        ]
+    },
+    {
+        "name": "CSS3",
+        "icon": "devicon-css3-plain-wordmark",
+        "type": [
+            "frontend",
+            "web",
+            "technology"
+        ]
+    }
+]
