@@ -1,9 +1,20 @@
 {
-            "imgUrl": "https://srinivas-batthula.github.io/portfolio/utils/projects/portfolio_project.png",
-            "title": "Personal Portfolio",
-            "des": " 'Personal Portfolio' is a modern & responsive website developed using React & Next.js, designed to showcase my skills, projects... in the tech world. The portfolio features an interactive user experience with smooth transitions and a mobile-friendly design. Feel free to explore and get a glimpse of my journey as a developer, and don't hesitate to reach out if you’d like to connect!",
-            "isOneRepo": "true",
-            "isLiveLink": "true",
-            "urlRepo": "https://github.com/srinivas-batthula/portfolio",
-            "urlLive": "https://srinivas-batthula.github.io/portfolio/"
+    "imgUrl": "https://srinivas-batthula.github.io/portfolio/utils/projects/portfolio_project.png",
+    "title": "Personal Portfolio",
+    "description": "A sleek, responsive portfolio built with React & Next.js to showcase my work, skills, and journey.",
+    "techStack": [
+        "Next.Js",
+        "React.js",
+        "TailwindCSS",
+        "SEO"
+    ],
+    "keyFeatures": [
+        "Pipedream Automation for contact-form",
+        "Auto-fetch & display latest GitHub projects using GitHub-API",
+        "Greets users based on their location/timezone using IP detection",
+        "Fully Responsive & Cross Platform"
+    ],
+    "isLiveLink": "true",
+    "githubLink": "https://github.com/srinivas-batthula/portfolio",
+    "liveLink": "https://srinivas-batthula.github.io/portfolio/"
 }
