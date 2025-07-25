@@ -1,3 +1,5 @@
+/* styles/Projects.module.css */
+
 .main {
     margin-top: 5.5rem;
     width: 100%;
@@ -43,13 +45,14 @@
 
 .card {
     width: 29rem;
-    height: 38rem;
+    height: fit-content;
     box-shadow: 0 0.25rem 0.45rem rgb(141, 76, 141);
     background: #21082d;
     backdrop-filter: blur(1.5rem);
     margin-right: 1rem;
     margin-left: 1rem;
-    margin-bottom: 6rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
     text-align: center;
     padding: 0.71rem;
     border-radius: 5%;
@@ -79,15 +82,6 @@
     align-content: center;
 }
 
-.img2 {
-    background-image: url('./../public/utils/projects/atm_project.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 24.3rem;
-    height: 15rem
-}
-
 .img3 {
     background-image: url('./../public/utils/projects/coming_soon.png');
     background-position: center;
@@ -109,8 +103,8 @@
     text-align: center;
     font-size: 1.4rem;
     font-weight: 600;
-    margin-top: 0.8rem;
-    margin-bottom: 0.4rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.2rem;
     color: rgb(238, 57, 238);
 }
 
@@ -129,7 +123,7 @@
     .card{
         width: 100%;
         /* border-radius: 0; */
-        height: 38rem;
+        height: fit-content;
     }
     .links{
         margin-bottom: 1rem;
@@ -163,140 +157,21 @@
     transition: all 0s;
 }
 
-.links {
+
+
+
+
+.card2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    margin-bottom: 0rem;
-    margin-top: 1rem;
+    width: 30rem;
+    height: fit-content;
 }
 
-/* Dropdown Button */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropbtn {
-    background-color: #d362ff;
-    color: white;
-    padding: 0.3rem;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
-    font-size: 1.4rem;
-    border-radius: 2.2rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-right: 1rem;
-}
-
-/* Hover Effect */
-.dropbtn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px #c940ff;
-    background: linear-gradient(45deg, #ca44ff, #ca44ff);
-}
-
-.btn2{
-    background-color: #d362ff;
-    color: white;
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    border-radius: 2.2rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn2:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px #c940ff;
-    background: linear-gradient(45deg, #ca44ff, #ca44ff);
-}
-
-/* Dropdown Content */
-.dropdownContent {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 140px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
-    z-index: 1;
-    transition: opacity 0.3s ease;
-}
-
-/* Links inside Dropdown */
-.dropdownContent a {
-    color: black;
-    padding: 0.3rem;
-    text-decoration: none;
-    display: block;
-    font-size: 1.1rem;
-}
-
-.dropdownContent a:hover {
-    background-color: #f1f1f1;
-}
-
-/* Show Dropdown on Hover */
-.dropdown:hover .dropdownContent {
-    display: block;
-}
-
-/* Button Styling */
-.animatedBtn {
-    position: relative;
-    background: linear-gradient(45deg, #d362ff, #d362ff);
-    color: white;
-    padding-top: 0.1rem;
-    padding-bottom: 0.4rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 2rem;
-    cursor: pointer;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease-in-out;
-    margin-left: 1rem;
-}
-
-/* Hover Effect */
-.animatedBtn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px #d362ff;
-}
-
-/* Ripple Effect */
-.animatedBtn::after {
-    content: "";
-    position: absolute;
-    width: 300%;
-    height: 300%;
-    background: #ce51ff;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    border-radius: 50%;
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-    pointer-events: none;
-    opacity: 0;
-}
-
-/* Click Effect */
-.animatedBtn:active::after {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-}
-
-.temp {
-    font-size: 1.3rem;
-    color: rgb(238, 57, 238);
-    text-align: center;
-    font-weight: bold;
+@media screen and (max-width: 550px) {
+    .card2 {
+        width: 98%;
+    }
 }

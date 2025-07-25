@@ -3,7 +3,7 @@ import styles from "./../styles/About.module.css";
 
 // JSON-Data imports
 import allSkills from '@/data/skills.json'
-import allTools from '@/data/skills.json'
+import allTools from '@/data/tools.json'
 
 
 export default function SkillsSection() {

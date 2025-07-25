@@ -1,4 +1,4 @@
-// src/pages/_document.js
+// /pages/_document.js
 
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { Schema } from '@/lib/schema.bundle'
@@ -12,7 +12,7 @@ class MyDocument extends Document {
                     <meta name='title' content='Srinivas Batthula | Portfolio' />
                     <meta name='author' content='Srinivas Batthula' />
                     <meta name="description" content="srinivas batthula portfolio website" />
-                    <meta name="keywords" content="Srinivas Batthula, srinivas-batthula, btech, snist, sreenidhi college, portfolio, Vercel, MERN stack developer, React.js, Next.js, MongoDB, Express.js, Node.js, full-stack developer, JavaScript, web development, front-end development, back-end development, software engineer, programming, java, python, seo, rest apis, pwa, progressive web apps" />
+                    <meta name="keywords" content="Srinivas Batthula, srinivas-batthula, btech, snist, sreenidhi college, ghatkesar, portfolio, Vercel, MERN stack developer, coflow, verseify, React.js, Next.js, MongoDB, Express.js, Node.js, full-stack developer, JavaScript, web development, front-end development, back-end development, software engineer, programming, java, python, seo, rest apis, pwa, progressive web apps" />
 
                     {/* Social Sharing... */}
                     <meta property='og:title' content='Srinivas Batthula | Fullstack Developer Portfolio' />

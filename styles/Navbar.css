@@ -82,10 +82,10 @@
     font-size: 1.3rem;
     text-align: center;
     font-weight: 540;
-    
     border: none;
     color: #fff;
     overflow: hidden;
+    transition: all 0.25s ease-in-out;
 }
 
 .resume-download:hover {
