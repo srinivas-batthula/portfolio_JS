@@ -35,7 +35,7 @@ https://srinivas-batthula.github.io/portfolio
 
 ## Tech Stack
 
-**Client:**  NextJs, React.Js, React-Bootsrap, TailwindCSS
+**Client:**  NextJs, React.Js, Zustand, React-Bootsrap, TailwindCSS
 
 
 ## Logo
