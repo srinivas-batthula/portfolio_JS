@@ -10,14 +10,8 @@ export default function Projects() {
                 {/* Custom fonts, meta tags, or external scripts go here */}
                 <meta name='title' content='Projects | Srinivas Batthula' />
                 <meta name='author' content='Srinivas Batthula' />
-                <meta name="description" content="Recent Projects of srinivas batthula" />
-                <meta name="keywords" content="Srinivas Batthula, srinivas-batthula, btech, snist, sreenidhi college, ghatkesar, portfolio, Vercel, MERN stack developer, coflow, verseify, React.js, Next.js, MongoDB, Express.js, Node.js, full-stack developer, JavaScript, web development, front-end development, back-end development, software engineer, programming, java, python, seo, rest apis, pwa, progressive web apps" />
-
-                {/* Social Sharing... */}
-                <meta property='og:title' content='Srinivas Batthula | Fullstack Developer Portfolio' />
-                <meta property="og:type" content="website" />
-                <meta property='og:description' content='Explore my recent Works and Projects on GitHub' />
-                <meta property='og:url' content='https://srinivas-batthula.vercel.app' />
+                <meta name="description" content="Recent Works / Projects of srinivas batthula" />
+                <meta name="keywords" content="Srinivas Batthula, srinivas-batthula, btech, engineering, snist, sreenidhi college, ghatkesar, hyderabad, portfolio, Vercel, MERN stack developer, Full Stack developer, Backend developer, sde, software engineer, Open Source, web development, problem solving, programming, projects, coflow, verseify, Java, Javascript, Python, Html, Css, Tailwindcss, Bootstrap, React, NextJs, Zustand, pwa, progressive web app, seo, indexedDB, offline, service workers, webmanifest, push notifications, json, Node.js, Express.js, FastAPI, web-push, nodemailer, openai, gemini api, razorpay, swagger docs, jwt, OAuth, cloudinary, multer, cors, rate limiter, helmet, pug, axios, npm, nodemon, mongoose, MongoDB, SQL, Databases, redis, caching, message queue, playwright, webscraping, node cron, socketio, websockets, realtime, jest, supertest, testing, mvc, rest apis, git, github, version control, Docker, containerization, render, vercel, netlify, deployment, api monitoring, scalable backend systems" />
 
                 {/* SEO... */}
                 <meta name="robots" content="index, follow" />
