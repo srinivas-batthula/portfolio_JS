@@ -5,13 +5,17 @@
     "techStack": [
         "Next.Js",
         "React.js",
+        "Zustand",
         "TailwindCSS",
-        "SEO"
+        "BootStrap",
+        "SEO",
+        "Pipedream-Automation"
     ],
     "keyFeatures": [
         "Pipedream Automation for contact-form",
         "Auto-fetch & display latest GitHub projects using GitHub-API",
         "Greets users based on their location/timezone using IP detection",
+        "Configured sitemap, robots, meta-tags for better Google indexing",
         "Fully Responsive & Cross Platform"
     ],
     "isLiveLink": "true",

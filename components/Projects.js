@@ -13,7 +13,7 @@ function Card({ project }) {
             className={`${styles.card2} bg-gradient-to-br from-[#1a1a1a] to-[#1f1f1f] border border-purple-500/20 rounded-2xl shadow-xl hover:shadow-purple-700 transition duration-200 hover:-translate-y-1 transform p-6`}
         >
             <div >
-                <Image src={project.imgUrl} alt='Image' width={500} height={300} loading="lazy" className='rounded-lg mb-3 w-full h-60' />
+                <Image src={project.imgUrl} alt={`${project.title} image`} width={500} height={300} loading="lazy" className='rounded-lg mb-3 w-full h-60' />
             </div>
 
             <h2 className="text-2xl font-semibold text-purple-400 mb-2 flex justify-center">
@@ -33,9 +33,9 @@ function Card({ project }) {
                 ))}
             </div>
 
-            <div className="mb-4 text-left flex flex-col justify-start mr-auto">
+            <div className="mb-3 text-left flex flex-col justify-start mr-auto">
                 <h4 className="text-sm font-semibold text-gray-300 mb-2 flex flex-col justify-start">
-                    Key Features:
+                    Key Achievements:
                 </h4>
                 <ul className="list-disc list-inside text-gray-400 text-sm space-y-1 flex flex-col justify-start">
                     {project.keyFeatures.map((feature, i) => (
@@ -43,6 +43,7 @@ function Card({ project }) {
                     ))}
                 </ul>
             </div>
+
             <div className="flex items-center gap-6 pt-4 justify-center">
                 {
                     (project.isLiveLink === "true") && <a
