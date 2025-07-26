@@ -28,6 +28,9 @@ class MyDocument extends Document {
                     <meta name="google-site-verification" content="TbhDgBAon0JlcRZGcPav0DB8188B7S1doUU7vfQy0qY" />  {/* For Vercel deployment... */}
                     <meta name="google-site-verification" content="tgr9rQeA_88RwbcxrcZmCrRUBjbLWUBYb9jolb1cFM0" />  {/* For Github-Pages deployment... */}
 
+                    {/* Yandex Search Webmaster Meta tags... */}
+                    <meta name="yandex-verification" content="85fe45ce1c1befd1" />
+
                     {/* SEO... */}
                     <link rel="sitemap" type="application/xml" href="https://srinivas-batthula.vercel.app/sitemap.xml" />
                     <meta name="robots" content="index, follow" />
