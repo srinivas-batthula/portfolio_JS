@@ -5,7 +5,7 @@
     justify-items: center;
     align-content: center;
     flex-direction: column;
-    margin-top: 5.5rem;
+    margin-top: 3.5rem;
     overflow: hidden;
 }
 
@@ -14,7 +14,7 @@
     font-size: 2.5rem;
     font-weight: 700;
     margin-top: 1.4rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
     width: 40%;
 }
 
@@ -179,8 +179,8 @@
 } */
 
 .main2 {
-    margin-top: 6.8rem;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,73 +201,5 @@
 
     100% {
         color: rgb(231, 110, 231);
-    }
-}
-
-
-.links {
-    width: 60%;
-    margin-top: 0.8rem;
-    padding: 0.4rem;
-    color: white;
-    font-size: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15%;
-}
-
-#linkBtn {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-    transition-duration: 0.2s;
-    transition-property: all;
-}
-
-#linkBtn:hover {
-    transform: scale(1.2);
-}
-
-.linkedinButton {
-    color: #109bff;
-}
-
-.githubButton {
-    color: white;
-}
-
-.instagramButton {
-    color: #fe1044;
-}
-
-.leetcodeButton {
-    color: #fea013;
-}
-
-.twitterButton {
-    color: white;
-}
-
-.emailButton {
-    color: #b2221e;
-}
-
-.whatsappButton {
-    color: #25D366;
-}
-
-
-@media screen and (max-width:450px) {
-    .links {
-        flex-wrap: wrap;
-    }
-
-    #linkBtn {
-        margin-bottom: 1rem;
     }
 }

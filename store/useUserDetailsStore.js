@@ -31,8 +31,19 @@ export const useUserDetailsStore = create((set) => ({
         const screenSize = `${window.innerWidth}x${window.innerHeight}`;
         const language = navigator.language;
 
+        const t = {
+            greeting,
+            browser,
+            os,
+            language,
+            screenSize,
+            city: 'fetching...',
+            country: 'fetching...'
+        }
+        console.log(t);
+
         try {
-            const res = await fetch("/api/userDetails");
+            const res = await fetch(`/api/userDetails`);
             const data = await res.json();
             if (data.city && data.country) {
                 let temp = {

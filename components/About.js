@@ -15,7 +15,7 @@ export default function AboutPage() {
                 <div className={styles.sec2}>Know Who <span style={{ color: 'rgb(231, 90, 231)', fontWeight: 'bold' }}>I'M</span></div>
                 <p style={{
                     color: 'rgba(220, 220, 220, 0.751)',
-                    fontSize: '1.3rem'
+                    fontSize: '1.2rem'
                 }}>Passionate about modern technology and scalable architectures</p>
 
                 <div className={styles.main}>

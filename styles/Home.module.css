@@ -478,10 +478,11 @@
     transition: color 0.3s ease-in-out;
     transition-duration: 0.2s;
     transition-property: all;
+    background: transparent;
 }
 
 #linkBtn:hover {
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(10deg) translate(0.2rem);
 }
 
 .linkedinButton {
@@ -490,6 +491,7 @@
 
 .githubButton {
     color: white;
+    border-radius: 50%;
 }
 
 .instagramButton {

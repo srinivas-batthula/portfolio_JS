@@ -37,13 +37,13 @@ export default function SkillsSection() {
                 </div>
 
                 {/* Skills Filter */}
-                <div className="w-full overflow-x-auto scrollbarHide px-4 mb-6 scroll-snap-x">
-                    <div className="inline-flex gap-2 whitespace-nowrap scroll-snap-start">
+                <div className="w-96 lg:w-full overflow-x-auto scrollbarHide px-4 mb-6 scroll-snap-x">
+                    <div className="inline-flex gap-1.5 whitespace-nowrap scroll-snap-start">
                         {skillCategories.map((category) => (
                             <button
                                 key={category}
                                 onClick={() => setSelectedSkillCategory(category)}
-                                className={`px-4 py-1.5 rounded-full text-sm border transition-all duration-400
+                                className={`px-3 py-1.5 rounded-full text-sm border transition-all duration-300
             ${selectedSkillCategory === category
                                         ? 'bg-purple-500 text-white border-purple-600 shadow'
                                         : 'bg-transparent text-white border-gray-500 hover:border-purple-500 hover:text-purple-400'
@@ -74,13 +74,13 @@ export default function SkillsSection() {
                 </div>
 
                 {/* Tool Filter */}
-                <div className="w-full overflow-x-auto scrollbarHide px-4 mb-6 scroll-snap-x">
-                    <div className="inline-flex gap-2 whitespace-nowrap scroll-snap-start">
+                <div className="w-96 lg:w-full overflow-x-auto scrollbarHide px-4 mb-6 scroll-snap-x">
+                    <div className="inline-flex gap-1.5 whitespace-nowrap scroll-snap-start">
                         {toolCategories.map((category) => (
                             <button
                                 key={category}
                                 onClick={() => setSelectedToolCategory(category)}
-                                className={`px-4 py-1.5 rounded-full text-sm border transition-all duration-400
+                                className={`px-3 py-1.5 rounded-full text-sm border transition-all duration-400
             ${selectedToolCategory === category
                                         ? 'bg-purple-500 text-white border-purple-600 shadow'
                                         : 'bg-transparent text-white border-gray-500 hover:border-purple-500 hover:text-purple-400'

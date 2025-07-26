@@ -15,7 +15,7 @@ export default function Footer() {
             {/* Visitor Counter Block */}
             <a href="https://www.hitwebcounter.com" target="_blank">
                 <p style={{color:'violet', fontWeight:'bold'}}>Visitors : </p>
-                <img src="https://hitwebcounter.com/counter/counter.php?page=21189306&style=0001&nbdigits=6&type=page&initCount=152" title="Counter Widget" Alt="Visit counter For Websites" border="0" />
+                <img src="https://hitwebcounter.com/counter/counter.php?page=21189306&style=0001&nbdigits=6&type=page&initCount=152" title="Counter Widget" alt="Visit counter For Websites" border="0" />
             </a>
 
             <div className={styles.footerChild2}>
