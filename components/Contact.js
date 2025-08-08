@@ -14,7 +14,6 @@ import { saveToIndexedDB } from "@/utils/indexedDB";
 
 
 const OfflineStore = async (val) => {       // Save Offline & Queue Background Sync...
-    console.log('OfflineStore')
     let temp = {
         id: Date.now(),
         body: { "name": val.name, "email": val.email, "message": val.msg },
@@ -26,7 +25,6 @@ const OfflineStore = async (val) => {       // Save Offline & Queue Background S
         }
     }
     await saveToIndexedDB(temp, 'contactForm');
-    console.log('saveToIndexedDB')
 
     try {      // Registering 'SYNC' event {fired when back online}...
         if ('serviceWorker' in navigator && 'SyncManager' in window) {
@@ -36,7 +34,7 @@ const OfflineStore = async (val) => {       // Save Offline & Queue Background S
     } catch (err) {
         console.error('Sync setup failed, saving locally:', err);
     }
-    console.log('SyncManager')
+    // console.log('SyncManager')
 
     toast.success("Saved successfully! Will send when online.", {
         position: "top-center",
@@ -48,7 +46,6 @@ const OfflineStore = async (val) => {       // Save Offline & Queue Background S
         theme: "colored",
         transition: Bounce
     });
-    console.log('toast.success')
     return;
 }
 
