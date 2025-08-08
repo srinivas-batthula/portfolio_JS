@@ -76,9 +76,7 @@ self.addEventListener("sync", (event) => {
 
 async function syncShareQueue() {
     const db = await openShareDB();
-    const tx = db.transaction("contactForm", "readonly");
-    const store = tx.objectStore("contactForm");
-    const shareData = await store.getAll();
+    const shareData = await db.getAll('contactForm');
     console.log(shareData);
 
     try {
