@@ -13,7 +13,7 @@ function Card({ project }) {
             className={`${styles.card2} bg-gradient-to-br from-[#1a1a1a] to-[#1f1f1f] border border-purple-500/20 rounded-2xl shadow-xl hover:shadow-purple-700 transition duration-200 hover:-translate-y-1 transform p-6`}
         >
             <div >
-                <Image src={project.imgUrl} alt={`${project.title} image`} width={500} height={300} loading="lazy" className='rounded-lg mb-3 w-full h-60' />
+                <Image src={ process.env.NEXT_PUBLIC_HOME + project.imgUrl} alt={`${project.title} image`} width={500} height={300} loading="lazy" className='rounded-lg mb-3 w-full h-60' />
             </div>
 
             <h2 className="text-2xl font-semibold text-purple-400 mb-2 flex justify-center">
@@ -88,7 +88,7 @@ export default function ProjectsPage() {
 
     // metadata.json.....   { In your all `projects` to display them automatically! }
     // {
-    //     "imgUrl": "https://srinivas-batthula.github.io/portfolio/utils/projects/portfolio_project.png",
+    //     "imgUrl": "/utils/projects/portfolio_project.png",
     //         "title": "Personal Portfolio",
     //             "description": "A sleek, responsive portfolio built with React & Next.js to showcase my work, skills, and journey.",
     //                 "techStack": [

@@ -2,13 +2,27 @@
 "use client";
 
 import { create } from "zustand";
+import { saveToIndexedDB, getFromIndexedDB } from "@/utils/indexedDB";
 
 
 export const useProjectsDataStore = create((set) => ({
     projects: null,
 
-    // Fetch User-Greeting details...
+    // Fetch Projects details...
     fetchProjects: async () => {
+        
+        // If offline, load from IndexedDB...
+        if (typeof navigator !== "undefined" && !navigator.onLine) {
+            const cached = await getFromIndexedDB('projects');
+            if (cached) {
+                set({ projects: cached.data });
+            } else {
+                set({ projects: null });
+            }
+            return;
+        }
+
+        // Online: fetch from live github...
         try {
             let r = await fetch('https://api.github.com/users/srinivas-batthula/repos', {       // Fetch all repo's of `srinivas-batthula`...
                 method: 'GET',
@@ -27,7 +41,7 @@ export const useProjectsDataStore = create((set) => ({
                     })
                     if (res.status === 200) {
                         res = await res.json()
-                        console.log(item.name+'  -Success!')
+                        console.log(item.name + '  -Success!')
                         return res
                     }
                 } catch (error) {
@@ -39,9 +53,14 @@ export const useProjectsDataStore = create((set) => ({
             setTimeout(() => {
                 const temp = Data.filter(item => item !== undefined);       // Filter out any undefined results (in case of fetch errors)...
                 set({ projects: temp });
+                saveToIndexedDB(temp, 'projects');       // Save to IndexedDB...
             }, 1000)
 
         } catch (error) {
+            const cached = await getFromIndexedDB('projects');
+            if (cached) {
+                set({ projects: cached.data });
+            }
             console.log('Error while fetching `projects`!', error);
         }
     },

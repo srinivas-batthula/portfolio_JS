@@ -16,6 +16,7 @@
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.7",
     "framer-motion": "^12.23.9",
+    "idb": "^8.0.3",
     "install": "^0.13.0",
     "next": "^15.1.6",
     "next-sitemap": "^4.2.3",

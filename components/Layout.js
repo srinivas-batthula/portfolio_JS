@@ -14,17 +14,17 @@ import { useUserDetailsStore } from "@/store/useUserDetailsStore";
 
 const Layout = ({ children }) => {
     const fetchDetails = useUserDetailsStore((s) => s.fetchDetails);
-                            //Redirect to 'vercel-deployment' if the current user is on 'github-pages'...
+    //Redirect to 'vercel-deployment' if the current user is on 'github-pages'...
     useEffect(() => {
         if (typeof window !== 'undefined') {
             const currentHost = window.location.hostname        // like 'srinivas-batthula.github.io/portfolio'...
             const correctHost = 'srinivas-batthula.vercel.app'
             console.log(currentHost);
 
-                            // To extract only '/about' from '/portfolio/about'...
+            // To extract only '/about' from '/portfolio/about'...
             function extractLastSegment(path) {
                 const parts = path.split('/').filter(Boolean)
-                return (parts.length>1 && parts[0]==='portfolio') ? '/' + parts[parts.length-1] : '/'
+                return (parts.length > 1 && parts[0] === 'portfolio') ? '/' + parts[parts.length - 1] : '/'
             }
 
             if (currentHost !== correctHost) {
@@ -35,6 +35,18 @@ const Layout = ({ children }) => {
                 window.location.replace(redirectTo)             // better UX than 'window.location.href'...
             }
         }
+
+        // Register the service worker...        (Note: Use Only in `Production`...)
+        if ('serviceWorker' in navigator && window.location.hostname !== "localhost") {
+            navigator.serviceWorker.register(process.env.NEXT_PUBLIC_HOME + '/service-worker.js', { scope: '/' })
+                .then((registration) => {
+                    console.log('Service Worker registered with scope: ', registration.scope)
+                })
+                .catch((error) => {
+                    console.error('Service Worker Registration failed: ', error)
+                })
+        }
+        
         fetchDetails();
     }, [])
 

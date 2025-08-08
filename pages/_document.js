@@ -10,7 +10,6 @@ class MyDocument extends Document {
                 <Head>
                     {/* Page Info... */}
                     <meta charSet='UTF-8' />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <meta name='title' content='Srinivas Batthula | Portfolio' />
                     <meta name='author' content='Srinivas Batthula' />
                     <meta name="description" content="Portfolio of Srinivas Batthula, MERN Stack Developer skilled in full-stack development, open source, and backend engineering." />
