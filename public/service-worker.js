@@ -76,21 +76,29 @@ self.addEventListener("sync", (event) => {
 
 async function syncShareQueue() {
     const db = await openShareDB();
-    const shareData = await db.getAll('contactForm');
-    console.log(shareData);
+    const tx = db.transaction("contactForm", "readonly");
+    const store = tx.objectStore("contactForm");
+    const allShares = await new Promise((resolve, reject) => {
+        const req = store.getAll();
+        req.onsuccess = () => resolve(req.result);
+        req.onerror = () => reject(req.error);
+    });
+    console.log(allShares)
 
-    try {
-        await fetch(shareData.url, {    // Send to n8n...
-            method: shareData.method,
-            body: JSON.stringify(shareData.body),
-            headers: shareData.headers
-        })
-        // Remove successfully Synced share
-        const deleteTx = db.transaction("contactForm", "readwrite");
-        deleteTx.objectStore("contactForm").delete(shareData.id);
-        console.log('Background Sync executed...');
-    } catch (err) {
-        console.error("Retry later:", err);
+    for (const shareData of allShares) {
+        try {
+            await fetch(shareData.url, {    // Send to n8n...
+                method: shareData.method,
+                body: JSON.stringify(shareData.body),
+                headers: shareData.headers
+            })
+            // Remove successfully Synced share
+            const deleteTx = db.transaction("contactForm", "readwrite");
+            deleteTx.objectStore("contactForm").delete(shareData.id);
+            console.log('Background Sync executed...');
+        } catch (err) {
+            console.error("Retry later:", err);
+        }
     }
 }
 
