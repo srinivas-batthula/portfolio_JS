@@ -1,0 +1,59 @@
+{
+    "name": "BSP  ~ Srinivas's Portfolio!",
+    "short_name": "BSP",
+    "description": "A powerful Portfolio project by  ~ Srinivas B",
+    "lang": "en-US",
+    "id": "/",
+    "start_url": "/",
+    "dir": "ltr",
+    "scope": "/",
+    "version": "1.0.0",
+    "display": "standalone",
+    "display_override": [
+        "window-controls-overlay"
+    ],
+    "orientation": "any",
+    "background_color": "#636ee0",
+    "theme_color": "#320398",
+    "icons": [
+        {
+            "src": "/icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/utils/projects/portfolio_project.png",
+            "sizes": "1280x800",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Desktop view of CoFlow dashboard"
+        },
+        {
+            "src": "/utils/projects/portfolio_project.png",
+            "sizes": "600x800",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Mobile interface for team collaboration"
+        }
+    ],
+    "features": [
+        "Cross Platform",
+        "Fast",
+        "Simple",
+        "productivity"
+    ],
+    "categories": [
+        "Personal",
+        "education",
+        "collaboration",
+        "productivity",
+        "Portfolio"
+    ],
+    "prefer_related_applications": false,
+    "launch_handler": {
+        "client_mode": "navigate-existing"
+    },
+    "edge_side_panel": {}
+}

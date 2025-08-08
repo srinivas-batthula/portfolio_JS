@@ -19,6 +19,9 @@ class MyDocument extends Document {
                     <link rel="icon" href="/icon.png" type="image/png" />
                     <link rel="apple-touch-icon" href="/icon.png" />
 
+                    {/* Manifest.json... */}
+                    <link rel="manifest" href="/manifest.json" />
+
                     {/* Font... */}
                     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
 
