@@ -1,5 +1,5 @@
 {
-    "imgUrl": "/utils/projects/portfolio_project.png",
+    "imgUrl": "https://srinivas-batthula.github.io/portfolio/utils/projects/portfolio_project.png",
     "title": "Personal Portfolio",
     "description": "A sleek, responsive portfolio built with React & Next.js to showcase my work, skills, and journey.",
     "techStack": [
