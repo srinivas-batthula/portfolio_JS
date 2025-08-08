@@ -14,9 +14,10 @@ import { getFromIndexedDB, clearInIndexedDB } from '@/utils/indexedDB'
 
 
 async function trySendOfflineShares() {
-    console.log('Fired trySendOfflineShares in Layout  to Sync Offline messages!')
+    console.log('Fired trySendOfflineShares in Layout  to Sync Offline messages!');
     const allShares = await getFromIndexedDB('contactForm');
 
+    console.log('Sent Saved data from IndexedDB : ');
     for (const shareData of allShares) {
         try {
             await fetch(shareData.url, {
@@ -24,6 +25,7 @@ async function trySendOfflineShares() {
                 headers: shareData.headers,
                 body: JSON.stringify(shareData.body),
             });
+            console.log(shareData.body);
             await clearInIndexedDB('contactForm', shareData.id);
         } catch (err) {
             console.warn('Network error sending saved entry, will retry later', err);
