@@ -75,6 +75,8 @@ self.addEventListener("sync", (event) => {
 })
 
 async function syncShareQueue() {
+    console.log('Fired syncShareQueue in Service-Worker!');
+
     const db = await openShareDB();
     const tx = db.transaction("contactForm", "readonly");
     const store = tx.objectStore("contactForm");
@@ -83,7 +85,7 @@ async function syncShareQueue() {
         req.onsuccess = () => resolve(req.result);
         req.onerror = () => reject(req.error);
     });
-    console.log(allShares)
+    // console.log(allShares);
 
     for (const shareData of allShares) {
         try {
@@ -126,16 +128,3 @@ async function openShareDB() {
         };
     });
 }
-// async function openShareDB() {
-//     const STORES_NAMES = ['projects', 'contactForm'];
-
-//     return await openDB('portfolio-db', 1, {
-//         upgrade(db) {
-//             for (const STORE_NAME of STORES_NAMES) {
-//                 if (!db.objectStoreNames.contains(STORE_NAME)) {
-//                     db.createObjectStore(STORE_NAME, { keyPath: 'id' });
-//                 }
-//             }
-//         },
-//     });
-// }

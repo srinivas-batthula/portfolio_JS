@@ -10,7 +10,26 @@ import styles from './../styles/Home.module.css'
 import FunToast from './ToastFun'
 
 import { useUserDetailsStore } from "@/store/useUserDetailsStore";
+import { getFromIndexedDB, clearInIndexedDB } from '@/utils/indexedDB'
 
+
+async function trySendOfflineShares() {
+    console.log('Fired trySendOfflineShares in Layout  to Sync Offline messages!')
+    const allShares = await getFromIndexedDB('contactForm');
+
+    for (const shareData of allShares) {
+        try {
+            await fetch(shareData.url, {
+                method: shareData.method,
+                headers: shareData.headers,
+                body: JSON.stringify(shareData.body),
+            });
+            await clearInIndexedDB('contactForm', shareData.id);
+        } catch (err) {
+            console.warn('Network error sending saved entry, will retry later', err);
+        }
+    }
+}
 
 const Layout = ({ children }) => {
     const fetchDetails = useUserDetailsStore((s) => s.fetchDetails);
@@ -46,8 +65,12 @@ const Layout = ({ children }) => {
                     console.error('Service Worker Registration failed: ', error)
                 })
         }
-        
+
         fetchDetails();
+
+        trySendOfflineShares();     // try once on load
+        window.addEventListener('online', trySendOfflineShares);        // also when browser comes back online
+        return () => window.removeEventListener('online', trySendOfflineShares);
     }, [])
 
     return (
