@@ -61,10 +61,12 @@ export const getFromIndexedDB = async (stores = 'contactForm') => {
 };
 
 // Clear ALL items in a store...
-export const clearInIndexedDB = async (stores = 'contactForm', id) => {
+export const clearAllInIndexedDB = async (stores = 'contactForm') => {
     const db = await dbPromise;
-    if (!db) return;
+    const tx = db.transaction(stores, 'readwrite');
+    const store = tx.objectStore(stores);
 
-    await db.delete(stores, id);
+    await store.clear();
+    await tx.done;
     return { success: true, msg: `${stores} -Cleared All!` };
 };

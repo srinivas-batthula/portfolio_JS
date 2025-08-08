@@ -10,7 +10,7 @@ import styles from './../styles/Home.module.css'
 import FunToast from './ToastFun'
 
 import { useUserDetailsStore } from "@/store/useUserDetailsStore";
-import { getFromIndexedDB, clearInIndexedDB } from '@/utils/indexedDB'
+import { getFromIndexedDB, clearAllInIndexedDB } from '@/utils/indexedDB'
 
 
 async function trySendOfflineShares() {
@@ -26,11 +26,11 @@ async function trySendOfflineShares() {
                 body: JSON.stringify(shareData.body),
             });
             console.log(shareData.body);
-            await clearInIndexedDB('contactForm', shareData.id);
         } catch (err) {
             console.warn('Network error sending saved entry, will retry later', err);
         }
     }
+    await clearAllInIndexedDB('contactForm');
 }
 
 const Layout = ({ children }) => {
