@@ -40,7 +40,7 @@ export const useUserDetailsStore = create((set) => ({
             city: 'fetching...',
             country: 'fetching...'
         }
-        console.log(t);
+        // console.log(t);
 
         try {
             const res = await fetch(`/api/userDetails`);

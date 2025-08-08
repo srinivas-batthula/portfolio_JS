@@ -1,8 +1,6 @@
-importScripts('https://cdn.jsdelivr.net/npm/idb@7/build/iife/index-min.js');
-const { openDB } = idb;
 
 const CACHE_NAME = `portfolio-cache-v${new Date().toISOString().slice(0, 10)}`             //Change this to a new version before every New DEPLOY.............................
-const HOME = self.location.origin;      // Provide a `Deployed` URL... (self.location.origin) / "https://coflow.netlify.app"
+const HOME = self.location.origin;      // Provide a `Deployed` URL... (self.location.origin) / "https://srinivas-batthula.vercel.app"
 
 const STATIC_FILES = [
     `${HOME}/`,
@@ -102,15 +100,39 @@ async function syncShareQueue() {
 }
 
 async function openShareDB() {
-    const STORES_NAMES = ['projects', 'contactForm'];
+    return new Promise((resolve, reject) => {
+        const STORES_NAMES = ['projects', 'contactForm'];
 
-    return await openDB('portfolio-db', 1, {
-        upgrade(db) {
+        const request = indexedDB.open('portfolio-db', 1);
+
+        request.onupgradeneeded = (event) => {
+            const db = event.target.result;
             for (const STORE_NAME of STORES_NAMES) {
                 if (!db.objectStoreNames.contains(STORE_NAME)) {
                     db.createObjectStore(STORE_NAME, { keyPath: 'id' });
                 }
             }
-        },
+        };
+
+        request.onsuccess = (event) => {
+            resolve(event.target.result);
+        };
+
+        request.onerror = (event) => {
+            reject(event.target.error);
+        };
     });
 }
+// async function openShareDB() {
+//     const STORES_NAMES = ['projects', 'contactForm'];
+
+//     return await openDB('portfolio-db', 1, {
+//         upgrade(db) {
+//             for (const STORE_NAME of STORES_NAMES) {
+//                 if (!db.objectStoreNames.contains(STORE_NAME)) {
+//                     db.createObjectStore(STORE_NAME, { keyPath: 'id' });
+//                 }
+//             }
+//         },
+//     });
+// }
