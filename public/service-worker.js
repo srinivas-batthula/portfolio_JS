@@ -5,11 +5,9 @@ const HOME = self.location.origin;      // Provide a `Deployed` URL... (self.loc
 const STATIC_FILES = [
     `${HOME}/`,
     `${HOME}/offline.html`,
-    '../data/certifications.json',
-    '../data/skills.json',
-    '../data/tools.json',
-    '../lib/schema.bundle.js',
-    // `${HOME}/_next/static/`,  // <- Next.js static build folder -installed in `fetch` event handler...
+    // `${HOME}/data/certifications.json`,
+    // `${HOME}/data/skills.json`,
+    // `${HOME}/data/tools.json`,
 ];
 
 
