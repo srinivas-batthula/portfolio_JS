@@ -94,14 +94,14 @@ async function syncShareQueue() {
                 body: JSON.stringify(shareData.body),
                 headers: shareData.headers
             })
-            // Remove successfully Synced share
-            const deleteTx = db.transaction("contactForm", "readwrite");
-            deleteTx.objectStore("contactForm").delete(shareData.id);
             console.log('Background Sync executed...');
         } catch (err) {
             console.error("Retry later:", err);
         }
     }
+    // Clear all entries in the "contactForm" object store
+    const clearTx = db.transaction("contactForm", "readwrite");
+    clearTx.objectStore("contactForm").clear();
 }
 
 async function openShareDB() {
