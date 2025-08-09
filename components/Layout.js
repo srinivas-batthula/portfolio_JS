@@ -14,24 +14,28 @@ import { getFromIndexedDB, clearAllInIndexedDB } from '@/utils/indexedDB'
 
 
 async function trySendOfflineShares() {
-    console.log('Fired trySendOfflineShares in Layout  to Sync Offline messages!');
+    console.log('Fired trySendOfflineShares in Layout  to Sync Offline messages : ');
     const allShares = await getFromIndexedDB('contactForm');
-    // console.log(allShares);
 
-    console.log('Sent Saved data from IndexedDB : ');
+    let check = false;
     for (const shareData of allShares.data) {
         try {
-            await fetch(shareData.url, {
+            const res = await fetch(shareData.url, {
                 method: shareData.method,
                 headers: shareData.headers,
                 body: JSON.stringify(shareData.body),
             });
+            if(res.ok)
+                check = true;
+            else
+                check = false;
             console.log(shareData.body);
         } catch (err) {
             console.warn('Network error sending saved entry, will retry later', err);
         }
     }
-    await clearAllInIndexedDB('contactForm');
+    if(check === true)
+        await clearAllInIndexedDB('contactForm');
 }
 
 const Layout = ({ children }) => {
@@ -60,12 +64,12 @@ const Layout = ({ children }) => {
 
         // Register the service worker...        (Note: Use Only in `Production`...)
         if ('serviceWorker' in navigator && window.location.hostname !== "localhost") {
-            navigator.serviceWorker.register(process.env.NEXT_PUBLIC_HOME + '/service-worker.js', { scope: '/' })
+            navigator.serviceWorker.register(process.env.NEXT_PUBLIC_HOME + '/service-worker.js', { scope: '/', type: 'module' })
                 .then((registration) => {
-                    console.log('Service Worker registered with scope: ', registration.scope)
+                    console.log('Service Worker registered with scope: ', registration.scope);
                 })
                 .catch((error) => {
-                    console.error('Service Worker Registration failed: ', error)
+                    console.error('Service Worker Registration failed: ', error);
                 })
         }
 

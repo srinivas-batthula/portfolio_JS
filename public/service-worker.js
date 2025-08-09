@@ -1,3 +1,6 @@
+// service-worker.js
+import { openDB } from 'idb';
+import { getFromIndexedDB, clearAllInIndexedDB } from '../utils/indexedDB.js';
 
 const CACHE_NAME = `portfolio-cache-v${new Date().toISOString().slice(0, 10)}`             //Change this to a new version before every New DEPLOY.............................
 const HOME = self.location.origin;      // Provide a `Deployed` URL... (self.location.origin) / "https://srinivas-batthula.vercel.app"
@@ -77,31 +80,39 @@ self.addEventListener("sync", (event) => {
 async function syncShareQueue() {
     console.log('Fired syncShareQueue in Service-Worker!');
 
-    const db = await openShareDB();
-    const tx = db.transaction("contactForm", "readonly");
-    const store = tx.objectStore("contactForm");
-    const allShares = await new Promise((resolve, reject) => {
-        const req = store.getAll();
-        req.onsuccess = () => resolve(req.result);
-        req.onerror = () => reject(req.error);
-    });
+    // const db = await openShareDB();
+    // const tx = db.transaction("contactForm", "readonly");
+    // const store = tx.objectStore("contactForm");
+    // const allShares = await new Promise((resolve, reject) => {
+    //     const req = store.getAll();
+    //     req.onsuccess = () => resolve(req.result);
+    //     req.onerror = () => reject(req.error);
+    // });
+    const allShares = await getFromIndexedDB('contactForm');
     // console.log(allShares);
 
-    for (const shareData of allShares) {
+    let check = false;
+    for (const shareData of allShares.data) {
         try {
-            await fetch(shareData.url, {    // Send to n8n...
+            const res = await fetch(shareData.url, {    // Send to n8n...
                 method: shareData.method,
                 body: JSON.stringify(shareData.body),
                 headers: shareData.headers
             })
+            if(res.ok)
+                check = true;
+            else
+                check = false;
             console.log('Background Sync executed...');
         } catch (err) {
             console.error("Retry later:", err);
         }
     }
     // Clear all entries in the "contactForm" object store
-    const clearTx = db.transaction("contactForm", "readwrite");
-    clearTx.objectStore("contactForm").clear();
+    if(check === true)
+        await clearAllInIndexedDB('contactForm');
+    // const clearTx = db.transaction("contactForm", "readwrite");
+    // clearTx.objectStore("contactForm").clear();
 }
 
 async function openShareDB() {

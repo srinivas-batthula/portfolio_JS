@@ -28,7 +28,8 @@ const OfflineStore = async (val) => {       // Save Offline & Queue Background S
 
     try {      // Registering 'SYNC' event {fired when back online}...
         if ('serviceWorker' in navigator && 'SyncManager' in window) {
-            (await navigator.serviceWorker.ready).sync.register('sync-share');
+            const reg = await navigator.serviceWorker.ready;
+            reg?.sync.register('sync-share');
             console.log('Background sync registered.');
         }
     } catch (err) {

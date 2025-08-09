@@ -40,7 +40,7 @@ export const saveToIndexedDB = async (data, stores = 'contactForm') => {
         }
     }
     else {
-        await store.put({ ...data, id: 1 });
+        await store.put({ ...data });
     }
 
     await tx.done
