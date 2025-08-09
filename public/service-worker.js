@@ -1,5 +1,4 @@
 // service-worker.js
-import { openDB } from 'idb';
 import { getFromIndexedDB, clearAllInIndexedDB } from '../utils/indexedDB.js';
 
 const CACHE_NAME = `portfolio-cache-v${new Date().toISOString().slice(0, 10)}`             //Change this to a new version before every New DEPLOY.............................
