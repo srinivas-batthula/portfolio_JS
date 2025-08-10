@@ -22,6 +22,12 @@ class MyDocument extends Document {
                     {/* Manifest.json... */}
                     <link rel="manifest" href="/manifest.json" />
 
+                    {/* ==== Preconnect / DNS Prefetch ==== */}
+                    <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+                    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+
                     {/* Font... */}
                     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
 
@@ -47,11 +53,9 @@ class MyDocument extends Document {
                     {/* Yandex Search Webmaster Meta tags... */}
                     <meta name="yandex-verification" content="85fe45ce1c1befd1" />
 
-                    {/* SEO tags... */}
+                    {/* SEO... */}
                     <link rel="canonical" href="https://srinivas-batthula.vercel.app" />
-                    {/* Sitemap */}
                     <link rel="sitemap" type="application/xml" href="https://srinivas-batthula.vercel.app/sitemap.xml" />
-                    {/* Robots */}
                     <meta name="robots" content="index, follow" />
 
                     {/* CDN's... */}

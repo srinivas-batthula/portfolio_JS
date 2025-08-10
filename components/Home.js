@@ -10,6 +10,7 @@ const TypingEffect = () => {
         "Software Developer",
         "Problem Solver",
         "MERN Stack Developer",
+        "Open Source Enthusiast",
     ];
 
     const [currentTextIndex, setCurrentTextIndex] = useState(0);

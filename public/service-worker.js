@@ -7,8 +7,6 @@ const STATIC_FILES = [
     `${HOME}/`,
     `${HOME}/offline.html`,
     // `${HOME}/data/certifications.json`,
-    // `${HOME}/data/skills.json`,
-    // `${HOME}/data/tools.json`,
 ];
 
 

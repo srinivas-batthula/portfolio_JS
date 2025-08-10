@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import { Autoplay, Navigation } from "swiper/modules";
+import Image from 'next/image';
 
 // JSON-Data imports
 import certificates from '@/data/certifications.json';
@@ -27,11 +28,12 @@ export default function ImageCarousel() {
                 {certificates.map((item, index) => (
                     <SwiperSlide key={index}>
                         <a href={item.link1} target="_blank" className="hover:bg-blue-500">
-                            <img
+                            {/* <img
                                 src={item.img}
                                 alt={`Slide ${index}`}
                                 className="w-full h-60 object-cover rounded-lg shadow-md"
-                            />
+                            /> */}
+                            <Image src={ item.img } alt={`Slide ${index}`} width={800} height={500} loading="lazy" className='w-full h-60 object-cover rounded-lg shadow-md' />
                         </a>
                     </SwiperSlide>
                 ))}

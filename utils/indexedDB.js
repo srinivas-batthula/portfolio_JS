@@ -1,3 +1,4 @@
+// utils/indexedDB.js
 import { openDB } from 'idb';
 
 const DB_NAME = 'portfolio-db';
