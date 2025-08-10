@@ -12,6 +12,7 @@ Hello all, Welcome to my Portfolio project, designed to showcase my skills, proj
 - **Geo-aware User Experience:** Detects user location and time zone via IP address on the /fun page.
 - **Fully Responsive Design:** Optimized for all screen sizes and devices to ensure a smooth experience everywhere.
 - **Cross-Platform Compatibility:** Works consistently across all major browsers and operating systems.
+- **Offline-Sync feature:** Offline Sync for Contact form.
 
 
 ## Live Demo
@@ -36,7 +37,7 @@ https://srinivas-batthula.github.io/portfolio
 
 ## Tech Stack
 
-**Client:**  NextJs, React.Js, Zustand, React-Bootsrap, TailwindCSS
+**Client:**  NextJs, React.Js, Zustand, React-Bootsrap, TailwindCSS, IndexedDB, PWA, SEO
 
 
 ## Logo
