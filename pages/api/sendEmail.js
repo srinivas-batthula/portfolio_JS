@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
     const EMAIL_USER = process.env.NEXT_PUBLIC_EMAIL_USER;
     const EMAIL_USER2 = process.env.NEXT_PUBLIC_EMAIL_USER2;
-NEXT_PUBLIC_
+
     // First email: To the user thanking them for contacting
     const firstEmailSubject = 'An E-mail from ~Srinivas Batthula';
     // const firstEmailText = `Thank you '${name}' for contacting me.\nYour response has been recorded.\n\t~Srinivas Batthula`;
@@ -93,6 +93,6 @@ NEXT_PUBLIC_
         return res.status(200).json({ status: 'success', message: 'Emails sent successfully!' })
     }
     catch (error) {
-        return res.status(500).json({ status: 'fail', error: 'Failed to send email.' });
+        return res.status(500).json({ status: 'fail', error: 'Failed to send email.', err: error.message });
     }
 }
