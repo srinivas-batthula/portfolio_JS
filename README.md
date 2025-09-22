@@ -4,6 +4,11 @@
 Hello all, Welcome to my Portfolio project, designed to showcase my skills, projects, etc.
 
 
+# Official repo ->
+
+[Portfolio Repo {Typescript}](https://github.com/srinivas-batthula/Portfolio)
+
+
 ## Features
 
 - **Pipedream Automation for contact form:** Seamlessly send 'thank you' emails with *AI*-Generated replies to the contacted users & store their data in Google-Sheets.
@@ -17,7 +22,7 @@ Hello all, Welcome to my Portfolio project, designed to showcase my skills, proj
 
 ## Live Demo
 
-https://srinivas-batthula.github.io/portfolio
+https://srinivas-batthula.github.io/portfolio_js
 
 
 ## API Reference
